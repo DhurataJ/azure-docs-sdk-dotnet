@@ -1,9 +1,9 @@
-<Type Name="VM" FullName="Azure.ResourceManager.Network.Models.VM">
-  <TypeSignature Language="C#" Value="public class VM : Azure.ResourceManager.Network.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VM extends Azure.ResourceManager.Network.Models.Resource" />
-  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Network.Models.VM" />
-  <TypeSignature Language="VB.NET" Value="Public Class VM&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type VM = class&#xA;    inherit Resource" />
+<Type Name="Vm" FullName="Azure.ResourceManager.Network.Models.Vm">
+  <TypeSignature Language="C#" Value="public class Vm : Azure.ResourceManager.Network.Models.Resource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Vm extends Azure.ResourceManager.Network.Models.Resource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Network.Models.Vm" />
+  <TypeSignature Language="VB.NET" Value="Public Class Vm&#xA;Inherits Resource" />
+  <TypeSignature Language="F#" Value="type Vm = class&#xA;    inherit Resource" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -18,9 +18,9 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VM ();" />
+      <MemberSignature Language="C#" Value="public Vm ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VM.#ctor" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.Vm.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -29,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of VM. </summary>
+        <summary> Initializes a new instance of Vm. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

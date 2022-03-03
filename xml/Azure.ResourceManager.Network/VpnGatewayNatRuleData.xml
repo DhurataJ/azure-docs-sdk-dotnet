@@ -133,12 +133,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IpConfigurationId">
-      <MemberSignature Language="C#" Value="public string IpConfigurationId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string IpConfigurationId" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.VpnGatewayNatRuleData.IpConfigurationId" />
-      <MemberSignature Language="VB.NET" Value="Public Property IpConfigurationId As String" />
-      <MemberSignature Language="F#" Value="member this.IpConfigurationId : string with get, set" Usage="Azure.ResourceManager.Network.VpnGatewayNatRuleData.IpConfigurationId" />
+    <Member MemberName="IPConfigurationId">
+      <MemberSignature Language="C#" Value="public string IPConfigurationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IPConfigurationId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.VpnGatewayNatRuleData.IPConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property IPConfigurationId As String" />
+      <MemberSignature Language="F#" Value="member this.IPConfigurationId : string with get, set" Usage="Azure.ResourceManager.Network.VpnGatewayNatRuleData.IPConfigurationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>

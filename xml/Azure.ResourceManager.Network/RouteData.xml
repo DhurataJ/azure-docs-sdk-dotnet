@@ -113,12 +113,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="NextHopIpAddress">
-      <MemberSignature Language="C#" Value="public string NextHopIpAddress { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string NextHopIpAddress" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.RouteData.NextHopIpAddress" />
-      <MemberSignature Language="VB.NET" Value="Public Property NextHopIpAddress As String" />
-      <MemberSignature Language="F#" Value="member this.NextHopIpAddress : string with get, set" Usage="Azure.ResourceManager.Network.RouteData.NextHopIpAddress" />
+    <Member MemberName="NextHopIPAddress">
+      <MemberSignature Language="C#" Value="public string NextHopIPAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NextHopIPAddress" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.RouteData.NextHopIPAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property NextHopIPAddress As String" />
+      <MemberSignature Language="F#" Value="member this.NextHopIPAddress : string with get, set" Usage="Azure.ResourceManager.Network.RouteData.NextHopIPAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
