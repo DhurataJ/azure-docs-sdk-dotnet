@@ -1,0 +1,265 @@
+<Type Name="SubscriptionExtensions" FullName="Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions">
+  <TypeSignature Language="C#" Value="public static class SubscriptionExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SubscriptionExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module SubscriptionExtensions" />
+  <TypeSignature Language="F#" Value="type SubscriptionExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Subscription. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetHostPools">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.DesktopVirtualization.HostPool&gt; GetHostPools (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.DesktopVirtualization.HostPool&gt; GetHostPools(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetHostPools(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetHostPools (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of HostPool)" />
+      <MemberSignature Language="F#" Value="static member GetHostPools : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DesktopVirtualization.HostPool&gt;" Usage="Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetHostPools (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DesktopVirtualization.HostPool&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List hostPools in subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DesktopVirtualization/hostPools
+            Operation Id: HostPools_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DesktopVirtualization.HostPool" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHostPoolsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.DesktopVirtualization.HostPool&gt; GetHostPoolsAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DesktopVirtualization.HostPool&gt; GetHostPoolsAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetHostPoolsAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetHostPoolsAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of HostPool)" />
+      <MemberSignature Language="F#" Value="static member GetHostPoolsAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DesktopVirtualization.HostPool&gt;" Usage="Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetHostPoolsAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DesktopVirtualization.HostPool&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List hostPools in subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DesktopVirtualization/hostPools
+            Operation Id: HostPools_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.DesktopVirtualization.HostPool" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScalingPlans">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.DesktopVirtualization.ScalingPlan&gt; GetScalingPlans (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.DesktopVirtualization.ScalingPlan&gt; GetScalingPlans(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetScalingPlans(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetScalingPlans (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ScalingPlan)" />
+      <MemberSignature Language="F#" Value="static member GetScalingPlans : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DesktopVirtualization.ScalingPlan&gt;" Usage="Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetScalingPlans (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DesktopVirtualization.ScalingPlan&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List scaling plans in subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DesktopVirtualization/scalingPlans
+            Operation Id: ScalingPlans_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DesktopVirtualization.ScalingPlan" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScalingPlansAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.DesktopVirtualization.ScalingPlan&gt; GetScalingPlansAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DesktopVirtualization.ScalingPlan&gt; GetScalingPlansAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetScalingPlansAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetScalingPlansAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ScalingPlan)" />
+      <MemberSignature Language="F#" Value="static member GetScalingPlansAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DesktopVirtualization.ScalingPlan&gt;" Usage="Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetScalingPlansAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DesktopVirtualization.ScalingPlan&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List scaling plans in subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DesktopVirtualization/scalingPlans
+            Operation Id: ScalingPlans_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.DesktopVirtualization.ScalingPlan" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualApplicationGroups">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup&gt; GetVirtualApplicationGroups (this Azure.ResourceManager.Resources.Subscription subscription, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup&gt; GetVirtualApplicationGroups(class Azure.ResourceManager.Resources.Subscription subscription, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetVirtualApplicationGroups(Azure.ResourceManager.Resources.Subscription,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualApplicationGroups (subscription As Subscription, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of VirtualApplicationGroup)" />
+      <MemberSignature Language="F#" Value="static member GetVirtualApplicationGroups : Azure.ResourceManager.Resources.Subscription * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup&gt;" Usage="Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetVirtualApplicationGroups (subscription, filter, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="filter"> OData filter expression. Valid properties for filtering are applicationGroupType. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List applicationGroups in subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DesktopVirtualization/applicationGroups
+            Operation Id: ApplicationGroups_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualApplicationGroupsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup&gt; GetVirtualApplicationGroupsAsync (this Azure.ResourceManager.Resources.Subscription subscription, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup&gt; GetVirtualApplicationGroupsAsync(class Azure.ResourceManager.Resources.Subscription subscription, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetVirtualApplicationGroupsAsync(Azure.ResourceManager.Resources.Subscription,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualApplicationGroupsAsync (subscription As Subscription, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of VirtualApplicationGroup)" />
+      <MemberSignature Language="F#" Value="static member GetVirtualApplicationGroupsAsync : Azure.ResourceManager.Resources.Subscription * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup&gt;" Usage="Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetVirtualApplicationGroupsAsync (subscription, filter, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="filter"> OData filter expression. Valid properties for filtering are applicationGroupType. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List applicationGroups in subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DesktopVirtualization/applicationGroups
+            Operation Id: ApplicationGroups_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualWorkspaces">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace&gt; GetVirtualWorkspaces (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace&gt; GetVirtualWorkspaces(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetVirtualWorkspaces(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualWorkspaces (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of VirtualWorkspace)" />
+      <MemberSignature Language="F#" Value="static member GetVirtualWorkspaces : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace&gt;" Usage="Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetVirtualWorkspaces (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List workspaces in subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DesktopVirtualization/workspaces
+            Operation Id: Workspaces_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualWorkspacesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace&gt; GetVirtualWorkspacesAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace&gt; GetVirtualWorkspacesAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetVirtualWorkspacesAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualWorkspacesAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of VirtualWorkspace)" />
+      <MemberSignature Language="F#" Value="static member GetVirtualWorkspacesAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace&gt;" Usage="Azure.ResourceManager.DesktopVirtualization.SubscriptionExtensions.GetVirtualWorkspacesAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List workspaces in subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DesktopVirtualization/workspaces
+            Operation Id: Workspaces_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
