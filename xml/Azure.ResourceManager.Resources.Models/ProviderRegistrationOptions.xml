@@ -33,22 +33,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ThirdPartyProviderConsent">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ProviderConsentDefinition ThirdPartyProviderConsent { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.ProviderConsentDefinition ThirdPartyProviderConsent" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ProviderRegistrationOptions.ThirdPartyProviderConsent" />
-      <MemberSignature Language="VB.NET" Value="Public Property ThirdPartyProviderConsent As ProviderConsentDefinition" />
-      <MemberSignature Language="F#" Value="member this.ThirdPartyProviderConsent : Azure.ResourceManager.Resources.Models.ProviderConsentDefinition with get, set" Usage="Azure.ResourceManager.Resources.Models.ProviderRegistrationOptions.ThirdPartyProviderConsent" />
+    <Member MemberName="ConsentToAuthorization">
+      <MemberSignature Language="C#" Value="public bool? ConsentToAuthorization { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ConsentToAuthorization" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ProviderRegistrationOptions.ConsentToAuthorization" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConsentToAuthorization As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ConsentToAuthorization : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.Resources.Models.ProviderRegistrationOptions.ConsentToAuthorization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ProviderConsentDefinition</ReturnType>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The provider consent. </summary>
+        <summary> A value indicating whether authorization is consented or not. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
