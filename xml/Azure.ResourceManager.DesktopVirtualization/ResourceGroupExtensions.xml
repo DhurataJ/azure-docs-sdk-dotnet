@@ -1,0 +1,117 @@
+<Type Name="ResourceGroupExtensions" FullName="Azure.ResourceManager.DesktopVirtualization.ResourceGroupExtensions">
+  <TypeSignature Language="C#" Value="public static class ResourceGroupExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ResourceGroupExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DesktopVirtualization.ResourceGroupExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ResourceGroupExtensions" />
+  <TypeSignature Language="F#" Value="type ResourceGroupExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to ResourceGroup. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetHostPools">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.HostPoolCollection GetHostPools (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.HostPoolCollection GetHostPools(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ResourceGroupExtensions.GetHostPools(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetHostPools (resourceGroup As ResourceGroup) As HostPoolCollection" />
+      <MemberSignature Language="F#" Value="static member GetHostPools : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.DesktopVirtualization.HostPoolCollection" Usage="Azure.ResourceManager.DesktopVirtualization.ResourceGroupExtensions.GetHostPools resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.HostPoolCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of HostPools in the HostPool. </summary>
+        <returns> An object representing collection of HostPools and their operations over a HostPool. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScalingPlans">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.ScalingPlanCollection GetScalingPlans (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.ScalingPlanCollection GetScalingPlans(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ResourceGroupExtensions.GetScalingPlans(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetScalingPlans (resourceGroup As ResourceGroup) As ScalingPlanCollection" />
+      <MemberSignature Language="F#" Value="static member GetScalingPlans : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.DesktopVirtualization.ScalingPlanCollection" Usage="Azure.ResourceManager.DesktopVirtualization.ResourceGroupExtensions.GetScalingPlans resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.ScalingPlanCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of ScalingPlans in the ScalingPlan. </summary>
+        <returns> An object representing collection of ScalingPlans and their operations over a ScalingPlan. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualApplicationGroups">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroupCollection GetVirtualApplicationGroups (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroupCollection GetVirtualApplicationGroups(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ResourceGroupExtensions.GetVirtualApplicationGroups(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualApplicationGroups (resourceGroup As ResourceGroup) As VirtualApplicationGroupCollection" />
+      <MemberSignature Language="F#" Value="static member GetVirtualApplicationGroups : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroupCollection" Usage="Azure.ResourceManager.DesktopVirtualization.ResourceGroupExtensions.GetVirtualApplicationGroups resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroupCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of VirtualApplicationGroups in the VirtualApplicationGroup. </summary>
+        <returns> An object representing collection of VirtualApplicationGroups and their operations over a VirtualApplicationGroup. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualWorkspaces">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.VirtualWorkspaceCollection GetVirtualWorkspaces (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.VirtualWorkspaceCollection GetVirtualWorkspaces(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ResourceGroupExtensions.GetVirtualWorkspaces(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualWorkspaces (resourceGroup As ResourceGroup) As VirtualWorkspaceCollection" />
+      <MemberSignature Language="F#" Value="static member GetVirtualWorkspaces : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.DesktopVirtualization.VirtualWorkspaceCollection" Usage="Azure.ResourceManager.DesktopVirtualization.ResourceGroupExtensions.GetVirtualWorkspaces resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.VirtualWorkspaceCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of VirtualWorkspaces in the VirtualWorkspace. </summary>
+        <returns> An object representing collection of VirtualWorkspaces and their operations over a VirtualWorkspace. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

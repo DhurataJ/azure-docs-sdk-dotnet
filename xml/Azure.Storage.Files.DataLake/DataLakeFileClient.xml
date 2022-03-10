@@ -429,10 +429,10 @@
       </Docs>
     </Member>
     <Member MemberName="Append">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response Append (System.IO.Stream content, long offset, Azure.Storage.Files.DataLake.Models.DataLakeFileAppendOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Append (System.IO.Stream content, long offset, Azure.Storage.Files.DataLake.Models.DataLakeFileAppendOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Append(class System.IO.Stream content, int64 offset, class Azure.Storage.Files.DataLake.Models.DataLakeFileAppendOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.Append(System.IO.Stream,System.Int64,Azure.Storage.Files.DataLake.Models.DataLakeFileAppendOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Append (content As Stream, offset As Long, options As DataLakeFileAppendOptions, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Append (content As Stream, offset As Long, Optional options As DataLakeFileAppendOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member Append : System.IO.Stream * int64 * Azure.Storage.Files.DataLake.Models.DataLakeFileAppendOptions * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.Append : System.IO.Stream * int64 * Azure.Storage.Files.DataLake.Models.DataLakeFileAppendOptions * System.Threading.CancellationToken -&gt; Azure.Response" Usage="dataLakeFileClient.Append (content, offset, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -487,11 +487,13 @@
       </Docs>
     </Member>
     <Member MemberName="Append">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response Append (System.IO.Stream content, long offset, byte[] contentHash = default, string leaseId = default, IProgress&lt;long&gt; progressHandler = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Append (System.IO.Stream content, long offset, byte[] contentHash = default, string leaseId = default, IProgress&lt;long&gt; progressHandler = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Append(class System.IO.Stream content, int64 offset, unsigned int8[] contentHash, string leaseId, class System.IProgress`1&lt;int64&gt; progressHandler, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.Append(System.IO.Stream,System.Int64,System.Byte[],System.String,System.IProgress{System.Int64},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Append (content As Stream, offset As Long, Optional contentHash As Byte() = Nothing, Optional leaseId As String = Nothing, Optional progressHandler As IProgress(Of Long) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Append (content As Stream, offset As Long, Optional contentHash As Byte() = Nothing, Optional leaseId As String = Nothing, Optional progressHandler As IProgress(Of Long) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member Append : System.IO.Stream * int64 * byte[] * string * IProgress&lt;int64&gt; * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.Append : System.IO.Stream * int64 * byte[] * string * IProgress&lt;int64&gt; * System.Threading.CancellationToken -&gt; Azure.Response" Usage="dataLakeFileClient.Append (content, offset, contentHash, leaseId, progressHandler, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Append (System.IO.Stream content, long offset, byte[] contentHash, string leaseId, IProgress&lt;long&gt; progressHandler, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Append (content As Stream, offset As Long, contentHash As Byte(), leaseId As String, progressHandler As IProgress(Of Long), cancellationToken As CancellationToken) As Response" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
@@ -567,10 +569,10 @@
       </Docs>
     </Member>
     <Member MemberName="AppendAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; AppendAsync (System.IO.Stream content, long offset, Azure.Storage.Files.DataLake.Models.DataLakeFileAppendOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; AppendAsync (System.IO.Stream content, long offset, Azure.Storage.Files.DataLake.Models.DataLakeFileAppendOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; AppendAsync(class System.IO.Stream content, int64 offset, class Azure.Storage.Files.DataLake.Models.DataLakeFileAppendOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.AppendAsync(System.IO.Stream,System.Int64,Azure.Storage.Files.DataLake.Models.DataLakeFileAppendOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function AppendAsync (content As Stream, offset As Long, options As DataLakeFileAppendOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AppendAsync (content As Stream, offset As Long, Optional options As DataLakeFileAppendOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member AppendAsync : System.IO.Stream * int64 * Azure.Storage.Files.DataLake.Models.DataLakeFileAppendOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.AppendAsync : System.IO.Stream * int64 * Azure.Storage.Files.DataLake.Models.DataLakeFileAppendOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="dataLakeFileClient.AppendAsync (content, offset, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -624,11 +626,13 @@
       </Docs>
     </Member>
     <Member MemberName="AppendAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; AppendAsync (System.IO.Stream content, long offset, byte[] contentHash = default, string leaseId = default, IProgress&lt;long&gt; progressHandler = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; AppendAsync (System.IO.Stream content, long offset, byte[] contentHash = default, string leaseId = default, IProgress&lt;long&gt; progressHandler = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; AppendAsync(class System.IO.Stream content, int64 offset, unsigned int8[] contentHash, string leaseId, class System.IProgress`1&lt;int64&gt; progressHandler, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.AppendAsync(System.IO.Stream,System.Int64,System.Byte[],System.String,System.IProgress{System.Int64},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function AppendAsync (content As Stream, offset As Long, Optional contentHash As Byte() = Nothing, Optional leaseId As String = Nothing, Optional progressHandler As IProgress(Of Long) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AppendAsync (content As Stream, offset As Long, Optional contentHash As Byte() = Nothing, Optional leaseId As String = Nothing, Optional progressHandler As IProgress(Of Long) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member AppendAsync : System.IO.Stream * int64 * byte[] * string * IProgress&lt;int64&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.AppendAsync : System.IO.Stream * int64 * byte[] * string * IProgress&lt;int64&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="dataLakeFileClient.AppendAsync (content, offset, contentHash, leaseId, progressHandler, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; AppendAsync (System.IO.Stream content, long offset, byte[] contentHash, string leaseId, IProgress&lt;long&gt; progressHandler, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AppendAsync (content As Stream, offset As Long, contentHash As Byte(), leaseId As String, progressHandler As IProgress(Of Long), cancellationToken As CancellationToken) As Task(Of Response)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
@@ -2043,7 +2047,7 @@
       </Parameters>
       <Docs>
         <param name="querySqlExpression">
-            The query.
+            The query. For a sample SQL query expression, see <see href="https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-query-acceleration-how-to?tabs=dotnet%2Cpowershell#retrieve-data-by-using-a-filter">this </see>article.
             </param>
         <param name="options">
             Optional parameters.
@@ -2090,7 +2094,7 @@
       </Parameters>
       <Docs>
         <param name="querySqlExpression">
-            The query.
+            The query. For a sample SQL query expression, see <see href="https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-query-acceleration-how-to?tabs=dotnet%2Cpowershell#retrieve-data-by-using-a-filter">this </see>article.
             </param>
         <param name="options">
             Optional parameters.
@@ -2515,10 +2519,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReadTo">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response ReadTo (System.IO.Stream destination, Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response ReadTo (System.IO.Stream destination, Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response ReadTo(class System.IO.Stream destination, class Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.ReadTo(System.IO.Stream,Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadTo (destination As Stream, options As DataLakeFileReadToOptions, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadTo (destination As Stream, Optional options As DataLakeFileReadToOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member ReadTo : System.IO.Stream * Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.ReadTo : System.IO.Stream * Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions * System.Threading.CancellationToken -&gt; Azure.Response" Usage="dataLakeFileClient.ReadTo (destination, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2559,10 +2563,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReadTo">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response ReadTo (string path, Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response ReadTo (string path, Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response ReadTo(string path, class Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.ReadTo(System.String,Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadTo (path As String, options As DataLakeFileReadToOptions, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadTo (path As String, Optional options As DataLakeFileReadToOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member ReadTo : string * Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.ReadTo : string * Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions * System.Threading.CancellationToken -&gt; Azure.Response" Usage="dataLakeFileClient.ReadTo (path, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2603,11 +2607,13 @@
       </Docs>
     </Member>
     <Member MemberName="ReadTo">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response ReadTo (System.IO.Stream destination, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions = default, Azure.Storage.StorageTransferOptions transferOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response ReadTo (System.IO.Stream destination, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions = default, Azure.Storage.StorageTransferOptions transferOptions = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response ReadTo(class System.IO.Stream destination, class Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, valuetype Azure.Storage.StorageTransferOptions transferOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.ReadTo(System.IO.Stream,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,Azure.Storage.StorageTransferOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadTo (destination As Stream, Optional conditions As DataLakeRequestConditions = Nothing, Optional transferOptions As StorageTransferOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadTo (destination As Stream, Optional conditions As DataLakeRequestConditions = Nothing, Optional transferOptions As StorageTransferOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member ReadTo : System.IO.Stream * Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.ReadTo : System.IO.Stream * Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; Azure.Response" Usage="dataLakeFileClient.ReadTo (destination, conditions, transferOptions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response ReadTo (System.IO.Stream destination, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, Azure.Storage.StorageTransferOptions transferOptions, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadTo (destination As Stream, conditions As DataLakeRequestConditions, transferOptions As StorageTransferOptions, cancellationToken As CancellationToken) As Response" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
@@ -2617,6 +2623,12 @@
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
@@ -2657,11 +2669,13 @@
       </Docs>
     </Member>
     <Member MemberName="ReadTo">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response ReadTo (string path, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions = default, Azure.Storage.StorageTransferOptions transferOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response ReadTo (string path, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions = default, Azure.Storage.StorageTransferOptions transferOptions = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response ReadTo(string path, class Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, valuetype Azure.Storage.StorageTransferOptions transferOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.ReadTo(System.String,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,Azure.Storage.StorageTransferOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadTo (path As String, Optional conditions As DataLakeRequestConditions = Nothing, Optional transferOptions As StorageTransferOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadTo (path As String, Optional conditions As DataLakeRequestConditions = Nothing, Optional transferOptions As StorageTransferOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member ReadTo : string * Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.ReadTo : string * Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; Azure.Response" Usage="dataLakeFileClient.ReadTo (path, conditions, transferOptions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response ReadTo (string path, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, Azure.Storage.StorageTransferOptions transferOptions, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadTo (path As String, conditions As DataLakeRequestConditions, transferOptions As StorageTransferOptions, cancellationToken As CancellationToken) As Response" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
@@ -2671,6 +2685,12 @@
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
@@ -2711,10 +2731,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReadToAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ReadToAsync (System.IO.Stream destination, Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ReadToAsync (System.IO.Stream destination, Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; ReadToAsync(class System.IO.Stream destination, class Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.ReadToAsync(System.IO.Stream,Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToAsync (destination As Stream, options As DataLakeFileReadToOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToAsync (destination As Stream, Optional options As DataLakeFileReadToOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member ReadToAsync : System.IO.Stream * Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.ReadToAsync : System.IO.Stream * Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="dataLakeFileClient.ReadToAsync (destination, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2755,10 +2775,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReadToAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ReadToAsync (string path, Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ReadToAsync (string path, Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; ReadToAsync(string path, class Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.ReadToAsync(System.String,Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToAsync (path As String, options As DataLakeFileReadToOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToAsync (path As String, Optional options As DataLakeFileReadToOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member ReadToAsync : string * Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.ReadToAsync : string * Azure.Storage.Files.DataLake.Models.DataLakeFileReadToOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="dataLakeFileClient.ReadToAsync (path, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2799,11 +2819,13 @@
       </Docs>
     </Member>
     <Member MemberName="ReadToAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ReadToAsync (System.IO.Stream destination, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions = default, Azure.Storage.StorageTransferOptions transferOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ReadToAsync (System.IO.Stream destination, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions = default, Azure.Storage.StorageTransferOptions transferOptions = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; ReadToAsync(class System.IO.Stream destination, class Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, valuetype Azure.Storage.StorageTransferOptions transferOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.ReadToAsync(System.IO.Stream,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,Azure.Storage.StorageTransferOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToAsync (destination As Stream, Optional conditions As DataLakeRequestConditions = Nothing, Optional transferOptions As StorageTransferOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToAsync (destination As Stream, Optional conditions As DataLakeRequestConditions = Nothing, Optional transferOptions As StorageTransferOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member ReadToAsync : System.IO.Stream * Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.ReadToAsync : System.IO.Stream * Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="dataLakeFileClient.ReadToAsync (destination, conditions, transferOptions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ReadToAsync (System.IO.Stream destination, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, Azure.Storage.StorageTransferOptions transferOptions, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToAsync (destination As Stream, conditions As DataLakeRequestConditions, transferOptions As StorageTransferOptions, cancellationToken As CancellationToken) As Task(Of Response)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
@@ -2813,6 +2835,12 @@
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
@@ -2853,11 +2881,13 @@
       </Docs>
     </Member>
     <Member MemberName="ReadToAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ReadToAsync (string path, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions = default, Azure.Storage.StorageTransferOptions transferOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ReadToAsync (string path, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions = default, Azure.Storage.StorageTransferOptions transferOptions = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; ReadToAsync(string path, class Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, valuetype Azure.Storage.StorageTransferOptions transferOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.ReadToAsync(System.String,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,Azure.Storage.StorageTransferOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToAsync (path As String, Optional conditions As DataLakeRequestConditions = Nothing, Optional transferOptions As StorageTransferOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToAsync (path As String, Optional conditions As DataLakeRequestConditions = Nothing, Optional transferOptions As StorageTransferOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member ReadToAsync : string * Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.ReadToAsync : string * Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="dataLakeFileClient.ReadToAsync (path, conditions, transferOptions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ReadToAsync (string path, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, Azure.Storage.StorageTransferOptions transferOptions, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToAsync (path As String, conditions As DataLakeRequestConditions, transferOptions As StorageTransferOptions, cancellationToken As CancellationToken) As Task(Of Response)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
@@ -2867,6 +2897,12 @@
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>

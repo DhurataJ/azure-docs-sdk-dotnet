@@ -1,15 +1,15 @@
 <Type Name="StorageCrc64NonCryptographicHashAlgorithm" FullName="Azure.Storage.StorageCrc64NonCryptographicHashAlgorithm">
-  <TypeSignature Language="C#" Value="public class StorageCrc64NonCryptographicHashAlgorithm" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageCrc64NonCryptographicHashAlgorithm extends System.Object" />
+  <TypeSignature Language="C#" Value="public class StorageCrc64NonCryptographicHashAlgorithm : System.IO.Hashing.NonCryptographicHashAlgorithm" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageCrc64NonCryptographicHashAlgorithm extends System.IO.Hashing.NonCryptographicHashAlgorithm" />
   <TypeSignature Language="DocId" Value="T:Azure.Storage.StorageCrc64NonCryptographicHashAlgorithm" />
-  <TypeSignature Language="VB.NET" Value="Public Class StorageCrc64NonCryptographicHashAlgorithm" />
-  <TypeSignature Language="F#" Value="type StorageCrc64NonCryptographicHashAlgorithm = class" />
+  <TypeSignature Language="VB.NET" Value="Public Class StorageCrc64NonCryptographicHashAlgorithm&#xA;Inherits NonCryptographicHashAlgorithm" />
+  <TypeSignature Language="F#" Value="type StorageCrc64NonCryptographicHashAlgorithm = class&#xA;    inherit NonCryptographicHashAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>Azure.Storage.Common</AssemblyName>
     <AssemblyVersion>12.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName>System.IO.Hashing.NonCryptographicHashAlgorithm</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -20,11 +20,11 @@
   </Docs>
   <Members>
     <Member MemberName="Append">
-      <MemberSignature Language="C#" Value="public void Append (ReadOnlySpan&lt;byte&gt; source);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Append(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
+      <MemberSignature Language="C#" Value="public override void Append (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Append(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.StorageCrc64NonCryptographicHashAlgorithm.Append(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Append (source As ReadOnlySpan(Of Byte))" />
-      <MemberSignature Language="F#" Value="member this.Append : ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="storageCrc64NonCryptographicHashAlgorithm.Append source" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Append (source As ReadOnlySpan(Of Byte))" />
+      <MemberSignature Language="F#" Value="override this.Append : ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="storageCrc64NonCryptographicHashAlgorithm.Append source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Common</AssemblyName>
@@ -37,9 +37,11 @@
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">Data to compute on.</param>
+        <param name="source">The data to process.</param>
         <summary>
-            Appends the given data to CRC computation.
+              When overridden in a derived class,
+              appends the contents of <paramref name="source" /> to the data already
+              processed for the current hash computation.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,35 +69,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetCurrentHash">
-      <MemberSignature Language="C#" Value="public byte[] GetCurrentHash ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetCurrentHash() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.StorageCrc64NonCryptographicHashAlgorithm.GetCurrentHash" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetCurrentHash () As Byte()" />
-      <MemberSignature Language="F#" Value="member this.GetCurrentHash : unit -&gt; byte[]" Usage="storageCrc64NonCryptographicHashAlgorithm.GetCurrentHash " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>12.10.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Byte[]</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Gets the current computed hash value without modifying accumulated state.
-            </summary>
-        <returns>Byte array of the current hash.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetCurrentHashCore">
-      <MemberSignature Language="C#" Value="protected void GetCurrentHashCore (Span&lt;byte&gt; destination);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void GetCurrentHashCore(valuetype System.Span`1&lt;unsigned int8&gt; destination) cil managed" />
+      <MemberSignature Language="C#" Value="protected override void GetCurrentHashCore (Span&lt;byte&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentHashCore(valuetype System.Span`1&lt;unsigned int8&gt; destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.StorageCrc64NonCryptographicHashAlgorithm.GetCurrentHashCore(System.Span{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub GetCurrentHashCore (destination As Span(Of Byte))" />
-      <MemberSignature Language="F#" Value="member this.GetCurrentHashCore : Span&lt;byte&gt; -&gt; unit" Usage="storageCrc64NonCryptographicHashAlgorithm.GetCurrentHashCore destination" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentHashCore (destination As Span(Of Byte))" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentHashCore : Span&lt;byte&gt; -&gt; unit" Usage="storageCrc64NonCryptographicHashAlgorithm.GetCurrentHashCore destination" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Common</AssemblyName>
@@ -108,19 +87,32 @@
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="destination">Span to write the current CRC to.</param>
+        <param name="destination">The buffer that receives the computed hash value.</param>
         <summary>
-            Gets current CRC computation.
+              When overridden in a derived class,
+              writes the computed hash value to <paramref name="destination" />
+              without modifying accumulated state.
             </summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>
+                Implementations of this method must write exactly
+                <see cref="P:System.IO.Hashing.NonCryptographicHashAlgorithm.HashLengthInBytes" /> bytes to <paramref name="destination" />.
+                Do not assume that the buffer was zero-initialized.
+              </para>
+          <para>
+                The <see cref="T:System.IO.Hashing.NonCryptographicHashAlgorithm" /> class validates the
+                size of the buffer before calling this method, and slices the span
+                down to be exactly <see cref="P:System.IO.Hashing.NonCryptographicHashAlgorithm.HashLengthInBytes" /> in length.
+              </para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
-      <MemberSignature Language="C#" Value="public void Reset ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
+      <MemberSignature Language="C#" Value="public override void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.StorageCrc64NonCryptographicHashAlgorithm.Reset" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
-      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="storageCrc64NonCryptographicHashAlgorithm.Reset " />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="storageCrc64NonCryptographicHashAlgorithm.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Common</AssemblyName>
@@ -132,7 +124,8 @@
       <Parameters />
       <Docs>
         <summary>
-            Resets CRC computation.
+              When overridden in a derived class,
+              resets the hash computation to the initial state.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
