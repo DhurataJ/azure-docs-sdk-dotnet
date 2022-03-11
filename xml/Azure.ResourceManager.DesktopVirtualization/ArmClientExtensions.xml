@@ -1,0 +1,255 @@
+<Type Name="ArmClientExtensions" FullName="Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions">
+  <TypeSignature Language="C#" Value="public static class ArmClientExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ArmClientExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ArmClientExtensions" />
+  <TypeSignature Language="F#" Value="type ArmClientExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to ArmClient. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetHostPool">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.HostPool GetHostPool (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.HostPool GetHostPool(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetHostPool(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetHostPool (client As ArmClient, id As ResourceIdentifier) As HostPool" />
+      <MemberSignature Language="F#" Value="static member GetHostPool : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DesktopVirtualization.HostPool" Usage="Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetHostPool (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.HostPool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a HostPool along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DesktopVirtualization.HostPool" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMsixPackage">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.MsixPackage GetMsixPackage (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.MsixPackage GetMsixPackage(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetMsixPackage(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMsixPackage (client As ArmClient, id As ResourceIdentifier) As MsixPackage" />
+      <MemberSignature Language="F#" Value="static member GetMsixPackage : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DesktopVirtualization.MsixPackage" Usage="Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetMsixPackage (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.MsixPackage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a MsixPackage along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DesktopVirtualization.MsixPackage" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScalingPlan">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.ScalingPlan GetScalingPlan (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.ScalingPlan GetScalingPlan(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetScalingPlan(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetScalingPlan (client As ArmClient, id As ResourceIdentifier) As ScalingPlan" />
+      <MemberSignature Language="F#" Value="static member GetScalingPlan : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DesktopVirtualization.ScalingPlan" Usage="Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetScalingPlan (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.ScalingPlan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a ScalingPlan along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DesktopVirtualization.ScalingPlan" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSessionHost">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.SessionHost GetSessionHost (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.SessionHost GetSessionHost(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetSessionHost(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSessionHost (client As ArmClient, id As ResourceIdentifier) As SessionHost" />
+      <MemberSignature Language="F#" Value="static member GetSessionHost : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DesktopVirtualization.SessionHost" Usage="Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetSessionHost (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.SessionHost</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a SessionHost along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DesktopVirtualization.SessionHost" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserSession">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.UserSession GetUserSession (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.UserSession GetUserSession(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetUserSession(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUserSession (client As ArmClient, id As ResourceIdentifier) As UserSession" />
+      <MemberSignature Language="F#" Value="static member GetUserSession : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DesktopVirtualization.UserSession" Usage="Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetUserSession (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.UserSession</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a UserSession along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DesktopVirtualization.UserSession" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualApplication">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.VirtualApplication GetVirtualApplication (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.VirtualApplication GetVirtualApplication(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetVirtualApplication(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualApplication (client As ArmClient, id As ResourceIdentifier) As VirtualApplication" />
+      <MemberSignature Language="F#" Value="static member GetVirtualApplication : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DesktopVirtualization.VirtualApplication" Usage="Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetVirtualApplication (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.VirtualApplication</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a VirtualApplication along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DesktopVirtualization.VirtualApplication" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualApplicationGroup">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup GetVirtualApplicationGroup (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup GetVirtualApplicationGroup(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetVirtualApplicationGroup(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualApplicationGroup (client As ArmClient, id As ResourceIdentifier) As VirtualApplicationGroup" />
+      <MemberSignature Language="F#" Value="static member GetVirtualApplicationGroup : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup" Usage="Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetVirtualApplicationGroup (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a VirtualApplicationGroup along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DesktopVirtualization.VirtualApplicationGroup" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualDesktop">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.VirtualDesktop GetVirtualDesktop (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.VirtualDesktop GetVirtualDesktop(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetVirtualDesktop(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualDesktop (client As ArmClient, id As ResourceIdentifier) As VirtualDesktop" />
+      <MemberSignature Language="F#" Value="static member GetVirtualDesktop : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DesktopVirtualization.VirtualDesktop" Usage="Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetVirtualDesktop (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.VirtualDesktop</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a VirtualDesktop along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DesktopVirtualization.VirtualDesktop" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualWorkspace">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace GetVirtualWorkspace (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace GetVirtualWorkspace(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetVirtualWorkspace(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualWorkspace (client As ArmClient, id As ResourceIdentifier) As VirtualWorkspace" />
+      <MemberSignature Language="F#" Value="static member GetVirtualWorkspace : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace" Usage="Azure.ResourceManager.DesktopVirtualization.ArmClientExtensions.GetVirtualWorkspace (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DesktopVirtualization</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a VirtualWorkspace along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DesktopVirtualization.VirtualWorkspace" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

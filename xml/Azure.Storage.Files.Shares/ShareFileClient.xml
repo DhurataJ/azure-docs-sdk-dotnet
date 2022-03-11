@@ -1199,51 +1199,6 @@
       </Docs>
     </Member>
     <Member MemberName="Download">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt; Download (Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions options, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt; Download(class Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.Download(Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Download (options As ShareFileDownloadOptions, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ShareFileDownloadInfo)" />
-      <MemberSignature Language="F#" Value="abstract member Download : Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt;&#xA;override this.Download : Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt;" Usage="shareFileClient.Download (options, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
-        <AssemblyVersion>12.9.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="options" Type="Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="options">
-             Optional parameters.
-             </param>
-        <param name="cancellationToken">
-             Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
-             notifications that the operation should be cancelled.
-             </param>
-        <summary>
-             The <see cref="M:Azure.Storage.Files.Shares.ShareFileClient.Download(Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions,System.Threading.CancellationToken)" />
-             operation reads or downloads a file from the system, including its metadata and properties.
-            
-             For more information, see
-             <see href="https://docs.microsoft.com/rest/api/storageservices/get-file">
-             Get File</see>.
-             </summary>
-        <returns>
-             A <see cref="T:Azure.Response`1" /> describing the
-             downloaded file.  <see cref="P:Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo.Content" /> contains
-             the file's data.
-             </returns>
-        <remarks>
-             A <see cref="T:Azure.RequestFailedException" /> will be thrown if
-             a failure occurs.
-             </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Download">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt; Download (Azure.HttpRange range, bool rangeGetContentHash, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt; Download(valuetype Azure.HttpRange range, bool rangeGetContentHash, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.Download(Azure.HttpRange,System.Boolean,System.Threading.CancellationToken)" />
@@ -1323,12 +1278,6 @@
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
-          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt;</ReturnType>
       </ReturnValue>
@@ -1361,51 +1310,6 @@
              </param>
         <summary>
              The <see cref="M:Azure.Storage.Files.Shares.ShareFileClient.Download(Azure.HttpRange,System.Boolean,Azure.Storage.Files.Shares.Models.ShareFileRequestConditions,System.Threading.CancellationToken)" />
-             operation reads or downloads a file from the system, including its metadata and properties.
-            
-             For more information, see
-             <see href="https://docs.microsoft.com/rest/api/storageservices/get-file">
-             Get File</see>.
-             </summary>
-        <returns>
-             A <see cref="T:Azure.Response`1" /> describing the
-             downloaded file.  <see cref="P:Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo.Content" /> contains
-             the file's data.
-             </returns>
-        <remarks>
-             A <see cref="T:Azure.RequestFailedException" /> will be thrown if
-             a failure occurs.
-             </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DownloadAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt;&gt; DownloadAsync (Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions options, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt;&gt; DownloadAsync(class Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.DownloadAsync(Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DownloadAsync (options As ShareFileDownloadOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ShareFileDownloadInfo))" />
-      <MemberSignature Language="F#" Value="abstract member DownloadAsync : Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt;&gt;&#xA;override this.DownloadAsync : Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt;&gt;" Usage="shareFileClient.DownloadAsync (options, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
-        <AssemblyVersion>12.9.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="options" Type="Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="options">
-             Optional parameters.
-             </param>
-        <param name="cancellationToken">
-             Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
-             notifications that the operation should be cancelled.
-             </param>
-        <summary>
-             The <see cref="M:Azure.Storage.Files.Shares.ShareFileClient.DownloadAsync(Azure.Storage.Files.Shares.Models.ShareFileDownloadOptions,System.Threading.CancellationToken)" />
              operation reads or downloads a file from the system, including its metadata and properties.
             
              For more information, see
@@ -1503,12 +1407,6 @@
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
-          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileDownloadInfo&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -2037,6 +1935,58 @@
              A <see cref="T:Azure.RequestFailedException" /> will be thrown if
              a failure occurs.
              </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParentShareClientCore">
+      <MemberSignature Language="C#" Value="protected internal virtual Azure.Storage.Files.Shares.ShareClient GetParentShareClientCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class Azure.Storage.Files.Shares.ShareClient GetParentShareClientCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.GetParentShareClientCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetParentShareClientCore () As ShareClient" />
+      <MemberSignature Language="F#" Value="abstract member GetParentShareClientCore : unit -&gt; Azure.Storage.Files.Shares.ShareClient&#xA;override this.GetParentShareClientCore : unit -&gt; Azure.Storage.Files.Shares.ShareClient" Usage="shareFileClient.GetParentShareClientCore " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
+        <AssemblyVersion>12.9.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Storage.Files.Shares.ShareClient</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create a new <see cref="T:Azure.Storage.Files.Shares.ShareClient" /> that pointing to this <see cref="T:Azure.Storage.Files.Shares.ShareFileClient" />'s parent container.
+            The new <see cref="T:Azure.Storage.Files.Shares.ShareClient" />
+            uses the same request policy pipeline as the
+            <see cref="T:Azure.Storage.Files.Shares.ShareFileClient" />.
+            </summary>
+        <returns>A new <see cref="T:Azure.Storage.Files.Shares.ShareFileClient" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParentShareDirectoryClientCore">
+      <MemberSignature Language="C#" Value="protected internal virtual Azure.Storage.Files.Shares.ShareDirectoryClient GetParentShareDirectoryClientCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class Azure.Storage.Files.Shares.ShareDirectoryClient GetParentShareDirectoryClientCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.GetParentShareDirectoryClientCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetParentShareDirectoryClientCore () As ShareDirectoryClient" />
+      <MemberSignature Language="F#" Value="abstract member GetParentShareDirectoryClientCore : unit -&gt; Azure.Storage.Files.Shares.ShareDirectoryClient&#xA;override this.GetParentShareDirectoryClientCore : unit -&gt; Azure.Storage.Files.Shares.ShareDirectoryClient" Usage="shareFileClient.GetParentShareDirectoryClientCore " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
+        <AssemblyVersion>12.9.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Storage.Files.Shares.ShareDirectoryClient</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create a new <see cref="T:Azure.Storage.Files.Shares.ShareDirectoryClient" /> that pointing to this <see cref="T:Azure.Storage.Files.Shares.ShareFileClient" />'s parent container.
+            The new <see cref="T:Azure.Storage.Files.Shares.ShareDirectoryClient" />
+            uses the same request policy pipeline as the
+            <see cref="T:Azure.Storage.Files.Shares.ShareFileClient" />.
+            </summary>
+        <returns>A new <see cref="T:Azure.Storage.Files.Shares.ShareFileClient" /> instance.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -3756,6 +3706,53 @@
       </Docs>
     </Member>
     <Member MemberName="StartCopy">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt; StartCopy (Uri sourceUri, Azure.Storage.Files.Shares.Models.ShareFileCopyOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt; StartCopy(class System.Uri sourceUri, class Azure.Storage.Files.Shares.Models.ShareFileCopyOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.StartCopy(System.Uri,Azure.Storage.Files.Shares.Models.ShareFileCopyOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCopy (sourceUri As Uri, Optional options As ShareFileCopyOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ShareFileCopyInfo)" />
+      <MemberSignature Language="F#" Value="abstract member StartCopy : Uri * Azure.Storage.Files.Shares.Models.ShareFileCopyOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&#xA;override this.StartCopy : Uri * Azure.Storage.Files.Shares.Models.ShareFileCopyOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;" Usage="shareFileClient.StartCopy (sourceUri, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
+        <AssemblyVersion>12.9.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="options" Type="Azure.Storage.Files.Shares.Models.ShareFileCopyOptions" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="sourceUri">
+             Required. Specifies the URL of the source file or blob.
+             </param>
+        <param name="options">
+             Optional parameters.
+             </param>
+        <param name="cancellationToken">
+             Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
+             notifications that the operation should be cancelled.
+             </param>
+        <summary>
+             Copies a blob or file to a destination file within the storage account.
+            
+             For more information, see
+             <see href="https://docs.microsoft.com/rest/api/storageservices/copy-file">
+             Copy File</see>.
+             </summary>
+        <returns>
+             A <see cref="T:Azure.Response`1" /> describing the
+             state of the file copy.
+             </returns>
+        <remarks>
+             A <see cref="T:Azure.RequestFailedException" /> will be thrown if
+             a failure occurs.
+             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCopy">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt; StartCopy (Uri sourceUri, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt; StartCopy(class System.Uri sourceUri, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.StartCopy(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
@@ -3813,11 +3810,13 @@
       </Docs>
     </Member>
     <Member MemberName="StartCopy">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt; StartCopy (Uri sourceUri, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.Storage.Files.Shares.Models.FileSmbProperties smbProperties = default, string filePermission = default, Azure.Storage.Files.Shares.Models.PermissionCopyMode? filePermissionCopyMode = default, bool? ignoreReadOnly = default, bool? setArchiveAttribute = default, Azure.Storage.Files.Shares.Models.ShareFileRequestConditions conditions = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt; StartCopy (Uri sourceUri, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.Storage.Files.Shares.Models.FileSmbProperties smbProperties = default, string filePermission = default, Azure.Storage.Files.Shares.Models.PermissionCopyMode? filePermissionCopyMode = default, bool? ignoreReadOnly = default, bool? setArchiveAttribute = default, Azure.Storage.Files.Shares.Models.ShareFileRequestConditions conditions = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt; StartCopy(class System.Uri sourceUri, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, class Azure.Storage.Files.Shares.Models.FileSmbProperties smbProperties, string filePermission, valuetype System.Nullable`1&lt;valuetype Azure.Storage.Files.Shares.Models.PermissionCopyMode&gt; filePermissionCopyMode, valuetype System.Nullable`1&lt;bool&gt; ignoreReadOnly, valuetype System.Nullable`1&lt;bool&gt; setArchiveAttribute, class Azure.Storage.Files.Shares.Models.ShareFileRequestConditions conditions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.StartCopy(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Storage.Files.Shares.Models.FileSmbProperties,System.String,System.Nullable{Azure.Storage.Files.Shares.Models.PermissionCopyMode},System.Nullable{System.Boolean},System.Nullable{System.Boolean},Azure.Storage.Files.Shares.Models.ShareFileRequestConditions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCopy (sourceUri As Uri, Optional metadata As IDictionary(Of String, String) = Nothing, Optional smbProperties As FileSmbProperties = Nothing, Optional filePermission As String = Nothing, Optional filePermissionCopyMode As Nullable(Of PermissionCopyMode) = Nothing, Optional ignoreReadOnly As Nullable(Of Boolean) = Nothing, Optional setArchiveAttribute As Nullable(Of Boolean) = Nothing, Optional conditions As ShareFileRequestConditions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ShareFileCopyInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCopy (sourceUri As Uri, Optional metadata As IDictionary(Of String, String) = Nothing, Optional smbProperties As FileSmbProperties = Nothing, Optional filePermission As String = Nothing, Optional filePermissionCopyMode As Nullable(Of PermissionCopyMode) = Nothing, Optional ignoreReadOnly As Nullable(Of Boolean) = Nothing, Optional setArchiveAttribute As Nullable(Of Boolean) = Nothing, Optional conditions As ShareFileRequestConditions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ShareFileCopyInfo)" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member StartCopy : Uri * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Files.Shares.Models.FileSmbProperties * string * Nullable&lt;Azure.Storage.Files.Shares.Models.PermissionCopyMode&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Azure.Storage.Files.Shares.Models.ShareFileRequestConditions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&#xA;override this.StartCopy : Uri * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Files.Shares.Models.FileSmbProperties * string * Nullable&lt;Azure.Storage.Files.Shares.Models.PermissionCopyMode&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Azure.Storage.Files.Shares.Models.ShareFileRequestConditions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;" Usage="shareFileClient.StartCopy (sourceUri, metadata, smbProperties, filePermission, filePermissionCopyMode, ignoreReadOnly, setArchiveAttribute, conditions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt; StartCopy (Uri sourceUri, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, Azure.Storage.Files.Shares.Models.FileSmbProperties smbProperties, string filePermission, Azure.Storage.Files.Shares.Models.PermissionCopyMode? filePermissionCopyMode, bool? ignoreReadOnly, bool? setArchiveAttribute, Azure.Storage.Files.Shares.Models.ShareFileRequestConditions conditions, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCopy (sourceUri As Uri, metadata As IDictionary(Of String, String), smbProperties As FileSmbProperties, filePermission As String, filePermissionCopyMode As Nullable(Of PermissionCopyMode), ignoreReadOnly As Nullable(Of Boolean), setArchiveAttribute As Nullable(Of Boolean), conditions As ShareFileRequestConditions, cancellationToken As CancellationToken) As Response(Of ShareFileCopyInfo)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
@@ -3827,6 +3826,12 @@
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;</ReturnType>
       </ReturnValue>
@@ -3871,6 +3876,53 @@
         <param name="conditions">
              Optional <see cref="T:Azure.Storage.Files.Shares.Models.ShareFileRequestConditions" /> to add conditions
              on creating the file.
+             </param>
+        <param name="cancellationToken">
+             Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
+             notifications that the operation should be cancelled.
+             </param>
+        <summary>
+             Copies a blob or file to a destination file within the storage account.
+            
+             For more information, see
+             <see href="https://docs.microsoft.com/rest/api/storageservices/copy-file">
+             Copy File</see>.
+             </summary>
+        <returns>
+             A <see cref="T:Azure.Response`1" /> describing the
+             state of the file copy.
+             </returns>
+        <remarks>
+             A <see cref="T:Azure.RequestFailedException" /> will be thrown if
+             a failure occurs.
+             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCopyAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&gt; StartCopyAsync (Uri sourceUri, Azure.Storage.Files.Shares.Models.ShareFileCopyOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&gt; StartCopyAsync(class System.Uri sourceUri, class Azure.Storage.Files.Shares.Models.ShareFileCopyOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.StartCopyAsync(System.Uri,Azure.Storage.Files.Shares.Models.ShareFileCopyOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCopyAsync (sourceUri As Uri, Optional options As ShareFileCopyOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ShareFileCopyInfo))" />
+      <MemberSignature Language="F#" Value="abstract member StartCopyAsync : Uri * Azure.Storage.Files.Shares.Models.ShareFileCopyOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&gt;&#xA;override this.StartCopyAsync : Uri * Azure.Storage.Files.Shares.Models.ShareFileCopyOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&gt;" Usage="shareFileClient.StartCopyAsync (sourceUri, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
+        <AssemblyVersion>12.9.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="options" Type="Azure.Storage.Files.Shares.Models.ShareFileCopyOptions" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="sourceUri">
+             Required. Specifies the URL of the source file or blob.
+             </param>
+        <param name="options">
+             Optional parameters.
              </param>
         <param name="cancellationToken">
              Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
@@ -3951,11 +4003,13 @@
       </Docs>
     </Member>
     <Member MemberName="StartCopyAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&gt; StartCopyAsync (Uri sourceUri, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.Storage.Files.Shares.Models.FileSmbProperties smbProperties = default, string filePermission = default, Azure.Storage.Files.Shares.Models.PermissionCopyMode? filePermissionCopyMode = default, bool? ignoreReadOnly = default, bool? setArchiveAttribute = default, Azure.Storage.Files.Shares.Models.ShareFileRequestConditions conditions = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&gt; StartCopyAsync (Uri sourceUri, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.Storage.Files.Shares.Models.FileSmbProperties smbProperties = default, string filePermission = default, Azure.Storage.Files.Shares.Models.PermissionCopyMode? filePermissionCopyMode = default, bool? ignoreReadOnly = default, bool? setArchiveAttribute = default, Azure.Storage.Files.Shares.Models.ShareFileRequestConditions conditions = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&gt; StartCopyAsync(class System.Uri sourceUri, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, class Azure.Storage.Files.Shares.Models.FileSmbProperties smbProperties, string filePermission, valuetype System.Nullable`1&lt;valuetype Azure.Storage.Files.Shares.Models.PermissionCopyMode&gt; filePermissionCopyMode, valuetype System.Nullable`1&lt;bool&gt; ignoreReadOnly, valuetype System.Nullable`1&lt;bool&gt; setArchiveAttribute, class Azure.Storage.Files.Shares.Models.ShareFileRequestConditions conditions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.StartCopyAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Storage.Files.Shares.Models.FileSmbProperties,System.String,System.Nullable{Azure.Storage.Files.Shares.Models.PermissionCopyMode},System.Nullable{System.Boolean},System.Nullable{System.Boolean},Azure.Storage.Files.Shares.Models.ShareFileRequestConditions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCopyAsync (sourceUri As Uri, Optional metadata As IDictionary(Of String, String) = Nothing, Optional smbProperties As FileSmbProperties = Nothing, Optional filePermission As String = Nothing, Optional filePermissionCopyMode As Nullable(Of PermissionCopyMode) = Nothing, Optional ignoreReadOnly As Nullable(Of Boolean) = Nothing, Optional setArchiveAttribute As Nullable(Of Boolean) = Nothing, Optional conditions As ShareFileRequestConditions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ShareFileCopyInfo))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCopyAsync (sourceUri As Uri, Optional metadata As IDictionary(Of String, String) = Nothing, Optional smbProperties As FileSmbProperties = Nothing, Optional filePermission As String = Nothing, Optional filePermissionCopyMode As Nullable(Of PermissionCopyMode) = Nothing, Optional ignoreReadOnly As Nullable(Of Boolean) = Nothing, Optional setArchiveAttribute As Nullable(Of Boolean) = Nothing, Optional conditions As ShareFileRequestConditions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ShareFileCopyInfo))" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member StartCopyAsync : Uri * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Files.Shares.Models.FileSmbProperties * string * Nullable&lt;Azure.Storage.Files.Shares.Models.PermissionCopyMode&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Azure.Storage.Files.Shares.Models.ShareFileRequestConditions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&gt;&#xA;override this.StartCopyAsync : Uri * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Files.Shares.Models.FileSmbProperties * string * Nullable&lt;Azure.Storage.Files.Shares.Models.PermissionCopyMode&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Azure.Storage.Files.Shares.Models.ShareFileRequestConditions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&gt;" Usage="shareFileClient.StartCopyAsync (sourceUri, metadata, smbProperties, filePermission, filePermissionCopyMode, ignoreReadOnly, setArchiveAttribute, conditions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&gt; StartCopyAsync (Uri sourceUri, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, Azure.Storage.Files.Shares.Models.FileSmbProperties smbProperties, string filePermission, Azure.Storage.Files.Shares.Models.PermissionCopyMode? filePermissionCopyMode, bool? ignoreReadOnly, bool? setArchiveAttribute, Azure.Storage.Files.Shares.Models.ShareFileRequestConditions conditions, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCopyAsync (sourceUri As Uri, metadata As IDictionary(Of String, String), smbProperties As FileSmbProperties, filePermission As String, filePermissionCopyMode As Nullable(Of PermissionCopyMode), ignoreReadOnly As Nullable(Of Boolean), setArchiveAttribute As Nullable(Of Boolean), conditions As ShareFileRequestConditions, cancellationToken As CancellationToken) As Task(Of Response(Of ShareFileCopyInfo))" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
@@ -3965,6 +4019,12 @@
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileCopyInfo&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -4024,54 +4084,6 @@
         <returns>
              A <see cref="T:Azure.Response`1" /> describing the
              state of the file copy.
-             </returns>
-        <remarks>
-             A <see cref="T:Azure.RequestFailedException" /> will be thrown if
-             a failure occurs.
-             </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Upload">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt; Upload (System.IO.Stream stream, Azure.Storage.Files.Shares.Models.ShareFileUploadOptions options, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt; Upload(class System.IO.Stream stream, class Azure.Storage.Files.Shares.Models.ShareFileUploadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.Upload(System.IO.Stream,Azure.Storage.Files.Shares.Models.ShareFileUploadOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Upload (stream As Stream, options As ShareFileUploadOptions, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ShareFileUploadInfo)" />
-      <MemberSignature Language="F#" Value="abstract member Upload : System.IO.Stream * Azure.Storage.Files.Shares.Models.ShareFileUploadOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&#xA;override this.Upload : System.IO.Stream * Azure.Storage.Files.Shares.Models.ShareFileUploadOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;" Usage="shareFileClient.Upload (stream, options, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
-        <AssemblyVersion>12.9.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="options" Type="Azure.Storage.Files.Shares.Models.ShareFileUploadOptions" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="stream">
-             Content stream to upload.
-             </param>
-        <param name="options">
-             Upload options.
-             </param>
-        <param name="cancellationToken">
-             Optional <see cref="T:System.Threading.CancellationToken" /> to propagate notifications
-             that the operation should be cancelled.
-             </param>
-        <summary>
-             The <see cref="M:Azure.Storage.Files.Shares.ShareFileClient.Upload(System.IO.Stream,Azure.Storage.Files.Shares.Models.ShareFileUploadOptions,System.Threading.CancellationToken)" />
-             operation writes <paramref name="options.Stream.Stream" /> to a file.
-            
-             For more information, see
-             <see href="https://docs.microsoft.com/rest/api/storageservices/put-range">
-             Put Range</see>.
-             </summary>
-        <returns>
-             A <see cref="T:Azure.Response`1" /> describing the
-             state of the file.
              </returns>
         <remarks>
              A <see cref="T:Azure.RequestFailedException" /> will be thrown if
@@ -4153,12 +4165,6 @@
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
-          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;</ReturnType>
       </ReturnValue>
@@ -4187,54 +4193,6 @@
         <summary>
              The <see cref="M:Azure.Storage.Files.Shares.ShareFileClient.Upload(System.IO.Stream,System.IProgress{System.Int64},Azure.Storage.Files.Shares.Models.ShareFileRequestConditions,System.Threading.CancellationToken)" />
              operation writes <paramref name="content" /> to a file.
-            
-             For more information, see
-             <see href="https://docs.microsoft.com/rest/api/storageservices/put-range">
-             Put Range</see>.
-             </summary>
-        <returns>
-             A <see cref="T:Azure.Response`1" /> describing the
-             state of the file.
-             </returns>
-        <remarks>
-             A <see cref="T:Azure.RequestFailedException" /> will be thrown if
-             a failure occurs.
-             </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UploadAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&gt; UploadAsync (System.IO.Stream stream, Azure.Storage.Files.Shares.Models.ShareFileUploadOptions options, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&gt; UploadAsync(class System.IO.Stream stream, class Azure.Storage.Files.Shares.Models.ShareFileUploadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.UploadAsync(System.IO.Stream,Azure.Storage.Files.Shares.Models.ShareFileUploadOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UploadAsync (stream As Stream, options As ShareFileUploadOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ShareFileUploadInfo))" />
-      <MemberSignature Language="F#" Value="abstract member UploadAsync : System.IO.Stream * Azure.Storage.Files.Shares.Models.ShareFileUploadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&gt;&#xA;override this.UploadAsync : System.IO.Stream * Azure.Storage.Files.Shares.Models.ShareFileUploadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&gt;" Usage="shareFileClient.UploadAsync (stream, options, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
-        <AssemblyVersion>12.9.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="options" Type="Azure.Storage.Files.Shares.Models.ShareFileUploadOptions" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="stream">
-             Content stream to upload.
-             </param>
-        <param name="options">
-             Upload options.
-             </param>
-        <param name="cancellationToken">
-             Optional <see cref="T:System.Threading.CancellationToken" /> to propagate notifications
-             that the operation should be cancelled.
-             </param>
-        <summary>
-             The <see cref="M:Azure.Storage.Files.Shares.ShareFileClient.UploadAsync(System.IO.Stream,Azure.Storage.Files.Shares.Models.ShareFileUploadOptions,System.Threading.CancellationToken)" /> operation writes
-             <paramref name="options.Stream.Stream" /> to a file.
             
              For more information, see
              <see href="https://docs.microsoft.com/rest/api/storageservices/put-range">
@@ -4324,12 +4282,6 @@
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
-          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -4358,58 +4310,6 @@
         <summary>
              The <see cref="M:Azure.Storage.Files.Shares.ShareFileClient.UploadAsync(System.IO.Stream,System.IProgress{System.Int64},Azure.Storage.Files.Shares.Models.ShareFileRequestConditions,System.Threading.CancellationToken)" /> operation writes
              <paramref name="content" /> to a file.
-            
-             For more information, see
-             <see href="https://docs.microsoft.com/rest/api/storageservices/put-range">
-             Put Range</see>.
-             </summary>
-        <returns>
-             A <see cref="T:Azure.Response`1" /> describing the
-             state of the file.
-             </returns>
-        <remarks>
-             A <see cref="T:Azure.RequestFailedException" /> will be thrown if
-             a failure occurs.
-             </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UploadRange">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt; UploadRange (Azure.HttpRange range, System.IO.Stream content, Azure.Storage.Files.Shares.Models.ShareFileUploadRangeOptions options, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt; UploadRange(valuetype Azure.HttpRange range, class System.IO.Stream content, class Azure.Storage.Files.Shares.Models.ShareFileUploadRangeOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.UploadRange(Azure.HttpRange,System.IO.Stream,Azure.Storage.Files.Shares.Models.ShareFileUploadRangeOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UploadRange (range As HttpRange, content As Stream, options As ShareFileUploadRangeOptions, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ShareFileUploadInfo)" />
-      <MemberSignature Language="F#" Value="abstract member UploadRange : Azure.HttpRange * System.IO.Stream * Azure.Storage.Files.Shares.Models.ShareFileUploadRangeOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&#xA;override this.UploadRange : Azure.HttpRange * System.IO.Stream * Azure.Storage.Files.Shares.Models.ShareFileUploadRangeOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;" Usage="shareFileClient.UploadRange (range, content, options, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
-        <AssemblyVersion>12.9.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="range" Type="Azure.HttpRange" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="content" Type="System.IO.Stream" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="options" Type="Azure.Storage.Files.Shares.Models.ShareFileUploadRangeOptions" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="range">
-             Specifies the range of bytes to be written. Both the start and end of the range must be specified.
-             </param>
-        <param name="content">
-             A <see cref="T:System.IO.Stream" /> containing the content of the range to upload.
-             </param>
-        <param name="options">
-             Optional parameters.
-             </param>
-        <param name="cancellationToken">
-             Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
-             notifications that the operation should be cancelled.
-             </param>
-        <summary>
-             The <see cref="M:Azure.Storage.Files.Shares.ShareFileClient.UploadRange(Azure.HttpRange,System.IO.Stream,System.Byte[],System.IProgress{System.Int64},Azure.Storage.Files.Shares.Models.ShareFileRequestConditions,System.Threading.CancellationToken)" />
-             operation writes <paramref name="content" /> to a <paramref name="range" /> of a file.
             
              For more information, see
              <see href="https://docs.microsoft.com/rest/api/storageservices/put-range">
@@ -4557,58 +4457,6 @@
              </param>
         <summary>
              The <see cref="M:Azure.Storage.Files.Shares.ShareFileClient.UploadRange(Azure.Storage.Files.Shares.Models.ShareFileRangeWriteType,Azure.HttpRange,System.IO.Stream,System.Byte[],System.IProgress{System.Int64},System.Threading.CancellationToken)" />
-             operation writes <paramref name="content" /> to a <paramref name="range" /> of a file.
-            
-             For more information, see
-             <see href="https://docs.microsoft.com/rest/api/storageservices/put-range">
-             Put Range</see>.
-             </summary>
-        <returns>
-             A <see cref="T:Azure.Response`1" /> describing the
-             state of the file.
-             </returns>
-        <remarks>
-             A <see cref="T:Azure.RequestFailedException" /> will be thrown if
-             a failure occurs.
-             </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UploadRangeAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&gt; UploadRangeAsync (Azure.HttpRange range, System.IO.Stream content, Azure.Storage.Files.Shares.Models.ShareFileUploadRangeOptions options, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&gt; UploadRangeAsync(valuetype Azure.HttpRange range, class System.IO.Stream content, class Azure.Storage.Files.Shares.Models.ShareFileUploadRangeOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareFileClient.UploadRangeAsync(Azure.HttpRange,System.IO.Stream,Azure.Storage.Files.Shares.Models.ShareFileUploadRangeOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UploadRangeAsync (range As HttpRange, content As Stream, options As ShareFileUploadRangeOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ShareFileUploadInfo))" />
-      <MemberSignature Language="F#" Value="abstract member UploadRangeAsync : Azure.HttpRange * System.IO.Stream * Azure.Storage.Files.Shares.Models.ShareFileUploadRangeOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&gt;&#xA;override this.UploadRangeAsync : Azure.HttpRange * System.IO.Stream * Azure.Storage.Files.Shares.Models.ShareFileUploadRangeOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&gt;" Usage="shareFileClient.UploadRangeAsync (range, content, options, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
-        <AssemblyVersion>12.9.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareFileUploadInfo&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="range" Type="Azure.HttpRange" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="content" Type="System.IO.Stream" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="options" Type="Azure.Storage.Files.Shares.Models.ShareFileUploadRangeOptions" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="range">
-             Specifies the range of bytes to be written. Both the start and end of the range must be specified.
-             </param>
-        <param name="content">
-             A <see cref="T:System.IO.Stream" /> containing the content of the range to upload.
-             </param>
-        <param name="options">
-             Optional parameters.
-             </param>
-        <param name="cancellationToken">
-             Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
-             notifications that the operation should be cancelled.
-             </param>
-        <summary>
-             The <see cref="M:Azure.Storage.Files.Shares.ShareFileClient.UploadRangeAsync(Azure.HttpRange,System.IO.Stream,System.Byte[],System.IProgress{System.Int64},Azure.Storage.Files.Shares.Models.ShareFileRequestConditions,System.Threading.CancellationToken)" />
              operation writes <paramref name="content" /> to a <paramref name="range" /> of a file.
             
              For more information, see

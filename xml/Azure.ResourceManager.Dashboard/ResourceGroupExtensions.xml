@@ -1,0 +1,45 @@
+<Type Name="ResourceGroupExtensions" FullName="Azure.ResourceManager.Dashboard.ResourceGroupExtensions">
+  <TypeSignature Language="C#" Value="public static class ResourceGroupExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ResourceGroupExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Dashboard.ResourceGroupExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ResourceGroupExtensions" />
+  <TypeSignature Language="F#" Value="type ResourceGroupExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Dashboard</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to ResourceGroup. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetGrafanaResources">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dashboard.GrafanaResourceCollection GetGrafanaResources (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dashboard.GrafanaResourceCollection GetGrafanaResources(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dashboard.ResourceGroupExtensions.GetGrafanaResources(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetGrafanaResources (resourceGroup As ResourceGroup) As GrafanaResourceCollection" />
+      <MemberSignature Language="F#" Value="static member GetGrafanaResources : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.Dashboard.GrafanaResourceCollection" Usage="Azure.ResourceManager.Dashboard.ResourceGroupExtensions.GetGrafanaResources resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dashboard</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dashboard.GrafanaResourceCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of GrafanaResources in the GrafanaResource. </summary>
+        <returns> An object representing collection of GrafanaResources and their operations over a GrafanaResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
