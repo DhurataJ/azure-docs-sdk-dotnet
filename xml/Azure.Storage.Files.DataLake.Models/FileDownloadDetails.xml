@@ -11,6 +11,7 @@
     <AssemblyVersion>12.7.0.0</AssemblyVersion>
     <AssemblyVersion>12.8.0.0</AssemblyVersion>
     <AssemblyVersion>12.9.0.0</AssemblyVersion>
+    <AssemblyVersion>12.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -37,6 +38,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -63,6 +65,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -89,6 +92,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -118,6 +122,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -144,6 +149,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -172,6 +178,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -198,15 +205,22 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Indicates the range of bytes returned in the event that the client requested a subset of the file
-            setting the 'Range' request header.
-            </summary>
+             Indicates the range of bytes returned in the event that the client requested a subset of the file
+             setting the 'Range' request header.
+            
+             The format of the Content-Range is expected to comeback in the following format.
+             [unit] [start]-[end]/[FileSize]
+             (e.g. bytes 1024-3071/10240)
+            
+             The [end] value will be the inclusive last byte (e.g. header "bytes 0-7/8" is the entire 8-byte file).
+             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -225,6 +239,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
@@ -255,6 +270,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -282,6 +298,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -311,6 +328,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -340,6 +358,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Files.DataLake.Models.CopyStatus</ReturnType>
@@ -366,6 +385,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -395,6 +415,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -422,6 +443,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ETag</ReturnType>
@@ -449,6 +471,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -477,6 +500,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
@@ -504,6 +528,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Files.DataLake.Models.DataLakeLeaseDuration</ReturnType>
@@ -530,6 +555,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Files.DataLake.Models.DataLakeLeaseState</ReturnType>
@@ -556,6 +582,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Files.DataLake.Models.DataLakeLeaseStatus</ReturnType>
@@ -582,6 +609,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>

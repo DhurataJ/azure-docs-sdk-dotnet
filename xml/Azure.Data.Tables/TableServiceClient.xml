@@ -13,6 +13,8 @@
     <AssemblyVersion>12.2.1.0</AssemblyVersion>
     <AssemblyVersion>12.3.0.0</AssemblyVersion>
     <AssemblyVersion>12.4.0.0</AssemblyVersion>
+    <AssemblyVersion>12.5.0.0</AssemblyVersion>
+    <AssemblyVersion>12.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -40,6 +42,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -66,6 +70,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -104,6 +110,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -148,6 +156,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -187,6 +197,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -227,6 +239,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -262,6 +276,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -301,6 +317,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -340,6 +358,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -379,6 +399,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -407,6 +429,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -439,6 +463,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -471,6 +497,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Data.Tables.Models.TableItem&gt;</ReturnType>
@@ -505,6 +533,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Data.Tables.Models.TableItem&gt;&gt;</ReturnType>
@@ -539,6 +569,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Data.Tables.Models.TableItem&gt;</ReturnType>
@@ -573,6 +605,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Data.Tables.Models.TableItem&gt;&gt;</ReturnType>
@@ -607,6 +641,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -641,6 +677,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -675,6 +713,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -712,6 +752,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -760,6 +802,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Data.Tables.Models.TableServiceProperties&gt;</ReturnType>
@@ -790,6 +834,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Data.Tables.Models.TableServiceProperties&gt;&gt;</ReturnType>
@@ -820,6 +866,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Data.Tables.Sas.TableAccountSasBuilder</ReturnType>
@@ -858,6 +906,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Data.Tables.Sas.TableAccountSasBuilder</ReturnType>
@@ -895,6 +945,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Data.Tables.Models.TableServiceStatistics&gt;</ReturnType>
@@ -925,6 +977,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Data.Tables.Models.TableServiceStatistics&gt;&gt;</ReturnType>
@@ -955,6 +1009,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Data.Tables.TableClient</ReturnType>
@@ -987,6 +1043,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.Data.Tables.Models.TableItem&gt;</ReturnType>
@@ -1031,6 +1089,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.Data.Tables.Models.TableItem&gt;</ReturnType>
@@ -1074,6 +1134,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.Data.Tables.Models.TableItem&gt;</ReturnType>
@@ -1116,6 +1178,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.Data.Tables.Models.TableItem&gt;</ReturnType>
@@ -1160,6 +1224,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.Data.Tables.Models.TableItem&gt;</ReturnType>
@@ -1203,6 +1269,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.Data.Tables.Models.TableItem&gt;</ReturnType>
@@ -1245,6 +1313,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1277,6 +1347,8 @@
         <AssemblyVersion>12.2.1.0</AssemblyVersion>
         <AssemblyVersion>12.3.0.0</AssemblyVersion>
         <AssemblyVersion>12.4.0.0</AssemblyVersion>
+        <AssemblyVersion>12.5.0.0</AssemblyVersion>
+        <AssemblyVersion>12.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>

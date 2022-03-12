@@ -18,10 +18,29 @@
   <Members>
     <Member MemberName="CanNotDelete">
       <MemberSignature Language="C#" Value="CanNotDelete" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Resources.Models.ApplicationLockLevel CanNotDelete = int32(0)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Resources.Models.ApplicationLockLevel CanNotDelete = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Resources.Models.ApplicationLockLevel.CanNotDelete" />
       <MemberSignature Language="VB.NET" Value="CanNotDelete" />
-      <MemberSignature Language="F#" Value="CanNotDelete = 0" Usage="Azure.ResourceManager.Resources.Models.ApplicationLockLevel.CanNotDelete" />
+      <MemberSignature Language="F#" Value="CanNotDelete = 1" Usage="Azure.ResourceManager.Resources.Models.ApplicationLockLevel.CanNotDelete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Models.ApplicationLockLevel</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary> CanNotDelete. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Resources.Models.ApplicationLockLevel None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Resources.Models.ApplicationLockLevel.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Azure.ResourceManager.Resources.Models.ApplicationLockLevel.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
@@ -32,15 +51,15 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary> CanNotDelete. </summary>
+        <summary> None. </summary>
       </Docs>
     </Member>
-    <Member MemberName="None">
-      <MemberSignature Language="C#" Value="None" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Resources.Models.ApplicationLockLevel None = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Resources.Models.ApplicationLockLevel.None" />
-      <MemberSignature Language="VB.NET" Value="None" />
-      <MemberSignature Language="F#" Value="None = 2" Usage="Azure.ResourceManager.Resources.Models.ApplicationLockLevel.None" />
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="ReadOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Resources.Models.ApplicationLockLevel ReadOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Resources.Models.ApplicationLockLevel.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 2" Usage="Azure.ResourceManager.Resources.Models.ApplicationLockLevel.ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
@@ -50,25 +69,6 @@
         <ReturnType>Azure.ResourceManager.Resources.Models.ApplicationLockLevel</ReturnType>
       </ReturnValue>
       <MemberValue>2</MemberValue>
-      <Docs>
-        <summary> None. </summary>
-      </Docs>
-    </Member>
-    <Member MemberName="ReadOnly">
-      <MemberSignature Language="C#" Value="ReadOnly" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Resources.Models.ApplicationLockLevel ReadOnly = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Resources.Models.ApplicationLockLevel.ReadOnly" />
-      <MemberSignature Language="VB.NET" Value="ReadOnly" />
-      <MemberSignature Language="F#" Value="ReadOnly = 1" Usage="Azure.ResourceManager.Resources.Models.ApplicationLockLevel.ReadOnly" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ApplicationLockLevel</ReturnType>
-      </ReturnValue>
-      <MemberValue>1</MemberValue>
       <Docs>
         <summary> ReadOnly. </summary>
       </Docs>

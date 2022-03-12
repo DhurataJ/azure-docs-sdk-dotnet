@@ -14,6 +14,7 @@
     <AssemblyVersion>12.9.1.0</AssemblyVersion>
     <AssemblyVersion>12.10.0.0</AssemblyVersion>
     <AssemblyVersion>12.11.0.0</AssemblyVersion>
+    <AssemblyVersion>12.12.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -42,6 +43,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -66,6 +68,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -95,6 +98,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -124,6 +128,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -153,6 +158,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -178,6 +184,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Blobs.Models.BlobType</ReturnType>
@@ -207,6 +214,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -236,6 +244,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -265,6 +274,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -290,6 +300,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -319,6 +330,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -344,6 +356,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -373,14 +386,21 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Indicates the range of bytes returned in the event that the client requested a subset of the blob by setting the 'Range' request header.
-            </summary>
+             Indicates the range of bytes returned in the event that the client requested a subset of the blob by setting the 'Range' request header.
+            
+             The format of the Content-Range is expected to comeback in the following format.
+             [unit] [start]-[end]/[blobSize]
+             (e.g. bytes 1024-3071/10240)
+            
+             The [end] value will be the inclusive last byte (e.g. header "bytes 0-7/8" is the entire 8-byte blob).
+             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -398,6 +418,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -427,6 +448,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
@@ -456,6 +478,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -485,6 +508,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -514,6 +538,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -543,6 +568,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Blobs.Models.CopyStatus</ReturnType>
@@ -572,6 +598,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -601,6 +628,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -630,6 +658,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -659,6 +688,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ETag</ReturnType>
@@ -682,6 +712,7 @@
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -705,6 +736,7 @@
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Blobs.Models.BlobImmutabilityPolicy</ReturnType>
@@ -734,6 +766,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -763,6 +796,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -792,6 +826,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
@@ -821,6 +856,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
@@ -850,6 +886,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Blobs.Models.LeaseDurationType</ReturnType>
@@ -879,6 +916,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Blobs.Models.LeaseState</ReturnType>
@@ -908,6 +946,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Blobs.Models.LeaseStatus</ReturnType>
@@ -937,6 +976,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -966,6 +1006,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -995,6 +1036,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.Storage.Blobs.Models.ObjectReplicationPolicy&gt;</ReturnType>
@@ -1024,6 +1066,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -1053,6 +1096,7 @@
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
