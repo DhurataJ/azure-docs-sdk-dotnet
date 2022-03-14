@@ -1,6 +1,6 @@
 ---
 title: Azure ResourceManager client library for .NET
-keywords: Azure, dotnet, SDK, API, Azure.ResourceManager, azureresourcemanager
+keywords: Azure, dotnet, SDK, API, Azure.ResourceManager, resourcemanager
 author: AlexGhiondea
 ms.author: alexghi
 ms.date: 03/14/2022
@@ -8,9 +8,9 @@ ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: azureresourcemanager
+ms.service: resourcemanager
 ---
-# Azure ResourceManager client library for .NET - Version 1.0.0-alpha.20220314.2 
+# Azure ResourceManager client library for .NET - Version 1.0.0-alpha.20220314.4 
 
 
 This package follows the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html), which provide core capabilities that are shared amongst all Azure SDKs, including:
