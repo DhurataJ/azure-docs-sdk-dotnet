@@ -101,7 +101,11 @@
       <Docs>
         <param name="expand"> The $expand query parameter. For example, to include property aliases in response, use $expand=resourceTypes/aliases. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified resource provider. </summary>
+        <summary>
+            Gets the specified resource provider.
+            Request Path: /subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}
+            Operation Id: Providers_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,9 +131,81 @@
       <Docs>
         <param name="expand"> The $expand query parameter. For example, to include property aliases in response, use $expand=resourceTypes/aliases. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified resource provider. </summary>
+        <summary>
+            Gets the specified resource provider.
+            Request Path: /subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}
+            Operation Id: Providers_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFeature">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Resources.Feature&gt; GetFeature (string featureName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Feature&gt; GetFeature(string featureName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Provider.GetFeature(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFeature (featureName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Feature)" />
+      <MemberSignature Language="F#" Value="abstract member GetFeature : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Feature&gt;&#xA;override this.GetFeature : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Feature&gt;" Usage="provider.GetFeature (featureName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.Feature&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="featureName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="featureName"> The name of the feature to get. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the preview feature with the specified name.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Features/providers/{resourceProviderNamespace}/features/{featureName}
+            Operation Id: Features_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="featureName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="featureName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFeatureAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Feature&gt;&gt; GetFeatureAsync (string featureName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Feature&gt;&gt; GetFeatureAsync(string featureName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Provider.GetFeatureAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFeatureAsync (featureName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Feature))" />
+      <MemberSignature Language="F#" Value="abstract member GetFeatureAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Feature&gt;&gt;&#xA;override this.GetFeatureAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Feature&gt;&gt;" Usage="provider.GetFeatureAsync (featureName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Feature&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="featureName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="featureName"> The name of the feature to get. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the preview feature with the specified name.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Features/providers/{resourceProviderNamespace}/features/{featureName}
+            Operation Id: Features_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="featureName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="featureName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetFeatures">
@@ -148,8 +224,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of Features in the Provider. </summary>
-        <returns> An object representing collection of Features and their operations over a Provider. </returns>
+        <summary> Gets a collection of Features in the Feature. </summary>
+        <returns> An object representing collection of Features and their operations over a Feature. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +250,11 @@
       <Docs>
         <param name="expand"> The $expand query parameter. For example, to include property aliases in response, use $expand=resourceTypes/aliases. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List the resource types for a specified resource provider. </summary>
+        <summary>
+            List the resource types for a specified resource provider.
+            Request Path: /subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}/resourceTypes
+            Operation Id: ProviderResourceTypes_List
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.Models.ProviderResourceType" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -200,7 +280,11 @@
       <Docs>
         <param name="expand"> The $expand query parameter. For example, to include property aliases in response, use $expand=resourceTypes/aliases. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List the resource types for a specified resource provider. </summary>
+        <summary>
+            List the resource types for a specified resource provider.
+            Request Path: /subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}/resourceTypes
+            Operation Id: ProviderResourceTypes_List
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Resources.Models.ProviderResourceType" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,7 +328,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get the provider permissions. </summary>
+        <summary>
+            Get the provider permissions.
+            Request Path: /subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}/providerPermissions
+            Operation Id: Providers_ProviderPermissions
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.Models.ProviderPermission" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,7 +356,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get the provider permissions. </summary>
+        <summary>
+            Get the provider permissions.
+            Request Path: /subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}/providerPermissions
+            Operation Id: Providers_ProviderPermissions
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Resources.Models.ProviderPermission" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -294,7 +386,11 @@
       <Docs>
         <param name="properties"> The third party consent for S2S. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Registers a subscription with a resource provider. </summary>
+        <summary>
+            Registers a subscription with a resource provider.
+            Request Path: /subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}/register
+            Operation Id: Providers_Register
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -320,7 +416,11 @@
       <Docs>
         <param name="properties"> The third party consent for S2S. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Registers a subscription with a resource provider. </summary>
+        <summary>
+            Registers a subscription with a resource provider.
+            Request Path: /subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}/register
+            Operation Id: Providers_Register
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,7 +463,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Unregisters a subscription from a resource provider. </summary>
+        <summary>
+            Unregisters a subscription from a resource provider.
+            Request Path: /subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}/unregister
+            Operation Id: Providers_Unregister
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,7 +491,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Unregisters a subscription from a resource provider. </summary>
+        <summary>
+            Unregisters a subscription from a resource provider.
+            Request Path: /subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}/unregister
+            Operation Id: Providers_Unregister
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

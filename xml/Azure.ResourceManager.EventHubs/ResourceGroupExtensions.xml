@@ -17,6 +17,78 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetEventHubCluster">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubCluster&gt; GetEventHubCluster (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string clusterName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.EventHubs.EventHubCluster&gt; GetEventHubCluster(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string clusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ResourceGroupExtensions.GetEventHubCluster(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEventHubCluster (resourceGroup As ResourceGroup, clusterName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of EventHubCluster)" />
+      <MemberSignature Language="F#" Value="static member GetEventHubCluster : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubCluster&gt;" Usage="Azure.ResourceManager.EventHubs.ResourceGroupExtensions.GetEventHubCluster (resourceGroup, clusterName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubCluster&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="clusterName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="clusterName"> The name of the Event Hubs Cluster. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the resource description of the specified Event Hubs Cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/clusters/{clusterName}
+            Operation Id: Clusters_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="clusterName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="clusterName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEventHubClusterAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubCluster&gt;&gt; GetEventHubClusterAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string clusterName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.EventHubs.EventHubCluster&gt;&gt; GetEventHubClusterAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string clusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ResourceGroupExtensions.GetEventHubClusterAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEventHubClusterAsync (resourceGroup As ResourceGroup, clusterName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of EventHubCluster))" />
+      <MemberSignature Language="F#" Value="static member GetEventHubClusterAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubCluster&gt;&gt;" Usage="Azure.ResourceManager.EventHubs.ResourceGroupExtensions.GetEventHubClusterAsync (resourceGroup, clusterName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubCluster&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="clusterName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="clusterName"> The name of the Event Hubs Cluster. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the resource description of the specified Event Hubs Cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/clusters/{clusterName}
+            Operation Id: Clusters_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="clusterName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="clusterName" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetEventHubClusters">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.EventHubClusterCollection GetEventHubClusters (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.EventHubClusterCollection GetEventHubClusters(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
@@ -36,9 +108,81 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a EventHubClusterCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.EventHubs.EventHubClusterCollection" /> object. </returns>
+        <summary> Gets a collection of EventHubClusters in the EventHubCluster. </summary>
+        <returns> An object representing collection of EventHubClusters and their operations over a EventHubCluster. </returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEventHubNamespace">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubNamespace&gt; GetEventHubNamespace (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string namespaceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.EventHubs.EventHubNamespace&gt; GetEventHubNamespace(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string namespaceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ResourceGroupExtensions.GetEventHubNamespace(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEventHubNamespace (resourceGroup As ResourceGroup, namespaceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of EventHubNamespace)" />
+      <MemberSignature Language="F#" Value="static member GetEventHubNamespace : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubNamespace&gt;" Usage="Azure.ResourceManager.EventHubs.ResourceGroupExtensions.GetEventHubNamespace (resourceGroup, namespaceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubNamespace&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="namespaceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="namespaceName"> The Namespace name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the description of the specified namespace.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}
+            Operation Id: Namespaces_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="namespaceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEventHubNamespaceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubNamespace&gt;&gt; GetEventHubNamespaceAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string namespaceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.EventHubs.EventHubNamespace&gt;&gt; GetEventHubNamespaceAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string namespaceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ResourceGroupExtensions.GetEventHubNamespaceAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEventHubNamespaceAsync (resourceGroup As ResourceGroup, namespaceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of EventHubNamespace))" />
+      <MemberSignature Language="F#" Value="static member GetEventHubNamespaceAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubNamespace&gt;&gt;" Usage="Azure.ResourceManager.EventHubs.ResourceGroupExtensions.GetEventHubNamespaceAsync (resourceGroup, namespaceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubNamespace&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="namespaceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="namespaceName"> The Namespace name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the description of the specified namespace.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}
+            Operation Id: Namespaces_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="namespaceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEventHubNamespaces">
@@ -60,8 +204,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a EventHubNamespaceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.EventHubs.EventHubNamespaceCollection" /> object. </returns>
+        <summary> Gets a collection of EventHubNamespaces in the EventHubNamespace. </summary>
+        <returns> An object representing collection of EventHubNamespaces and their operations over a EventHubNamespace. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -17,6 +17,78 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetDiskPool">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.StoragePool.DiskPool&gt; GetDiskPool (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string diskPoolName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.StoragePool.DiskPool&gt; GetDiskPool(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string diskPoolName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.ResourceGroupExtensions.GetDiskPool(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDiskPool (resourceGroup As ResourceGroup, diskPoolName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DiskPool)" />
+      <MemberSignature Language="F#" Value="static member GetDiskPool : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;" Usage="Azure.ResourceManager.StoragePool.ResourceGroupExtensions.GetDiskPool (resourceGroup, diskPoolName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="diskPoolName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="diskPoolName"> The name of the Disk Pool. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a Disk pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.StoragePool/diskPools/{diskPoolName}
+            Operation Id: DiskPools_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="diskPoolName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="diskPoolName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDiskPoolAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;&gt; GetDiskPoolAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string diskPoolName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.StoragePool.DiskPool&gt;&gt; GetDiskPoolAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string diskPoolName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.ResourceGroupExtensions.GetDiskPoolAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDiskPoolAsync (resourceGroup As ResourceGroup, diskPoolName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DiskPool))" />
+      <MemberSignature Language="F#" Value="static member GetDiskPoolAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;&gt;" Usage="Azure.ResourceManager.StoragePool.ResourceGroupExtensions.GetDiskPoolAsync (resourceGroup, diskPoolName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="diskPoolName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="diskPoolName"> The name of the Disk Pool. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a Disk pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.StoragePool/diskPools/{diskPoolName}
+            Operation Id: DiskPools_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="diskPoolName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="diskPoolName" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetDiskPools">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.StoragePool.DiskPoolCollection GetDiskPools (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.StoragePool.DiskPoolCollection GetDiskPools(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
@@ -36,8 +108,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DiskPoolCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.StoragePool.DiskPoolCollection" /> object. </returns>
+        <summary> Gets a collection of DiskPools in the DiskPool. </summary>
+        <returns> An object representing collection of DiskPools and their operations over a DiskPool. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -138,18 +138,18 @@
       </Docs>
     </Member>
     <Member MemberName="Plan">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Models.Plan Plan { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Models.Plan Plan" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Models.ArmPlan Plan { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Models.ArmPlan Plan" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.GenericResourceData.Plan" />
-      <MemberSignature Language="VB.NET" Value="Public Property Plan As Plan" />
-      <MemberSignature Language="F#" Value="member this.Plan : Azure.ResourceManager.Models.Plan with get, set" Usage="Azure.ResourceManager.Resources.GenericResourceData.Plan" />
+      <MemberSignature Language="VB.NET" Value="Public Property Plan As ArmPlan" />
+      <MemberSignature Language="F#" Value="member this.Plan : Azure.ResourceManager.Models.ArmPlan with get, set" Usage="Azure.ResourceManager.Resources.GenericResourceData.Plan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Models.Plan</ReturnType>
+        <ReturnType>Azure.ResourceManager.Models.ArmPlan</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The plan of the resource. </summary>
@@ -198,18 +198,18 @@
       </Docs>
     </Member>
     <Member MemberName="Sku">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.Sku Sku { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.Sku Sku" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ResourcesSku Sku { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.ResourcesSku Sku" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.GenericResourceData.Sku" />
-      <MemberSignature Language="VB.NET" Value="Public Property Sku As Sku" />
-      <MemberSignature Language="F#" Value="member this.Sku : Azure.ResourceManager.Resources.Models.Sku with get, set" Usage="Azure.ResourceManager.Resources.GenericResourceData.Sku" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sku As ResourcesSku" />
+      <MemberSignature Language="F#" Value="member this.Sku : Azure.ResourceManager.Resources.Models.ResourcesSku with get, set" Usage="Azure.ResourceManager.Resources.GenericResourceData.Sku" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.Sku</ReturnType>
+        <ReturnType>Azure.ResourceManager.Resources.Models.ResourcesSku</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The SKU of the resource. </summary>

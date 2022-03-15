@@ -40,18 +40,18 @@
       </Docs>
     </Member>
     <Member MemberName="Info">
-      <MemberSignature Language="C#" Value="public object Info { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object Info" />
+      <MemberSignature Language="C#" Value="public BinaryData Info { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData Info" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Models.ErrorAdditionalInfo.Info" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Info As Object" />
-      <MemberSignature Language="F#" Value="member this.Info : obj" Usage="Azure.ResourceManager.Models.ErrorAdditionalInfo.Info" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Info As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.Info : BinaryData" Usage="Azure.ResourceManager.Models.ErrorAdditionalInfo.Info" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Object</ReturnType>
+        <ReturnType>System.BinaryData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The additional info. </summary>

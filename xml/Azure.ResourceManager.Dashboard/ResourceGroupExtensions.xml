@@ -1,0 +1,117 @@
+<Type Name="ResourceGroupExtensions" FullName="Azure.ResourceManager.Dashboard.ResourceGroupExtensions">
+  <TypeSignature Language="C#" Value="public static class ResourceGroupExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ResourceGroupExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Dashboard.ResourceGroupExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ResourceGroupExtensions" />
+  <TypeSignature Language="F#" Value="type ResourceGroupExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Dashboard</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to ResourceGroup. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetGrafanaResource">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Dashboard.GrafanaResource&gt; GetGrafanaResource (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string workspaceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Dashboard.GrafanaResource&gt; GetGrafanaResource(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string workspaceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dashboard.ResourceGroupExtensions.GetGrafanaResource(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetGrafanaResource (resourceGroup As ResourceGroup, workspaceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of GrafanaResource)" />
+      <MemberSignature Language="F#" Value="static member GetGrafanaResource : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Dashboard.GrafanaResource&gt;" Usage="Azure.ResourceManager.Dashboard.ResourceGroupExtensions.GetGrafanaResource (resourceGroup, workspaceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dashboard</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Dashboard.GrafanaResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="workspaceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="workspaceName"> The name of Azure Managed Grafana. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of a specific workspace for Grafana resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Dashboard/grafana/{workspaceName}
+            Operation Id: Grafana_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="workspaceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="workspaceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGrafanaResourceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Dashboard.GrafanaResource&gt;&gt; GetGrafanaResourceAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string workspaceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Dashboard.GrafanaResource&gt;&gt; GetGrafanaResourceAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string workspaceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dashboard.ResourceGroupExtensions.GetGrafanaResourceAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetGrafanaResourceAsync (resourceGroup As ResourceGroup, workspaceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of GrafanaResource))" />
+      <MemberSignature Language="F#" Value="static member GetGrafanaResourceAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Dashboard.GrafanaResource&gt;&gt;" Usage="Azure.ResourceManager.Dashboard.ResourceGroupExtensions.GetGrafanaResourceAsync (resourceGroup, workspaceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dashboard</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Dashboard.GrafanaResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="workspaceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="workspaceName"> The name of Azure Managed Grafana. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of a specific workspace for Grafana resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Dashboard/grafana/{workspaceName}
+            Operation Id: Grafana_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="workspaceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="workspaceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGrafanaResources">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dashboard.GrafanaResourceCollection GetGrafanaResources (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dashboard.GrafanaResourceCollection GetGrafanaResources(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dashboard.ResourceGroupExtensions.GetGrafanaResources(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetGrafanaResources (resourceGroup As ResourceGroup) As GrafanaResourceCollection" />
+      <MemberSignature Language="F#" Value="static member GetGrafanaResources : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.Dashboard.GrafanaResourceCollection" Usage="Azure.ResourceManager.Dashboard.ResourceGroupExtensions.GetGrafanaResources resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dashboard</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dashboard.GrafanaResourceCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of GrafanaResources in the GrafanaResource. </summary>
+        <returns> An object representing collection of GrafanaResources and their operations over a GrafanaResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

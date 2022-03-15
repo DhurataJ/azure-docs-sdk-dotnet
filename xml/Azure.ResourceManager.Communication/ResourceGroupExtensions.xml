@@ -17,6 +17,78 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetCommunicationService">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Communication.CommunicationService&gt; GetCommunicationService (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string communicationServiceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Communication.CommunicationService&gt; GetCommunicationService(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string communicationServiceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Communication.ResourceGroupExtensions.GetCommunicationService(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCommunicationService (resourceGroup As ResourceGroup, communicationServiceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CommunicationService)" />
+      <MemberSignature Language="F#" Value="static member GetCommunicationService : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Communication.CommunicationService&gt;" Usage="Azure.ResourceManager.Communication.ResourceGroupExtensions.GetCommunicationService (resourceGroup, communicationServiceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Communication.CommunicationService&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="communicationServiceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="communicationServiceName"> The name of the CommunicationService resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the CommunicationService and its properties.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Communication/communicationServices/{communicationServiceName}
+            Operation Id: CommunicationService_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="communicationServiceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="communicationServiceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCommunicationServiceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Communication.CommunicationService&gt;&gt; GetCommunicationServiceAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string communicationServiceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Communication.CommunicationService&gt;&gt; GetCommunicationServiceAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string communicationServiceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Communication.ResourceGroupExtensions.GetCommunicationServiceAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCommunicationServiceAsync (resourceGroup As ResourceGroup, communicationServiceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CommunicationService))" />
+      <MemberSignature Language="F#" Value="static member GetCommunicationServiceAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Communication.CommunicationService&gt;&gt;" Usage="Azure.ResourceManager.Communication.ResourceGroupExtensions.GetCommunicationServiceAsync (resourceGroup, communicationServiceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Communication.CommunicationService&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="communicationServiceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="communicationServiceName"> The name of the CommunicationService resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the CommunicationService and its properties.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Communication/communicationServices/{communicationServiceName}
+            Operation Id: CommunicationService_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="communicationServiceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="communicationServiceName" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetCommunicationServices">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Communication.CommunicationServiceCollection GetCommunicationServices (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Communication.CommunicationServiceCollection GetCommunicationServices(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
@@ -36,8 +108,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a CommunicationServiceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Communication.CommunicationServiceCollection" /> object. </returns>
+        <summary> Gets a collection of CommunicationServices in the CommunicationService. </summary>
+        <returns> An object representing collection of CommunicationServices and their operations over a CommunicationService. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
