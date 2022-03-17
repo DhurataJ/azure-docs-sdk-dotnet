@@ -38,8 +38,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List all managed Cassandra clusters in this subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/cassandraClusters
+            Operation Id: CassandraClusters_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.CosmosDB.ClusterResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +68,85 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List all managed Cassandra clusters in this subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/cassandraClusters
+            Operation Id: CassandraClusters_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.CosmosDB.ClusterResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCosmosDBLocation">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt; GetCosmosDBLocation (this Azure.ResourceManager.Resources.Subscription subscription, string location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt; GetCosmosDBLocation(class Azure.ResourceManager.Resources.Subscription subscription, string location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.SubscriptionExtensions.GetCosmosDBLocation(Azure.ResourceManager.Resources.Subscription,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCosmosDBLocation (subscription As Subscription, location As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CosmosDBLocation)" />
+      <MemberSignature Language="F#" Value="static member GetCosmosDBLocation : Azure.ResourceManager.Resources.Subscription * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt;" Usage="Azure.ResourceManager.CosmosDB.SubscriptionExtensions.GetCosmosDBLocation (subscription, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="location"> Cosmos DB region, with spaces between words and each word capitalized. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of an existing Cosmos DB location
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/locations/{location}
+            Operation Id: Locations_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCosmosDBLocationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt;&gt; GetCosmosDBLocationAsync (this Azure.ResourceManager.Resources.Subscription subscription, string location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt;&gt; GetCosmosDBLocationAsync(class Azure.ResourceManager.Resources.Subscription subscription, string location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.SubscriptionExtensions.GetCosmosDBLocationAsync(Azure.ResourceManager.Resources.Subscription,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCosmosDBLocationAsync (subscription As Subscription, location As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CosmosDBLocation))" />
+      <MemberSignature Language="F#" Value="static member GetCosmosDBLocationAsync : Azure.ResourceManager.Resources.Subscription * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt;&gt;" Usage="Azure.ResourceManager.CosmosDB.SubscriptionExtensions.GetCosmosDBLocationAsync (subscription, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="location"> Cosmos DB region, with spaces between words and each word capitalized. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of an existing Cosmos DB location
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/locations/{location}
+            Operation Id: Locations_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCosmosDBLocations">
@@ -88,8 +168,8 @@
       </Parameters>
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a CosmosDBLocationCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.CosmosDBLocationCollection" /> object. </returns>
+        <summary> Gets a collection of CosmosDBLocations in the CosmosDBLocation. </summary>
+        <returns> An object representing collection of CosmosDBLocations and their operations over a CosmosDBLocation. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,8 +194,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the DatabaseAccounts for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all the Azure Cosmos DB database accounts available under the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/databaseAccounts
+            Operation Id: DatabaseAccounts_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccount" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +224,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the DatabaseAccounts for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all the Azure Cosmos DB database accounts available under the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/databaseAccounts
+            Operation Id: DatabaseAccounts_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccount" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +254,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the RestorableDatabaseAccountData for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all the restorable Azure Cosmos DB database accounts available under the subscription. This call requires 'Microsoft.DocumentDB/locations/restorableDatabaseAccounts/read' permission.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/restorableDatabaseAccounts
+            Operation Id: RestorableDatabaseAccounts_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,8 +284,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the RestorableDatabaseAccountData for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all the restorable Azure Cosmos DB database accounts available under the subscription. This call requires 'Microsoft.DocumentDB/locations/restorableDatabaseAccounts/read' permission.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/restorableDatabaseAccounts
+            Operation Id: RestorableDatabaseAccounts_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

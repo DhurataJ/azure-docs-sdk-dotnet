@@ -21,6 +21,78 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetDeployment">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt; GetDeployment (this Azure.ResourceManager.Management.ManagementGroup managementGroup, string deploymentName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Deployment&gt; GetDeployment(class Azure.ResourceManager.Management.ManagementGroup managementGroup, string deploymentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ManagementGroupExtensions.GetDeployment(Azure.ResourceManager.Management.ManagementGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeployment (managementGroup As ManagementGroup, deploymentName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Deployment)" />
+      <MemberSignature Language="F#" Value="static member GetDeployment : Azure.ResourceManager.Management.ManagementGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;" Usage="Azure.ResourceManager.Resources.ManagementGroupExtensions.GetDeployment (managementGroup, deploymentName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="managementGroup" Type="Azure.ResourceManager.Management.ManagementGroup" RefType="this" />
+        <Parameter Name="deploymentName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="managementGroup"> The <see cref="T:Azure.ResourceManager.Management.ManagementGroup" /> instance the method will execute against. </param>
+        <param name="deploymentName"> The name of the deployment. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a deployment.
+            Request Path: /{scope}/providers/Microsoft.Resources/deployments/{deploymentName}
+            Operation Id: Deployments_GetAtScope
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deploymentName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="deploymentName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt; GetDeploymentAsync (this Azure.ResourceManager.Management.ManagementGroup managementGroup, string deploymentName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Deployment&gt;&gt; GetDeploymentAsync(class Azure.ResourceManager.Management.ManagementGroup managementGroup, string deploymentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ManagementGroupExtensions.GetDeploymentAsync(Azure.ResourceManager.Management.ManagementGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentAsync (managementGroup As ManagementGroup, deploymentName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Deployment))" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentAsync : Azure.ResourceManager.Management.ManagementGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt;" Usage="Azure.ResourceManager.Resources.ManagementGroupExtensions.GetDeploymentAsync (managementGroup, deploymentName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="managementGroup" Type="Azure.ResourceManager.Management.ManagementGroup" RefType="this" />
+        <Parameter Name="deploymentName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="managementGroup"> The <see cref="T:Azure.ResourceManager.Management.ManagementGroup" /> instance the method will execute against. </param>
+        <param name="deploymentName"> The name of the deployment. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a deployment.
+            Request Path: /{scope}/providers/Microsoft.Resources/deployments/{deploymentName}
+            Operation Id: Deployments_GetAtScope
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deploymentName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="deploymentName" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetDeployments">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentCollection GetDeployments (this Azure.ResourceManager.Management.ManagementGroup managementGroup);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentCollection GetDeployments(class Azure.ResourceManager.Management.ManagementGroup managementGroup) cil managed" />
@@ -40,8 +112,8 @@
       </Parameters>
       <Docs>
         <param name="managementGroup"> The <see cref="T:Azure.ResourceManager.Management.ManagementGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DeploymentCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.DeploymentCollection" /> object. </returns>
+        <summary> Gets a collection of Deployments in the Deployment. </summary>
+        <returns> An object representing collection of Deployments and their operations over a Deployment. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

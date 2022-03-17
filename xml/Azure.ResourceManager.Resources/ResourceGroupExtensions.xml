@@ -21,6 +21,150 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetApplication">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Resources.Application&gt; GetApplication (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string applicationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Application&gt; GetApplication(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string applicationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupExtensions.GetApplication(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetApplication (resourceGroup As ResourceGroup, applicationName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Application)" />
+      <MemberSignature Language="F#" Value="static member GetApplication : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Application&gt;" Usage="Azure.ResourceManager.Resources.ResourceGroupExtensions.GetApplication (resourceGroup, applicationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.Application&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="applicationName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="applicationName"> The name of the managed application. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the managed application.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applications/{applicationName}
+            Operation Id: Applications_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="applicationName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="applicationName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetApplicationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Application&gt;&gt; GetApplicationAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string applicationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Application&gt;&gt; GetApplicationAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string applicationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupExtensions.GetApplicationAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetApplicationAsync (resourceGroup As ResourceGroup, applicationName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Application))" />
+      <MemberSignature Language="F#" Value="static member GetApplicationAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Application&gt;&gt;" Usage="Azure.ResourceManager.Resources.ResourceGroupExtensions.GetApplicationAsync (resourceGroup, applicationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Application&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="applicationName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="applicationName"> The name of the managed application. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the managed application.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applications/{applicationName}
+            Operation Id: Applications_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="applicationName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="applicationName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetApplicationDefinition">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Resources.ApplicationDefinition&gt; GetApplicationDefinition (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string applicationDefinitionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Resources.ApplicationDefinition&gt; GetApplicationDefinition(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string applicationDefinitionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupExtensions.GetApplicationDefinition(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetApplicationDefinition (resourceGroup As ResourceGroup, applicationDefinitionName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ApplicationDefinition)" />
+      <MemberSignature Language="F#" Value="static member GetApplicationDefinition : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.ApplicationDefinition&gt;" Usage="Azure.ResourceManager.Resources.ResourceGroupExtensions.GetApplicationDefinition (resourceGroup, applicationDefinitionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.ApplicationDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="applicationDefinitionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="applicationDefinitionName"> The name of the managed application definition. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the managed application definition.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applicationDefinitions/{applicationDefinitionName}
+            Operation Id: ApplicationDefinitions_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="applicationDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="applicationDefinitionName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetApplicationDefinitionAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.ApplicationDefinition&gt;&gt; GetApplicationDefinitionAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string applicationDefinitionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.ApplicationDefinition&gt;&gt; GetApplicationDefinitionAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string applicationDefinitionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupExtensions.GetApplicationDefinitionAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetApplicationDefinitionAsync (resourceGroup As ResourceGroup, applicationDefinitionName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ApplicationDefinition))" />
+      <MemberSignature Language="F#" Value="static member GetApplicationDefinitionAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.ApplicationDefinition&gt;&gt;" Usage="Azure.ResourceManager.Resources.ResourceGroupExtensions.GetApplicationDefinitionAsync (resourceGroup, applicationDefinitionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.ApplicationDefinition&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="applicationDefinitionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="applicationDefinitionName"> The name of the managed application definition. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the managed application definition.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applicationDefinitions/{applicationDefinitionName}
+            Operation Id: ApplicationDefinitions_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="applicationDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="applicationDefinitionName" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetApplicationDefinitions">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.ApplicationDefinitionCollection GetApplicationDefinitions (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.ApplicationDefinitionCollection GetApplicationDefinitions(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
@@ -40,8 +184,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a ApplicationDefinitionCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.ApplicationDefinitionCollection" /> object. </returns>
+        <summary> Gets a collection of ApplicationDefinitions in the ApplicationDefinition. </summary>
+        <returns> An object representing collection of ApplicationDefinitions and their operations over a ApplicationDefinition. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +208,81 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a ApplicationCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.ApplicationCollection" /> object. </returns>
+        <summary> Gets a collection of Applications in the Application. </summary>
+        <returns> An object representing collection of Applications and their operations over a Application. </returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeployment">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt; GetDeployment (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string deploymentName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Deployment&gt; GetDeployment(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string deploymentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupExtensions.GetDeployment(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeployment (resourceGroup As ResourceGroup, deploymentName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Deployment)" />
+      <MemberSignature Language="F#" Value="static member GetDeployment : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;" Usage="Azure.ResourceManager.Resources.ResourceGroupExtensions.GetDeployment (resourceGroup, deploymentName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="deploymentName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="deploymentName"> The name of the deployment. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a deployment.
+            Request Path: /{scope}/providers/Microsoft.Resources/deployments/{deploymentName}
+            Operation Id: Deployments_GetAtScope
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deploymentName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="deploymentName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt; GetDeploymentAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string deploymentName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Deployment&gt;&gt; GetDeploymentAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string deploymentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupExtensions.GetDeploymentAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentAsync (resourceGroup As ResourceGroup, deploymentName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Deployment))" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt;" Usage="Azure.ResourceManager.Resources.ResourceGroupExtensions.GetDeploymentAsync (resourceGroup, deploymentName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="deploymentName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="deploymentName"> The name of the deployment. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a deployment.
+            Request Path: /{scope}/providers/Microsoft.Resources/deployments/{deploymentName}
+            Operation Id: Deployments_GetAtScope
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deploymentName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="deploymentName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeployments">
@@ -88,9 +304,81 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DeploymentCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.DeploymentCollection" /> object. </returns>
+        <summary> Gets a collection of Deployments in the Deployment. </summary>
+        <returns> An object representing collection of Deployments and their operations over a Deployment. </returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentScript">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentScript&gt; GetDeploymentScript (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string scriptName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentScript&gt; GetDeploymentScript(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string scriptName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupExtensions.GetDeploymentScript(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentScript (resourceGroup As ResourceGroup, scriptName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeploymentScript)" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentScript : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentScript&gt;" Usage="Azure.ResourceManager.Resources.ResourceGroupExtensions.GetDeploymentScript (resourceGroup, scriptName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentScript&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="scriptName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="scriptName"> Name of the deployment script. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a deployment script with a given name.
+            Request Path: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Resources/deploymentScripts/{scriptName}
+            Operation Id: DeploymentScripts_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="scriptName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="scriptName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentScriptAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentScript&gt;&gt; GetDeploymentScriptAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string scriptName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentScript&gt;&gt; GetDeploymentScriptAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string scriptName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupExtensions.GetDeploymentScriptAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentScriptAsync (resourceGroup As ResourceGroup, scriptName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeploymentScript))" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentScriptAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentScript&gt;&gt;" Usage="Azure.ResourceManager.Resources.ResourceGroupExtensions.GetDeploymentScriptAsync (resourceGroup, scriptName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentScript&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="scriptName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="scriptName"> Name of the deployment script. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a deployment script with a given name.
+            Request Path: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Resources/deploymentScripts/{scriptName}
+            Operation Id: DeploymentScripts_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="scriptName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="scriptName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentScripts">
@@ -112,9 +400,81 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DeploymentScriptCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.DeploymentScriptCollection" /> object. </returns>
+        <summary> Gets a collection of DeploymentScripts in the DeploymentScript. </summary>
+        <returns> An object representing collection of DeploymentScripts and their operations over a DeploymentScript. </returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJitRequest">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Resources.JitRequest&gt; GetJitRequest (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string jitRequestName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Resources.JitRequest&gt; GetJitRequest(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string jitRequestName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupExtensions.GetJitRequest(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetJitRequest (resourceGroup As ResourceGroup, jitRequestName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of JitRequest)" />
+      <MemberSignature Language="F#" Value="static member GetJitRequest : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.JitRequest&gt;" Usage="Azure.ResourceManager.Resources.ResourceGroupExtensions.GetJitRequest (resourceGroup, jitRequestName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.JitRequest&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="jitRequestName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="jitRequestName"> The name of the JIT request. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the JIT request.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests/{jitRequestName}
+            Operation Id: JitRequests_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jitRequestName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="jitRequestName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJitRequestAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.JitRequest&gt;&gt; GetJitRequestAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string jitRequestName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.JitRequest&gt;&gt; GetJitRequestAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string jitRequestName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupExtensions.GetJitRequestAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetJitRequestAsync (resourceGroup As ResourceGroup, jitRequestName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of JitRequest))" />
+      <MemberSignature Language="F#" Value="static member GetJitRequestAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.JitRequest&gt;&gt;" Usage="Azure.ResourceManager.Resources.ResourceGroupExtensions.GetJitRequestAsync (resourceGroup, jitRequestName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.JitRequest&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="jitRequestName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="jitRequestName"> The name of the JIT request. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the JIT request.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests/{jitRequestName}
+            Operation Id: JitRequests_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jitRequestName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="jitRequestName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetJitRequests">
@@ -136,9 +496,85 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a JitRequestCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.JitRequestCollection" /> object. </returns>
+        <summary> Gets a collection of JitRequests in the JitRequest. </summary>
+        <returns> An object representing collection of JitRequests and their operations over a JitRequest. </returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTemplateSpec">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Resources.TemplateSpec&gt; GetTemplateSpec (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string templateSpecName, Azure.ResourceManager.Resources.Models.TemplateSpecExpandKind? expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Resources.TemplateSpec&gt; GetTemplateSpec(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string templateSpecName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.TemplateSpecExpandKind&gt; expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupExtensions.GetTemplateSpec(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Nullable{Azure.ResourceManager.Resources.Models.TemplateSpecExpandKind},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTemplateSpec (resourceGroup As ResourceGroup, templateSpecName As String, Optional expand As Nullable(Of TemplateSpecExpandKind) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of TemplateSpec)" />
+      <MemberSignature Language="F#" Value="static member GetTemplateSpec : Azure.ResourceManager.Resources.ResourceGroup * string * Nullable&lt;Azure.ResourceManager.Resources.Models.TemplateSpecExpandKind&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.TemplateSpec&gt;" Usage="Azure.ResourceManager.Resources.ResourceGroupExtensions.GetTemplateSpec (resourceGroup, templateSpecName, expand, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.TemplateSpec&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="templateSpecName" Type="System.String" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Azure.ResourceManager.Resources.Models.TemplateSpecExpandKind&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="templateSpecName"> Name of the Template Spec. </param>
+        <param name="expand"> Allows for expansion of additional Template Spec details in the response. Optional. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a Template Spec with a given name.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Resources/templateSpecs/{templateSpecName}
+            Operation Id: TemplateSpecs_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="templateSpecName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="templateSpecName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTemplateSpecAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.TemplateSpec&gt;&gt; GetTemplateSpecAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string templateSpecName, Azure.ResourceManager.Resources.Models.TemplateSpecExpandKind? expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.TemplateSpec&gt;&gt; GetTemplateSpecAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string templateSpecName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.TemplateSpecExpandKind&gt; expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupExtensions.GetTemplateSpecAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Nullable{Azure.ResourceManager.Resources.Models.TemplateSpecExpandKind},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTemplateSpecAsync (resourceGroup As ResourceGroup, templateSpecName As String, Optional expand As Nullable(Of TemplateSpecExpandKind) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of TemplateSpec))" />
+      <MemberSignature Language="F#" Value="static member GetTemplateSpecAsync : Azure.ResourceManager.Resources.ResourceGroup * string * Nullable&lt;Azure.ResourceManager.Resources.Models.TemplateSpecExpandKind&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.TemplateSpec&gt;&gt;" Usage="Azure.ResourceManager.Resources.ResourceGroupExtensions.GetTemplateSpecAsync (resourceGroup, templateSpecName, expand, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.TemplateSpec&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="templateSpecName" Type="System.String" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Azure.ResourceManager.Resources.Models.TemplateSpecExpandKind&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="templateSpecName"> Name of the Template Spec. </param>
+        <param name="expand"> Allows for expansion of additional Template Spec details in the response. Optional. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a Template Spec with a given name.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Resources/templateSpecs/{templateSpecName}
+            Operation Id: TemplateSpecs_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="templateSpecName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="templateSpecName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetTemplateSpecs">
@@ -160,8 +596,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a TemplateSpecCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.TemplateSpecCollection" /> object. </returns>
+        <summary> Gets a collection of TemplateSpecs in the TemplateSpec. </summary>
+        <returns> An object representing collection of TemplateSpecs and their operations over a TemplateSpec. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

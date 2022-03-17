@@ -16,6 +16,7 @@
     <AssemblyVersion>1.20.0.0</AssemblyVersion>
     <AssemblyVersion>1.21.0.0</AssemblyVersion>
     <AssemblyVersion>1.22.0.0</AssemblyVersion>
+    <AssemblyVersion>1.23.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,35 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="ToDictionaryFromJson">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;string,object?&gt; ToDictionaryFromJson (this BinaryData data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;string, object&gt; ToDictionaryFromJson(class System.BinaryData data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AzureCoreExtensions.ToDictionaryFromJson(System.BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToDictionaryFromJson (data As BinaryData) As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="static member ToDictionaryFromJson : BinaryData -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="Azure.AzureCoreExtensions.ToDictionaryFromJson data" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="data">The <see cref="T:System.BinaryData" /> instance to convert.</param>
+        <summary>
+            Converts the <see cref="T:System.BinaryData" /> to a Dictionary of string to object.
+            Each value in the key value pair will be strongly typed as an int, long, string, Guid, double or bool.
+            Each value can also be another Dictionary of string object representing an inner object or
+            a List of objects representing an array.
+            </summary>
+        <returns>The data converted to the Dictionary of string to object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ToObject&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T? ToObject&lt;T&gt; (this BinaryData data, Azure.Core.Serialization.ObjectSerializer serializer, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ToObject&lt;T&gt;(class System.BinaryData data, class Azure.Core.Serialization.ObjectSerializer serializer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -47,6 +77,7 @@
         <AssemblyVersion>1.20.0.0</AssemblyVersion>
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -93,6 +124,7 @@
         <AssemblyVersion>1.20.0.0</AssemblyVersion>
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;T&gt;</ReturnType>

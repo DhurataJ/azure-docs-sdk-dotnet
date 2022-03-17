@@ -33,6 +33,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ApplicationManagedIdentityType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ApplicationManagedIdentityType? ApplicationManagedIdentityType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.ApplicationManagedIdentityType&gt; ApplicationManagedIdentityType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ApplicationManagedIdentity.ApplicationManagedIdentityType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationManagedIdentityType As Nullable(Of ApplicationManagedIdentityType)" />
+      <MemberSignature Language="F#" Value="member this.ApplicationManagedIdentityType : Nullable&lt;Azure.ResourceManager.Resources.Models.ApplicationManagedIdentityType&gt; with get, set" Usage="Azure.ResourceManager.Resources.Models.ApplicationManagedIdentity.ApplicationManagedIdentityType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Resources.Models.ApplicationManagedIdentityType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The identity type. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PrincipalId">
       <MemberSignature Language="C#" Value="public string PrincipalId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrincipalId" />
@@ -69,26 +89,6 @@
       </ReturnValue>
       <Docs>
         <summary> The tenant ID of resource. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Type">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ApplicationManagedIdentityType? Type { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.ApplicationManagedIdentityType&gt; Type" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ApplicationManagedIdentity.Type" />
-      <MemberSignature Language="VB.NET" Value="Public Property Type As Nullable(Of ApplicationManagedIdentityType)" />
-      <MemberSignature Language="F#" Value="member this.Type : Nullable&lt;Azure.ResourceManager.Resources.Models.ApplicationManagedIdentityType&gt; with get, set" Usage="Azure.ResourceManager.Resources.Models.ApplicationManagedIdentity.Type" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Resources.Models.ApplicationManagedIdentityType&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> The identity type. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

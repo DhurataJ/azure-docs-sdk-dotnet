@@ -53,12 +53,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Type">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.OnErrorDeploymentType? Type { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.OnErrorDeploymentType&gt; Type" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.OnErrorDeployment.Type" />
-      <MemberSignature Language="VB.NET" Value="Public Property Type As Nullable(Of OnErrorDeploymentType)" />
-      <MemberSignature Language="F#" Value="member this.Type : Nullable&lt;Azure.ResourceManager.Resources.Models.OnErrorDeploymentType&gt; with get, set" Usage="Azure.ResourceManager.Resources.Models.OnErrorDeployment.Type" />
+    <Member MemberName="OnErrorDeploymentType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.OnErrorDeploymentType? OnErrorDeploymentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.OnErrorDeploymentType&gt; OnErrorDeploymentType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.OnErrorDeployment.OnErrorDeploymentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnErrorDeploymentType As Nullable(Of OnErrorDeploymentType)" />
+      <MemberSignature Language="F#" Value="member this.OnErrorDeploymentType : Nullable&lt;Azure.ResourceManager.Resources.Models.OnErrorDeploymentType&gt; with get, set" Usage="Azure.ResourceManager.Resources.Models.OnErrorDeployment.OnErrorDeploymentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>

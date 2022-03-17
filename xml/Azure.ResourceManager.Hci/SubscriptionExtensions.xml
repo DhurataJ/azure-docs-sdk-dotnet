@@ -40,7 +40,11 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List all HCI clusters in a subscription. </summary>
+        <summary>
+            List all HCI clusters in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.AzureStackHCI/clusters
+            Operation Id: Clusters_ListBySubscription
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Hci.HciCluster" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,7 +71,11 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List all HCI clusters in a subscription. </summary>
+        <summary>
+            List all HCI clusters in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.AzureStackHCI/clusters
+            Operation Id: Clusters_ListBySubscription
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Hci.HciCluster" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -79,12 +79,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Type">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.JitApproverType? Type { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.JitApproverType&gt; Type" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.JitApproverDefinition.Type" />
-      <MemberSignature Language="VB.NET" Value="Public Property Type As Nullable(Of JitApproverType)" />
-      <MemberSignature Language="F#" Value="member this.Type : Nullable&lt;Azure.ResourceManager.Resources.Models.JitApproverType&gt; with get, set" Usage="Azure.ResourceManager.Resources.Models.JitApproverDefinition.Type" />
+    <Member MemberName="JitApproverType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.JitApproverType? JitApproverType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.JitApproverType&gt; JitApproverType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.JitApproverDefinition.JitApproverType" />
+      <MemberSignature Language="VB.NET" Value="Public Property JitApproverType As Nullable(Of JitApproverType)" />
+      <MemberSignature Language="F#" Value="member this.JitApproverType : Nullable&lt;Azure.ResourceManager.Resources.Models.JitApproverType&gt; with get, set" Usage="Azure.ResourceManager.Resources.Models.JitApproverDefinition.JitApproverType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>

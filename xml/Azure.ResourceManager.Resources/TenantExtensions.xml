@@ -44,7 +44,11 @@
         <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
         <param name="template"> The template provided to calculate hash. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Calculate the hash of the given template. </summary>
+        <summary>
+            Calculate the hash of the given template.
+            Request Path: /providers/Microsoft.Resources/calculateTemplateHash
+            Operation Id: Deployments_CalculateTemplateHash
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -74,11 +78,87 @@
         <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
         <param name="template"> The template provided to calculate hash. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Calculate the hash of the given template. </summary>
+        <summary>
+            Calculate the hash of the given template.
+            Request Path: /providers/Microsoft.Resources/calculateTemplateHash
+            Operation Id: Deployments_CalculateTemplateHash
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="template" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeployment">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt; GetDeployment (this Azure.ResourceManager.Resources.Tenant tenant, string deploymentName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Deployment&gt; GetDeployment(class Azure.ResourceManager.Resources.Tenant tenant, string deploymentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.TenantExtensions.GetDeployment(Azure.ResourceManager.Resources.Tenant,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeployment (tenant As Tenant, deploymentName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Deployment)" />
+      <MemberSignature Language="F#" Value="static member GetDeployment : Azure.ResourceManager.Resources.Tenant * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;" Usage="Azure.ResourceManager.Resources.TenantExtensions.GetDeployment (tenant, deploymentName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenant" Type="Azure.ResourceManager.Resources.Tenant" RefType="this" />
+        <Parameter Name="deploymentName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
+        <param name="deploymentName"> The name of the deployment. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a deployment.
+            Request Path: /{scope}/providers/Microsoft.Resources/deployments/{deploymentName}
+            Operation Id: Deployments_GetAtScope
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deploymentName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="deploymentName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt; GetDeploymentAsync (this Azure.ResourceManager.Resources.Tenant tenant, string deploymentName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Deployment&gt;&gt; GetDeploymentAsync(class Azure.ResourceManager.Resources.Tenant tenant, string deploymentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.TenantExtensions.GetDeploymentAsync(Azure.ResourceManager.Resources.Tenant,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentAsync (tenant As Tenant, deploymentName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Deployment))" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentAsync : Azure.ResourceManager.Resources.Tenant * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt;" Usage="Azure.ResourceManager.Resources.TenantExtensions.GetDeploymentAsync (tenant, deploymentName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenant" Type="Azure.ResourceManager.Resources.Tenant" RefType="this" />
+        <Parameter Name="deploymentName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
+        <param name="deploymentName"> The name of the deployment. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a deployment.
+            Request Path: /{scope}/providers/Microsoft.Resources/deployments/{deploymentName}
+            Operation Id: Deployments_GetAtScope
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deploymentName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="deploymentName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeployments">
@@ -100,8 +180,8 @@
       </Parameters>
       <Docs>
         <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DeploymentCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.DeploymentCollection" /> object. </returns>
+        <summary> Gets a collection of Deployments in the Deployment. </summary>
+        <returns> An object representing collection of Deployments and their operations over a Deployment. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -91,55 +91,61 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Hci.Models.ArcExtensionDeleteOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Hci.Models.ArcExtensionDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Hci.ArcExtension.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArcExtensionDeleteOperation" />
-      <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Hci.Models.ArcExtensionDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Hci.Models.ArcExtensionDeleteOperation" Usage="arcExtension.Delete (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Delete (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Delete(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Hci.ArcExtension.Delete(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Delete : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Delete : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="arcExtension.Delete (waitUntil, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Hci</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Hci.Models.ArcExtensionDeleteOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Delete particular Arc Extension of HCI Cluster. </summary>
+        <summary>
+            Delete particular Arc Extension of HCI Cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}/extensions/{extensionName}
+            Operation Id: Extensions_Delete
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Hci.Models.ArcExtensionDeleteOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Hci.Models.ArcExtensionDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Hci.ArcExtension.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArcExtensionDeleteOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Hci.Models.ArcExtensionDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Hci.Models.ArcExtensionDeleteOperation&gt;" Usage="arcExtension.DeleteAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeleteAsync (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeleteAsync(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Hci.ArcExtension.DeleteAsync(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeleteAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="arcExtension.DeleteAsync (waitUntil, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Hci</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Hci.Models.ArcExtensionDeleteOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Delete particular Arc Extension of HCI Cluster. </summary>
+        <summary>
+            Delete particular Arc Extension of HCI Cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}/extensions/{extensionName}
+            Operation Id: Extensions_Delete
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -164,7 +170,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get particular Arc Extension of HCI Cluster. </summary>
+        <summary>
+            Get particular Arc Extension of HCI Cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}/extensions/{extensionName}
+            Operation Id: Extensions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,7 +199,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get particular Arc Extension of HCI Cluster. </summary>
+        <summary>
+            Get particular Arc Extension of HCI Cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}/extensions/{extensionName}
+            Operation Id: Extensions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -236,30 +250,33 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Hci.Models.ArcExtensionUpdateOperation Update (bool waitForCompletion, Azure.ResourceManager.Hci.ArcExtensionData extension, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Hci.Models.ArcExtensionUpdateOperation Update(bool waitForCompletion, class Azure.ResourceManager.Hci.ArcExtensionData extension, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Hci.ArcExtension.Update(System.Boolean,Azure.ResourceManager.Hci.ArcExtensionData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, extension As ArcExtensionData, Optional cancellationToken As CancellationToken = Nothing) As ArcExtensionUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.Hci.ArcExtensionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Hci.Models.ArcExtensionUpdateOperation&#xA;override this.Update : bool * Azure.ResourceManager.Hci.ArcExtensionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Hci.Models.ArcExtensionUpdateOperation" Usage="arcExtension.Update (waitForCompletion, extension, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcExtension&gt; Update (Azure.WaitUntil waitUntil, Azure.ResourceManager.Hci.ArcExtensionData extension, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Hci.ArcExtension&gt; Update(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Hci.ArcExtensionData extension, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Hci.ArcExtension.Update(Azure.WaitUntil,Azure.ResourceManager.Hci.ArcExtensionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitUntil As WaitUntil, extension As ArcExtensionData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ArcExtension)" />
+      <MemberSignature Language="F#" Value="abstract member Update : Azure.WaitUntil * Azure.ResourceManager.Hci.ArcExtensionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcExtension&gt;&#xA;override this.Update : Azure.WaitUntil * Azure.ResourceManager.Hci.ArcExtensionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcExtension&gt;" Usage="arcExtension.Update (waitUntil, extension, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Hci</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Hci.Models.ArcExtensionUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcExtension&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="extension" Type="Azure.ResourceManager.Hci.ArcExtensionData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="extension"> Details of the Machine Extension to be created. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Update Extension for HCI cluster. </summary>
+        <summary>
+            Update Extension for HCI cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}/extensions/{extensionName}
+            Operation Id: Extensions_Update
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -267,30 +284,33 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Hci.Models.ArcExtensionUpdateOperation&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.Hci.ArcExtensionData extension, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Hci.Models.ArcExtensionUpdateOperation&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.Hci.ArcExtensionData extension, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Hci.ArcExtension.UpdateAsync(System.Boolean,Azure.ResourceManager.Hci.ArcExtensionData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, extension As ArcExtensionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArcExtensionUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.Hci.ArcExtensionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Hci.Models.ArcExtensionUpdateOperation&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.Hci.ArcExtensionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Hci.Models.ArcExtensionUpdateOperation&gt;" Usage="arcExtension.UpdateAsync (waitForCompletion, extension, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcExtension&gt;&gt; UpdateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Hci.ArcExtensionData extension, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Hci.ArcExtension&gt;&gt; UpdateAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Hci.ArcExtensionData extension, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Hci.ArcExtension.UpdateAsync(Azure.WaitUntil,Azure.ResourceManager.Hci.ArcExtensionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitUntil As WaitUntil, extension As ArcExtensionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ArcExtension))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.Hci.ArcExtensionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcExtension&gt;&gt;&#xA;override this.UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.Hci.ArcExtensionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcExtension&gt;&gt;" Usage="arcExtension.UpdateAsync (waitUntil, extension, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Hci</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Hci.Models.ArcExtensionUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcExtension&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="extension" Type="Azure.ResourceManager.Hci.ArcExtensionData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="extension"> Details of the Machine Extension to be created. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Update Extension for HCI cluster. </summary>
+        <summary>
+            Update Extension for HCI cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}/extensions/{extensionName}
+            Operation Id: Extensions_Update
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -1,0 +1,81 @@
+<Type Name="SubscriptionExtensions" FullName="Azure.ResourceManager.Dashboard.SubscriptionExtensions">
+  <TypeSignature Language="C#" Value="public static class SubscriptionExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SubscriptionExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Dashboard.SubscriptionExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module SubscriptionExtensions" />
+  <TypeSignature Language="F#" Value="type SubscriptionExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Dashboard</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Subscription. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetGrafanaResources">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Dashboard.GrafanaResource&gt; GetGrafanaResources (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Dashboard.GrafanaResource&gt; GetGrafanaResources(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dashboard.SubscriptionExtensions.GetGrafanaResources(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetGrafanaResources (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of GrafanaResource)" />
+      <MemberSignature Language="F#" Value="static member GetGrafanaResources : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Dashboard.GrafanaResource&gt;" Usage="Azure.ResourceManager.Dashboard.SubscriptionExtensions.GetGrafanaResources (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dashboard</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Dashboard.GrafanaResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List all resources of workspaces for Grafana under the specified subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Dashboard/grafana
+            Operation Id: Grafana_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Dashboard.GrafanaResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGrafanaResourcesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Dashboard.GrafanaResource&gt; GetGrafanaResourcesAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Dashboard.GrafanaResource&gt; GetGrafanaResourcesAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dashboard.SubscriptionExtensions.GetGrafanaResourcesAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetGrafanaResourcesAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of GrafanaResource)" />
+      <MemberSignature Language="F#" Value="static member GetGrafanaResourcesAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Dashboard.GrafanaResource&gt;" Usage="Azure.ResourceManager.Dashboard.SubscriptionExtensions.GetGrafanaResourcesAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dashboard</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Dashboard.GrafanaResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List all resources of workspaces for Grafana under the specified subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Dashboard/grafana
+            Operation Id: Grafana_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Dashboard.GrafanaResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
