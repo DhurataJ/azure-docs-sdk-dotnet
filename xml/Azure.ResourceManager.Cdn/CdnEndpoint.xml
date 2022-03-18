@@ -55,10 +55,16 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Add a tag to the current resource. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
+            Operation Id: CdnEndpoints_Get
+            </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddTagAsync">
@@ -83,10 +89,16 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Add a tag to the current resource. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
+            Operation Id: CdnEndpoints_Get
+            </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
@@ -141,53 +153,61 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Cdn.Models.CdnEndpointDeleteOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Cdn.Models.CdnEndpointDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As CdnEndpointDeleteOperation" />
-      <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Cdn.Models.CdnEndpointDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Cdn.Models.CdnEndpointDeleteOperation" Usage="cdnEndpoint.Delete (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Delete (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Delete(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.Delete(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Delete : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Delete : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="cdnEndpoint.Delete (waitUntil, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Cdn.Models.CdnEndpointDeleteOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deletes an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile. </summary>
+        <summary>
+            Deletes an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
+            Operation Id: CdnEndpoints_Delete
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointDeleteOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Cdn.Models.CdnEndpointDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CdnEndpointDeleteOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointDeleteOperation&gt;" Usage="cdnEndpoint.DeleteAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeleteAsync (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeleteAsync(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.DeleteAsync(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeleteAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="cdnEndpoint.DeleteAsync (waitUntil, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointDeleteOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deletes an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile. </summary>
+        <summary>
+            Deletes an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
+            Operation Id: CdnEndpoints_Delete
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,7 +231,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile. </summary>
+        <summary>
+            Gets an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
+            Operation Id: CdnEndpoints_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,57 +259,81 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile. </summary>
+        <summary>
+            Gets an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
+            Operation Id: CdnEndpoints_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="cdnEndpoint.GetAvailableLocations cancellationToken" />
+    <Member MemberName="GetCdnCustomDomain">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Cdn.CdnCustomDomain&gt; GetCdnCustomDomain (string customDomainName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.CdnCustomDomain&gt; GetCdnCustomDomain(string customDomainName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.GetCdnCustomDomain(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCdnCustomDomain (customDomainName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CdnCustomDomain)" />
+      <MemberSignature Language="F#" Value="abstract member GetCdnCustomDomain : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.CdnCustomDomain&gt;&#xA;override this.GetCdnCustomDomain : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.CdnCustomDomain&gt;" Usage="cdnEndpoint.GetCdnCustomDomain (customDomainName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.CdnCustomDomain&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="customDomainName" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
+        <param name="customDomainName"> Name of the custom domain within an endpoint. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets an existing custom domain within an endpoint.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/customDomains/{customDomainName}
+            Operation Id: CdnCustomDomains_Get
+            </summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="customDomainName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="customDomainName" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="cdnEndpoint.GetAvailableLocationsAsync cancellationToken" />
+    <Member MemberName="GetCdnCustomDomainAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnCustomDomain&gt;&gt; GetCdnCustomDomainAsync (string customDomainName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.CdnCustomDomain&gt;&gt; GetCdnCustomDomainAsync(string customDomainName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.GetCdnCustomDomainAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCdnCustomDomainAsync (customDomainName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CdnCustomDomain))" />
+      <MemberSignature Language="F#" Value="abstract member GetCdnCustomDomainAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnCustomDomain&gt;&gt;&#xA;override this.GetCdnCustomDomainAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnCustomDomain&gt;&gt;" Usage="cdnEndpoint.GetCdnCustomDomainAsync (customDomainName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnCustomDomain&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="customDomainName" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
+        <param name="customDomainName"> Name of the custom domain within an endpoint. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets an existing custom domain within an endpoint.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/customDomains/{customDomainName}
+            Operation Id: CdnCustomDomains_Get
+            </summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="customDomainName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="customDomainName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCdnCustomDomains">
@@ -304,9 +352,145 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of CdnCustomDomains in the CdnEndpoint. </summary>
-        <returns> An object representing collection of CdnCustomDomains and their operations over a CdnEndpoint. </returns>
+        <summary> Gets a collection of CdnCustomDomains in the CdnCustomDomain. </summary>
+        <returns> An object representing collection of CdnCustomDomains and their operations over a CdnCustomDomain. </returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnOrigin">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOrigin&gt; GetCdnOrigin (string originName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.CdnOrigin&gt; GetCdnOrigin(string originName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.GetCdnOrigin(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCdnOrigin (originName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CdnOrigin)" />
+      <MemberSignature Language="F#" Value="abstract member GetCdnOrigin : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOrigin&gt;&#xA;override this.GetCdnOrigin : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOrigin&gt;" Usage="cdnEndpoint.GetCdnOrigin (originName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOrigin&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="originName"> Name of the origin which is unique within the endpoint. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets an existing origin within an endpoint.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/origins/{originName}
+            Operation Id: CdnOrigins_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="originName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="originName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnOriginAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOrigin&gt;&gt; GetCdnOriginAsync (string originName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.CdnOrigin&gt;&gt; GetCdnOriginAsync(string originName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.GetCdnOriginAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCdnOriginAsync (originName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CdnOrigin))" />
+      <MemberSignature Language="F#" Value="abstract member GetCdnOriginAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOrigin&gt;&gt;&#xA;override this.GetCdnOriginAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOrigin&gt;&gt;" Usage="cdnEndpoint.GetCdnOriginAsync (originName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOrigin&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="originName"> Name of the origin which is unique within the endpoint. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets an existing origin within an endpoint.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/origins/{originName}
+            Operation Id: CdnOrigins_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="originName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="originName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnOriginGroup">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOriginGroup&gt; GetCdnOriginGroup (string originGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.CdnOriginGroup&gt; GetCdnOriginGroup(string originGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.GetCdnOriginGroup(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCdnOriginGroup (originGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CdnOriginGroup)" />
+      <MemberSignature Language="F#" Value="abstract member GetCdnOriginGroup : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOriginGroup&gt;&#xA;override this.GetCdnOriginGroup : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOriginGroup&gt;" Usage="cdnEndpoint.GetCdnOriginGroup (originGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOriginGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="originGroupName"> Name of the origin group which is unique within the endpoint. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets an existing origin group within an endpoint.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/originGroups/{originGroupName}
+            Operation Id: CdnOriginGroups_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="originGroupName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="originGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnOriginGroupAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOriginGroup&gt;&gt; GetCdnOriginGroupAsync (string originGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.CdnOriginGroup&gt;&gt; GetCdnOriginGroupAsync(string originGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.GetCdnOriginGroupAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCdnOriginGroupAsync (originGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CdnOriginGroup))" />
+      <MemberSignature Language="F#" Value="abstract member GetCdnOriginGroupAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOriginGroup&gt;&gt;&#xA;override this.GetCdnOriginGroupAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOriginGroup&gt;&gt;" Usage="cdnEndpoint.GetCdnOriginGroupAsync (originGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnOriginGroup&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="originGroupName"> Name of the origin group which is unique within the endpoint. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets an existing origin group within an endpoint.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/originGroups/{originGroupName}
+            Operation Id: CdnOriginGroups_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="originGroupName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="originGroupName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCdnOriginGroups">
@@ -325,8 +509,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of CdnOriginGroups in the CdnEndpoint. </summary>
-        <returns> An object representing collection of CdnOriginGroups and their operations over a CdnEndpoint. </returns>
+        <summary> Gets a collection of CdnOriginGroups in the CdnOriginGroup. </summary>
+        <returns> An object representing collection of CdnOriginGroups and their operations over a CdnOriginGroup. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,8 +530,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of CdnOrigins in the CdnEndpoint. </summary>
-        <returns> An object representing collection of CdnOrigins and their operations over a CdnEndpoint. </returns>
+        <summary> Gets a collection of CdnOrigins in the CdnOrigin. </summary>
+        <returns> An object representing collection of CdnOrigins and their operations over a CdnOrigin. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,7 +554,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks the quota and usage of geo filters and custom domains under the given endpoint. </summary>
+        <summary>
+            Checks the quota and usage of geo filters and custom domains under the given endpoint.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/checkResourceUsage
+            Operation Id: CdnEndpoints_ListResourceUsage
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Cdn.Models.ResourceUsage" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -394,7 +582,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks the quota and usage of geo filters and custom domains under the given endpoint. </summary>
+        <summary>
+            Checks the quota and usage of geo filters and custom domains under the given endpoint.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/checkResourceUsage
+            Operation Id: CdnEndpoints_ListResourceUsage
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Cdn.Models.ResourceUsage" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -420,29 +612,33 @@
       </Docs>
     </Member>
     <Member MemberName="LoadContent">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Cdn.Models.CdnEndpointLoadContentOperation LoadContent (bool waitForCompletion, Azure.ResourceManager.Cdn.Models.LoadOptions contentFilePaths, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Cdn.Models.CdnEndpointLoadContentOperation LoadContent(bool waitForCompletion, class Azure.ResourceManager.Cdn.Models.LoadOptions contentFilePaths, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.LoadContent(System.Boolean,Azure.ResourceManager.Cdn.Models.LoadOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadContent (waitForCompletion As Boolean, contentFilePaths As LoadOptions, Optional cancellationToken As CancellationToken = Nothing) As CdnEndpointLoadContentOperation" />
-      <MemberSignature Language="F#" Value="abstract member LoadContent : bool * Azure.ResourceManager.Cdn.Models.LoadOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Cdn.Models.CdnEndpointLoadContentOperation&#xA;override this.LoadContent : bool * Azure.ResourceManager.Cdn.Models.LoadOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Cdn.Models.CdnEndpointLoadContentOperation" Usage="cdnEndpoint.LoadContent (waitForCompletion, contentFilePaths, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation LoadContent (Azure.WaitUntil waitUntil, Azure.ResourceManager.Cdn.Models.LoadOptions contentFilePaths, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation LoadContent(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Cdn.Models.LoadOptions contentFilePaths, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.LoadContent(Azure.WaitUntil,Azure.ResourceManager.Cdn.Models.LoadOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadContent (waitUntil As WaitUntil, contentFilePaths As LoadOptions, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member LoadContent : Azure.WaitUntil * Azure.ResourceManager.Cdn.Models.LoadOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.LoadContent : Azure.WaitUntil * Azure.ResourceManager.Cdn.Models.LoadOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="cdnEndpoint.LoadContent (waitUntil, contentFilePaths, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Cdn.Models.CdnEndpointLoadContentOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="contentFilePaths" Type="Azure.ResourceManager.Cdn.Models.LoadOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="contentFilePaths"> The path to the content to be loaded. Path should be a full URL, e.g. ‘/pictures/city.png' which loads a single file. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Pre-loads a content to CDN. Available for Verizon Profiles. </summary>
+        <summary>
+            Pre-loads a content to CDN. Available for Verizon Profiles.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/load
+            Operation Id: CdnEndpoints_LoadContent
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -450,29 +646,33 @@
       </Docs>
     </Member>
     <Member MemberName="LoadContentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointLoadContentOperation&gt; LoadContentAsync (bool waitForCompletion, Azure.ResourceManager.Cdn.Models.LoadOptions contentFilePaths, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Cdn.Models.CdnEndpointLoadContentOperation&gt; LoadContentAsync(bool waitForCompletion, class Azure.ResourceManager.Cdn.Models.LoadOptions contentFilePaths, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.LoadContentAsync(System.Boolean,Azure.ResourceManager.Cdn.Models.LoadOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadContentAsync (waitForCompletion As Boolean, contentFilePaths As LoadOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CdnEndpointLoadContentOperation)" />
-      <MemberSignature Language="F#" Value="abstract member LoadContentAsync : bool * Azure.ResourceManager.Cdn.Models.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointLoadContentOperation&gt;&#xA;override this.LoadContentAsync : bool * Azure.ResourceManager.Cdn.Models.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointLoadContentOperation&gt;" Usage="cdnEndpoint.LoadContentAsync (waitForCompletion, contentFilePaths, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; LoadContentAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Cdn.Models.LoadOptions contentFilePaths, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; LoadContentAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Cdn.Models.LoadOptions contentFilePaths, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.LoadContentAsync(Azure.WaitUntil,Azure.ResourceManager.Cdn.Models.LoadOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadContentAsync (waitUntil As WaitUntil, contentFilePaths As LoadOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member LoadContentAsync : Azure.WaitUntil * Azure.ResourceManager.Cdn.Models.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.LoadContentAsync : Azure.WaitUntil * Azure.ResourceManager.Cdn.Models.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="cdnEndpoint.LoadContentAsync (waitUntil, contentFilePaths, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointLoadContentOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="contentFilePaths" Type="Azure.ResourceManager.Cdn.Models.LoadOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="contentFilePaths"> The path to the content to be loaded. Path should be a full URL, e.g. ‘/pictures/city.png' which loads a single file. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Pre-loads a content to CDN. Available for Verizon Profiles. </summary>
+        <summary>
+            Pre-loads a content to CDN. Available for Verizon Profiles.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/load
+            Operation Id: CdnEndpoints_LoadContent
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -480,29 +680,33 @@
       </Docs>
     </Member>
     <Member MemberName="PurgeContent">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Cdn.Models.CdnEndpointPurgeContentOperation PurgeContent (bool waitForCompletion, Azure.ResourceManager.Cdn.Models.PurgeOptions contentFilePaths, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Cdn.Models.CdnEndpointPurgeContentOperation PurgeContent(bool waitForCompletion, class Azure.ResourceManager.Cdn.Models.PurgeOptions contentFilePaths, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.PurgeContent(System.Boolean,Azure.ResourceManager.Cdn.Models.PurgeOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PurgeContent (waitForCompletion As Boolean, contentFilePaths As PurgeOptions, Optional cancellationToken As CancellationToken = Nothing) As CdnEndpointPurgeContentOperation" />
-      <MemberSignature Language="F#" Value="abstract member PurgeContent : bool * Azure.ResourceManager.Cdn.Models.PurgeOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Cdn.Models.CdnEndpointPurgeContentOperation&#xA;override this.PurgeContent : bool * Azure.ResourceManager.Cdn.Models.PurgeOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Cdn.Models.CdnEndpointPurgeContentOperation" Usage="cdnEndpoint.PurgeContent (waitForCompletion, contentFilePaths, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation PurgeContent (Azure.WaitUntil waitUntil, Azure.ResourceManager.Cdn.Models.PurgeOptions contentFilePaths, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation PurgeContent(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Cdn.Models.PurgeOptions contentFilePaths, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.PurgeContent(Azure.WaitUntil,Azure.ResourceManager.Cdn.Models.PurgeOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PurgeContent (waitUntil As WaitUntil, contentFilePaths As PurgeOptions, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member PurgeContent : Azure.WaitUntil * Azure.ResourceManager.Cdn.Models.PurgeOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.PurgeContent : Azure.WaitUntil * Azure.ResourceManager.Cdn.Models.PurgeOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="cdnEndpoint.PurgeContent (waitUntil, contentFilePaths, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Cdn.Models.CdnEndpointPurgeContentOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="contentFilePaths" Type="Azure.ResourceManager.Cdn.Models.PurgeOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="contentFilePaths"> The path to the content to be purged. Path can be a full URL, e.g. '/pictures/city.png' which removes a single file, or a directory with a wildcard, e.g. '/pictures/*' which removes all folders and files in the directory. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Removes a content from CDN. </summary>
+        <summary>
+            Removes a content from CDN.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/purge
+            Operation Id: CdnEndpoints_PurgeContent
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -510,29 +714,33 @@
       </Docs>
     </Member>
     <Member MemberName="PurgeContentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointPurgeContentOperation&gt; PurgeContentAsync (bool waitForCompletion, Azure.ResourceManager.Cdn.Models.PurgeOptions contentFilePaths, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Cdn.Models.CdnEndpointPurgeContentOperation&gt; PurgeContentAsync(bool waitForCompletion, class Azure.ResourceManager.Cdn.Models.PurgeOptions contentFilePaths, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.PurgeContentAsync(System.Boolean,Azure.ResourceManager.Cdn.Models.PurgeOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PurgeContentAsync (waitForCompletion As Boolean, contentFilePaths As PurgeOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CdnEndpointPurgeContentOperation)" />
-      <MemberSignature Language="F#" Value="abstract member PurgeContentAsync : bool * Azure.ResourceManager.Cdn.Models.PurgeOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointPurgeContentOperation&gt;&#xA;override this.PurgeContentAsync : bool * Azure.ResourceManager.Cdn.Models.PurgeOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointPurgeContentOperation&gt;" Usage="cdnEndpoint.PurgeContentAsync (waitForCompletion, contentFilePaths, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; PurgeContentAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Cdn.Models.PurgeOptions contentFilePaths, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; PurgeContentAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Cdn.Models.PurgeOptions contentFilePaths, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.PurgeContentAsync(Azure.WaitUntil,Azure.ResourceManager.Cdn.Models.PurgeOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PurgeContentAsync (waitUntil As WaitUntil, contentFilePaths As PurgeOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member PurgeContentAsync : Azure.WaitUntil * Azure.ResourceManager.Cdn.Models.PurgeOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.PurgeContentAsync : Azure.WaitUntil * Azure.ResourceManager.Cdn.Models.PurgeOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="cdnEndpoint.PurgeContentAsync (waitUntil, contentFilePaths, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointPurgeContentOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="contentFilePaths" Type="Azure.ResourceManager.Cdn.Models.PurgeOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="contentFilePaths"> The path to the content to be purged. Path can be a full URL, e.g. '/pictures/city.png' which removes a single file, or a directory with a wildcard, e.g. '/pictures/*' which removes all folders and files in the directory. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Removes a content from CDN. </summary>
+        <summary>
+            Removes a content from CDN.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/purge
+            Operation Id: CdnEndpoints_PurgeContent
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -558,11 +766,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Removes a tag by key from the resource. </summary>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
+            Operation Id: CdnEndpoints_Get
+            </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveTagAsync">
@@ -584,11 +798,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Removes a tag by key from the resource. </summary>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
+            Operation Id: CdnEndpoints_Get
+            </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
@@ -630,10 +850,16 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Replace the tags on the resource with the given set. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
+            Operation Id: CdnEndpoints_Get
+            </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SetTagsAsync">
@@ -656,174 +882,204 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Replace the tags on the resource with the given set. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
+            Operation Id: CdnEndpoints_Get
+            </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Start">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Cdn.Models.CdnEndpointStartOperation Start (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Cdn.Models.CdnEndpointStartOperation Start(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.Start(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Start (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As CdnEndpointStartOperation" />
-      <MemberSignature Language="F#" Value="abstract member Start : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Cdn.Models.CdnEndpointStartOperation&#xA;override this.Start : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Cdn.Models.CdnEndpointStartOperation" Usage="cdnEndpoint.Start (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt; Start (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Cdn.CdnEndpoint&gt; Start(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.Start(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Start (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of CdnEndpoint)" />
+      <MemberSignature Language="F#" Value="abstract member Start : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&#xA;override this.Start : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;" Usage="cdnEndpoint.Start (waitUntil, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Cdn.Models.CdnEndpointStartOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Starts an existing CDN endpoint that is on a stopped state. </summary>
+        <summary>
+            Starts an existing CDN endpoint that is on a stopped state.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/start
+            Operation Id: CdnEndpoints_Start
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointStartOperation&gt; StartAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Cdn.Models.CdnEndpointStartOperation&gt; StartAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.StartAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CdnEndpointStartOperation)" />
-      <MemberSignature Language="F#" Value="abstract member StartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointStartOperation&gt;&#xA;override this.StartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointStartOperation&gt;" Usage="cdnEndpoint.StartAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt; StartAsync (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt; StartAsync(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.StartAsync(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAsync (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of CdnEndpoint))" />
+      <MemberSignature Language="F#" Value="abstract member StartAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt;&#xA;override this.StartAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt;" Usage="cdnEndpoint.StartAsync (waitUntil, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointStartOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Starts an existing CDN endpoint that is on a stopped state. </summary>
+        <summary>
+            Starts an existing CDN endpoint that is on a stopped state.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/start
+            Operation Id: CdnEndpoints_Start
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Cdn.Models.CdnEndpointStopOperation Stop (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Cdn.Models.CdnEndpointStopOperation Stop(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.Stop(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Stop (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As CdnEndpointStopOperation" />
-      <MemberSignature Language="F#" Value="abstract member Stop : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Cdn.Models.CdnEndpointStopOperation&#xA;override this.Stop : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Cdn.Models.CdnEndpointStopOperation" Usage="cdnEndpoint.Stop (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt; Stop (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Cdn.CdnEndpoint&gt; Stop(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.Stop(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Stop (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of CdnEndpoint)" />
+      <MemberSignature Language="F#" Value="abstract member Stop : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&#xA;override this.Stop : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;" Usage="cdnEndpoint.Stop (waitUntil, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Cdn.Models.CdnEndpointStopOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Stops an existing running CDN endpoint. </summary>
+        <summary>
+            Stops an existing running CDN endpoint.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/stop
+            Operation Id: CdnEndpoints_Stop
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StopAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointStopOperation&gt; StopAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Cdn.Models.CdnEndpointStopOperation&gt; StopAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.StopAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StopAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CdnEndpointStopOperation)" />
-      <MemberSignature Language="F#" Value="abstract member StopAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointStopOperation&gt;&#xA;override this.StopAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointStopOperation&gt;" Usage="cdnEndpoint.StopAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt; StopAsync (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt; StopAsync(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.StopAsync(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StopAsync (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of CdnEndpoint))" />
+      <MemberSignature Language="F#" Value="abstract member StopAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt;&#xA;override this.StopAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt;" Usage="cdnEndpoint.StopAsync (waitUntil, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointStopOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Stops an existing running CDN endpoint. </summary>
+        <summary>
+            Stops an existing running CDN endpoint.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/stop
+            Operation Id: CdnEndpoints_Stop
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Cdn.Models.CdnEndpointUpdateOperation Update (bool waitForCompletion, Azure.ResourceManager.Cdn.Models.EndpointUpdateOptions endpointUpdateProperties, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Cdn.Models.CdnEndpointUpdateOperation Update(bool waitForCompletion, class Azure.ResourceManager.Cdn.Models.EndpointUpdateOptions endpointUpdateProperties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.Update(System.Boolean,Azure.ResourceManager.Cdn.Models.EndpointUpdateOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, endpointUpdateProperties As EndpointUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As CdnEndpointUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.Cdn.Models.EndpointUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Cdn.Models.CdnEndpointUpdateOperation&#xA;override this.Update : bool * Azure.ResourceManager.Cdn.Models.EndpointUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Cdn.Models.CdnEndpointUpdateOperation" Usage="cdnEndpoint.Update (waitForCompletion, endpointUpdateProperties, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt; Update (Azure.WaitUntil waitUntil, Azure.ResourceManager.Cdn.Models.PatchableCdnEndpointData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Cdn.CdnEndpoint&gt; Update(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Cdn.Models.PatchableCdnEndpointData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.Update(Azure.WaitUntil,Azure.ResourceManager.Cdn.Models.PatchableCdnEndpointData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitUntil As WaitUntil, data As PatchableCdnEndpointData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of CdnEndpoint)" />
+      <MemberSignature Language="F#" Value="abstract member Update : Azure.WaitUntil * Azure.ResourceManager.Cdn.Models.PatchableCdnEndpointData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&#xA;override this.Update : Azure.WaitUntil * Azure.ResourceManager.Cdn.Models.PatchableCdnEndpointData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;" Usage="cdnEndpoint.Update (waitUntil, data, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Cdn.Models.CdnEndpointUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
-        <Parameter Name="endpointUpdateProperties" Type="Azure.ResourceManager.Cdn.Models.EndpointUpdateOptions" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="data" Type="Azure.ResourceManager.Cdn.Models.PatchableCdnEndpointData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
-        <param name="endpointUpdateProperties"> Endpoint update properties. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="data"> Endpoint update properties. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Updates an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile. Only tags can be updated after creating an endpoint. To update origins, use the Update Origin operation. To update origin groups, use the Update Origin group operation. To update custom domains, use the Update Custom Domain operation. </summary>
+        <summary>
+            Updates an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile. Only tags can be updated after creating an endpoint. To update origins, use the Update Origin operation. To update origin groups, use the Update Origin group operation. To update custom domains, use the Update Custom Domain operation.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
+            Operation Id: CdnEndpoints_Update
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="endpointUpdateProperties" /> is null. </exception>
+          <paramref name="data" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointUpdateOperation&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.Cdn.Models.EndpointUpdateOptions endpointUpdateProperties, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Cdn.Models.CdnEndpointUpdateOperation&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.Cdn.Models.EndpointUpdateOptions endpointUpdateProperties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.UpdateAsync(System.Boolean,Azure.ResourceManager.Cdn.Models.EndpointUpdateOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, endpointUpdateProperties As EndpointUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CdnEndpointUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.Cdn.Models.EndpointUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointUpdateOperation&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.Cdn.Models.EndpointUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointUpdateOperation&gt;" Usage="cdnEndpoint.UpdateAsync (waitForCompletion, endpointUpdateProperties, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt; UpdateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Cdn.Models.PatchableCdnEndpointData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt; UpdateAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Cdn.Models.PatchableCdnEndpointData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnEndpoint.UpdateAsync(Azure.WaitUntil,Azure.ResourceManager.Cdn.Models.PatchableCdnEndpointData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitUntil As WaitUntil, data As PatchableCdnEndpointData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of CdnEndpoint))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.Cdn.Models.PatchableCdnEndpointData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt;&#xA;override this.UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.Cdn.Models.PatchableCdnEndpointData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt;" Usage="cdnEndpoint.UpdateAsync (waitUntil, data, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Cdn.Models.CdnEndpointUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.CdnEndpoint&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
-        <Parameter Name="endpointUpdateProperties" Type="Azure.ResourceManager.Cdn.Models.EndpointUpdateOptions" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="data" Type="Azure.ResourceManager.Cdn.Models.PatchableCdnEndpointData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
-        <param name="endpointUpdateProperties"> Endpoint update properties. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="data"> Endpoint update properties. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Updates an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile. Only tags can be updated after creating an endpoint. To update origins, use the Update Origin operation. To update origin groups, use the Update Origin group operation. To update custom domains, use the Update Custom Domain operation. </summary>
+        <summary>
+            Updates an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile. Only tags can be updated after creating an endpoint. To update origins, use the Update Origin operation. To update origin groups, use the Update Origin group operation. To update custom domains, use the Update Custom Domain operation.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
+            Operation Id: CdnEndpoints_Update
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="endpointUpdateProperties" /> is null. </exception>
+          <paramref name="data" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ValidateCustomDomain">
@@ -847,7 +1103,11 @@
       <Docs>
         <param name="customDomainProperties"> Custom domain to be validated. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Validates the custom domain mapping to ensure it maps to the correct CDN endpoint in DNS. </summary>
+        <summary>
+            Validates the custom domain mapping to ensure it maps to the correct CDN endpoint in DNS.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/validateCustomDomain
+            Operation Id: CdnEndpoints_ValidateCustomDomain
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -875,7 +1135,11 @@
       <Docs>
         <param name="customDomainProperties"> Custom domain to be validated. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Validates the custom domain mapping to ensure it maps to the correct CDN endpoint in DNS. </summary>
+        <summary>
+            Validates the custom domain mapping to ensure it maps to the correct CDN endpoint in DNS.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/validateCustomDomain
+            Operation Id: CdnEndpoints_ValidateCustomDomain
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

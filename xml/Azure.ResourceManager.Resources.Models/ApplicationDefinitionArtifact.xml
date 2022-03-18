@@ -18,11 +18,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ApplicationDefinitionArtifact (Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifactName name, string uri, Azure.ResourceManager.Resources.Models.ApplicationArtifactType type);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifactName name, string uri, valuetype Azure.ResourceManager.Resources.Models.ApplicationArtifactType type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact.#ctor(Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifactName,System.String,Azure.ResourceManager.Resources.Models.ApplicationArtifactType)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (name As ApplicationDefinitionArtifactName, uri As String, type As ApplicationArtifactType)" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact : Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifactName * string * Azure.ResourceManager.Resources.Models.ApplicationArtifactType -&gt; Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact" Usage="new Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact (name, uri, type)" />
+      <MemberSignature Language="C#" Value="public ApplicationDefinitionArtifact (Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifactName name, Uri uri, Azure.ResourceManager.Resources.Models.ApplicationArtifactType applicationArtifactType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifactName name, class System.Uri uri, valuetype Azure.ResourceManager.Resources.Models.ApplicationArtifactType applicationArtifactType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact.#ctor(Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifactName,System.Uri,Azure.ResourceManager.Resources.Models.ApplicationArtifactType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As ApplicationDefinitionArtifactName, uri As Uri, applicationArtifactType As ApplicationArtifactType)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact : Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifactName * Uri * Azure.ResourceManager.Resources.Models.ApplicationArtifactType -&gt; Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact" Usage="new Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact (name, uri, applicationArtifactType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
@@ -30,17 +30,37 @@
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifactName" />
-        <Parameter Name="uri" Type="System.String" />
-        <Parameter Name="type" Type="Azure.ResourceManager.Resources.Models.ApplicationArtifactType" />
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="applicationArtifactType" Type="Azure.ResourceManager.Resources.Models.ApplicationArtifactType" />
       </Parameters>
       <Docs>
         <param name="name"> The managed application definition artifact name. </param>
         <param name="uri"> The managed application definition artifact blob uri. </param>
-        <param name="type"> The managed application definition artifact type. </param>
+        <param name="applicationArtifactType"> The managed application definition artifact type. </param>
         <summary> Initializes a new instance of ApplicationDefinitionArtifact. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="uri" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationArtifactType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ApplicationArtifactType ApplicationArtifactType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.Resources.Models.ApplicationArtifactType ApplicationArtifactType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact.ApplicationArtifactType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationArtifactType As ApplicationArtifactType" />
+      <MemberSignature Language="F#" Value="member this.ApplicationArtifactType : Azure.ResourceManager.Resources.Models.ApplicationArtifactType with get, set" Usage="Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact.ApplicationArtifactType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Models.ApplicationArtifactType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The managed application definition artifact type. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -63,39 +83,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Type">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ApplicationArtifactType Type { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.Resources.Models.ApplicationArtifactType Type" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact.Type" />
-      <MemberSignature Language="VB.NET" Value="Public Property Type As ApplicationArtifactType" />
-      <MemberSignature Language="F#" Value="member this.Type : Azure.ResourceManager.Resources.Models.ApplicationArtifactType with get, set" Usage="Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact.Type" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ApplicationArtifactType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> The managed application definition artifact type. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Uri">
-      <MemberSignature Language="C#" Value="public string Uri { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Uri" />
+      <MemberSignature Language="C#" Value="public Uri Uri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact.Uri" />
-      <MemberSignature Language="VB.NET" Value="Public Property Uri As String" />
-      <MemberSignature Language="F#" Value="member this.Uri : string with get, set" Usage="Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public Property Uri As Uri" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri with get, set" Usage="Azure.ResourceManager.Resources.Models.ApplicationDefinitionArtifact.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The managed application definition artifact blob uri. </summary>

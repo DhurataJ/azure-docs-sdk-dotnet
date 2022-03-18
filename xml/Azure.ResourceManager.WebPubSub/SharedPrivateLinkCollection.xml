@@ -44,75 +44,87 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.WebPubSub.Models.SharedPrivateLinkCreateOrUpdateOperation CreateOrUpdate (string sharedPrivateLinkName, Azure.ResourceManager.WebPubSub.SharedPrivateLinkData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.WebPubSub.Models.SharedPrivateLinkCreateOrUpdateOperation CreateOrUpdate(string sharedPrivateLinkName, class Azure.ResourceManager.WebPubSub.SharedPrivateLinkData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection.CreateOrUpdate(System.String,Azure.ResourceManager.WebPubSub.SharedPrivateLinkData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (sharedPrivateLinkName As String, parameters As SharedPrivateLinkData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As SharedPrivateLinkCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.WebPubSub.SharedPrivateLinkData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.SharedPrivateLinkCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.WebPubSub.SharedPrivateLinkData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.SharedPrivateLinkCreateOrUpdateOperation" Usage="sharedPrivateLinkCollection.CreateOrUpdate (sharedPrivateLinkName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string sharedPrivateLinkResourceName, Azure.ResourceManager.WebPubSub.SharedPrivateLinkData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt; CreateOrUpdate(valuetype Azure.WaitUntil waitUntil, string sharedPrivateLinkResourceName, class Azure.ResourceManager.WebPubSub.SharedPrivateLinkData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection.CreateOrUpdate(Azure.WaitUntil,System.String,Azure.ResourceManager.WebPubSub.SharedPrivateLinkData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, sharedPrivateLinkResourceName As String, parameters As SharedPrivateLinkData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of SharedPrivateLink)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.WebPubSub.SharedPrivateLinkData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&#xA;override this.CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.WebPubSub.SharedPrivateLinkData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;" Usage="sharedPrivateLinkCollection.CreateOrUpdate (waitUntil, sharedPrivateLinkResourceName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.WebPubSub.Models.SharedPrivateLinkCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sharedPrivateLinkName" Type="System.String" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="sharedPrivateLinkResourceName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.WebPubSub.SharedPrivateLinkData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="sharedPrivateLinkName"> The name of the shared private link. </param>
-        <param name="parameters"> The shared private link. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="sharedPrivateLinkResourceName"> The name of the shared private link resource. </param>
+        <param name="parameters"> The shared private link resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update a shared private link resource. </summary>
+        <summary>
+            Create or update a shared private link resource
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/webPubSub/{resourceName}/sharedPrivateLinkResources/{sharedPrivateLinkResourceName}
+            Operation Id: WebPubSubSharedPrivateLinkResources_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sharedPrivateLinkResourceName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sharedPrivateLinkName" /> or <paramref name="parameters" /> is null. </exception>
+          <paramref name="sharedPrivateLinkResourceName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.SharedPrivateLinkCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string sharedPrivateLinkName, Azure.ResourceManager.WebPubSub.SharedPrivateLinkData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.WebPubSub.Models.SharedPrivateLinkCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string sharedPrivateLinkName, class Azure.ResourceManager.WebPubSub.SharedPrivateLinkData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.WebPubSub.SharedPrivateLinkData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (sharedPrivateLinkName As String, parameters As SharedPrivateLinkData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SharedPrivateLinkCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.WebPubSub.SharedPrivateLinkData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.SharedPrivateLinkCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.WebPubSub.SharedPrivateLinkData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.SharedPrivateLinkCreateOrUpdateOperation&gt;" Usage="sharedPrivateLinkCollection.CreateOrUpdateAsync (sharedPrivateLinkName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string sharedPrivateLinkResourceName, Azure.ResourceManager.WebPubSub.SharedPrivateLinkData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt; CreateOrUpdateAsync(valuetype Azure.WaitUntil waitUntil, string sharedPrivateLinkResourceName, class Azure.ResourceManager.WebPubSub.SharedPrivateLinkData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection.CreateOrUpdateAsync(Azure.WaitUntil,System.String,Azure.ResourceManager.WebPubSub.SharedPrivateLinkData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, sharedPrivateLinkResourceName As String, parameters As SharedPrivateLinkData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of SharedPrivateLink))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.WebPubSub.SharedPrivateLinkData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;&#xA;override this.CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.WebPubSub.SharedPrivateLinkData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;" Usage="sharedPrivateLinkCollection.CreateOrUpdateAsync (waitUntil, sharedPrivateLinkResourceName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.SharedPrivateLinkCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sharedPrivateLinkName" Type="System.String" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="sharedPrivateLinkResourceName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.WebPubSub.SharedPrivateLinkData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="sharedPrivateLinkName"> The name of the shared private link. </param>
-        <param name="parameters"> The shared private link. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="sharedPrivateLinkResourceName"> The name of the shared private link resource. </param>
+        <param name="parameters"> The shared private link resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update a shared private link resource. </summary>
+        <summary>
+            Create or update a shared private link resource
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/webPubSub/{resourceName}/sharedPrivateLinkResources/{sharedPrivateLinkResourceName}
+            Operation Id: WebPubSubSharedPrivateLinkResources_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sharedPrivateLinkResourceName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sharedPrivateLinkName" /> or <paramref name="parameters" /> is null. </exception>
+          <paramref name="sharedPrivateLinkResourceName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Exists">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;bool&gt; Exists (string sharedPrivateLinkName, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;bool&gt; Exists(string sharedPrivateLinkName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;bool&gt; Exists (string sharedPrivateLinkResourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;bool&gt; Exists(string sharedPrivateLinkResourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection.Exists(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Exists (sharedPrivateLinkName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Boolean)" />
-      <MemberSignature Language="F#" Value="abstract member Exists : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;&#xA;override this.Exists : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;" Usage="sharedPrivateLinkCollection.Exists (sharedPrivateLinkName, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Exists (sharedPrivateLinkResourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Exists : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;&#xA;override this.Exists : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;" Usage="sharedPrivateLinkCollection.Exists (sharedPrivateLinkResourceName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -122,25 +134,31 @@
         <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sharedPrivateLinkName" Type="System.String" />
+        <Parameter Name="sharedPrivateLinkResourceName" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="sharedPrivateLinkName"> The name of the shared private link. </param>
+        <param name="sharedPrivateLinkResourceName"> The name of the shared private link resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/webPubSub/{resourceName}/sharedPrivateLinkResources/{sharedPrivateLinkResourceName}
+            Operation Id: WebPubSubSharedPrivateLinkResources_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sharedPrivateLinkResourceName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sharedPrivateLinkName" /> is null. </exception>
+          <paramref name="sharedPrivateLinkResourceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ExistsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt; ExistsAsync (string sharedPrivateLinkName, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;bool&gt;&gt; ExistsAsync(string sharedPrivateLinkName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt; ExistsAsync (string sharedPrivateLinkResourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;bool&gt;&gt; ExistsAsync(string sharedPrivateLinkResourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection.ExistsAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExistsAsync (sharedPrivateLinkName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Boolean))" />
-      <MemberSignature Language="F#" Value="abstract member ExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;&#xA;override this.ExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;" Usage="sharedPrivateLinkCollection.ExistsAsync (sharedPrivateLinkName, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExistsAsync (sharedPrivateLinkResourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Boolean))" />
+      <MemberSignature Language="F#" Value="abstract member ExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;&#xA;override this.ExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;" Usage="sharedPrivateLinkCollection.ExistsAsync (sharedPrivateLinkResourceName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -150,25 +168,31 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sharedPrivateLinkName" Type="System.String" />
+        <Parameter Name="sharedPrivateLinkResourceName" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="sharedPrivateLinkName"> The name of the shared private link. </param>
+        <param name="sharedPrivateLinkResourceName"> The name of the shared private link resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/webPubSub/{resourceName}/sharedPrivateLinkResources/{sharedPrivateLinkResourceName}
+            Operation Id: WebPubSubSharedPrivateLinkResources_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sharedPrivateLinkResourceName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sharedPrivateLinkName" /> is null. </exception>
+          <paramref name="sharedPrivateLinkResourceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Get">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt; Get (string sharedPrivateLinkName, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt; Get(string sharedPrivateLinkName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt; Get (string sharedPrivateLinkResourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt; Get(string sharedPrivateLinkResourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection.Get(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (sharedPrivateLinkName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SharedPrivateLink)" />
-      <MemberSignature Language="F#" Value="abstract member Get : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&#xA;override this.Get : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;" Usage="sharedPrivateLinkCollection.Get (sharedPrivateLinkName, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (sharedPrivateLinkResourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SharedPrivateLink)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&#xA;override this.Get : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;" Usage="sharedPrivateLinkCollection.Get (sharedPrivateLinkResourceName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -178,17 +202,23 @@
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sharedPrivateLinkName" Type="System.String" />
+        <Parameter Name="sharedPrivateLinkResourceName" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="sharedPrivateLinkName"> The name of the shared private link. </param>
+        <param name="sharedPrivateLinkResourceName"> The name of the shared private link resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get the specified shared private link resource. </summary>
+        <summary>
+            Get the specified shared private link resource
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/webPubSub/{resourceName}/sharedPrivateLinkResources/{sharedPrivateLinkResourceName}
+            Operation Id: WebPubSubSharedPrivateLinkResources_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sharedPrivateLinkResourceName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sharedPrivateLinkName" /> is null. </exception>
+          <paramref name="sharedPrivateLinkResourceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetAll">
@@ -210,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List shared private link resources. </summary>
+        <summary>
+            List shared private link resources
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/webPubSub/{resourceName}/sharedPrivateLinkResources
+            Operation Id: WebPubSubSharedPrivateLinkResources_List
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.WebPubSub.SharedPrivateLink" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,17 +268,21 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List shared private link resources. </summary>
+        <summary>
+            List shared private link resources
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/webPubSub/{resourceName}/sharedPrivateLinkResources
+            Operation Id: WebPubSubSharedPrivateLinkResources_List
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.WebPubSub.SharedPrivateLink" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt; GetAsync (string sharedPrivateLinkName, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt; GetAsync(string sharedPrivateLinkName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt; GetAsync (string sharedPrivateLinkResourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt; GetAsync(string sharedPrivateLinkResourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection.GetAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (sharedPrivateLinkName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SharedPrivateLink))" />
-      <MemberSignature Language="F#" Value="abstract member GetAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;&#xA;override this.GetAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;" Usage="sharedPrivateLinkCollection.GetAsync (sharedPrivateLinkName, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (sharedPrivateLinkResourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SharedPrivateLink))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;&#xA;override this.GetAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;" Usage="sharedPrivateLinkCollection.GetAsync (sharedPrivateLinkResourceName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -254,25 +292,31 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sharedPrivateLinkName" Type="System.String" />
+        <Parameter Name="sharedPrivateLinkResourceName" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="sharedPrivateLinkName"> The name of the shared private link. </param>
+        <param name="sharedPrivateLinkResourceName"> The name of the shared private link resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get the specified shared private link resource. </summary>
+        <summary>
+            Get the specified shared private link resource
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/webPubSub/{resourceName}/sharedPrivateLinkResources/{sharedPrivateLinkResourceName}
+            Operation Id: WebPubSubSharedPrivateLinkResources_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sharedPrivateLinkResourceName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sharedPrivateLinkName" /> is null. </exception>
+          <paramref name="sharedPrivateLinkResourceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIfExists">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt; GetIfExists (string sharedPrivateLinkName, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt; GetIfExists(string sharedPrivateLinkName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt; GetIfExists (string sharedPrivateLinkResourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt; GetIfExists(string sharedPrivateLinkResourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection.GetIfExists(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIfExists (sharedPrivateLinkName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SharedPrivateLink)" />
-      <MemberSignature Language="F#" Value="abstract member GetIfExists : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&#xA;override this.GetIfExists : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;" Usage="sharedPrivateLinkCollection.GetIfExists (sharedPrivateLinkName, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIfExists (sharedPrivateLinkResourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SharedPrivateLink)" />
+      <MemberSignature Language="F#" Value="abstract member GetIfExists : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&#xA;override this.GetIfExists : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;" Usage="sharedPrivateLinkCollection.GetIfExists (sharedPrivateLinkResourceName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -282,25 +326,31 @@
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sharedPrivateLinkName" Type="System.String" />
+        <Parameter Name="sharedPrivateLinkResourceName" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="sharedPrivateLinkName"> The name of the shared private link. </param>
+        <param name="sharedPrivateLinkResourceName"> The name of the shared private link resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/webPubSub/{resourceName}/sharedPrivateLinkResources/{sharedPrivateLinkResourceName}
+            Operation Id: WebPubSubSharedPrivateLinkResources_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sharedPrivateLinkResourceName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sharedPrivateLinkName" /> is null. </exception>
+          <paramref name="sharedPrivateLinkResourceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIfExistsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt; GetIfExistsAsync (string sharedPrivateLinkName, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt; GetIfExistsAsync(string sharedPrivateLinkName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt; GetIfExistsAsync (string sharedPrivateLinkResourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt; GetIfExistsAsync(string sharedPrivateLinkResourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection.GetIfExistsAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIfExistsAsync (sharedPrivateLinkName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SharedPrivateLink))" />
-      <MemberSignature Language="F#" Value="abstract member GetIfExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;&#xA;override this.GetIfExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;" Usage="sharedPrivateLinkCollection.GetIfExistsAsync (sharedPrivateLinkName, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIfExistsAsync (sharedPrivateLinkResourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SharedPrivateLink))" />
+      <MemberSignature Language="F#" Value="abstract member GetIfExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;&#xA;override this.GetIfExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;" Usage="sharedPrivateLinkCollection.GetIfExistsAsync (sharedPrivateLinkResourceName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -310,17 +360,23 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sharedPrivateLinkName" Type="System.String" />
+        <Parameter Name="sharedPrivateLinkResourceName" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="sharedPrivateLinkName"> The name of the shared private link. </param>
+        <param name="sharedPrivateLinkResourceName"> The name of the shared private link resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/webPubSub/{resourceName}/sharedPrivateLinkResources/{sharedPrivateLinkResourceName}
+            Operation Id: WebPubSubSharedPrivateLinkResources_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sharedPrivateLinkResourceName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sharedPrivateLinkName" /> is null. </exception>
+          <paramref name="sharedPrivateLinkResourceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.WebPubSub.SharedPrivateLink&gt;.GetAsyncEnumerator">
@@ -395,26 +451,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

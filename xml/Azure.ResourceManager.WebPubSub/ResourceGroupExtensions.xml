@@ -17,6 +17,78 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetWebPubSub">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.WebPubSub.WebPubSub&gt; GetWebPubSub (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string resourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.WebPubSub&gt; GetWebPubSub(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string resourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.ResourceGroupExtensions.GetWebPubSub(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetWebPubSub (resourceGroup As ResourceGroup, resourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of WebPubSub)" />
+      <MemberSignature Language="F#" Value="static member GetWebPubSub : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.WebPubSub.WebPubSub&gt;" Usage="Azure.ResourceManager.WebPubSub.ResourceGroupExtensions.GetWebPubSub (resourceGroup, resourceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.WebPubSub.WebPubSub&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="resourceName"> The name of the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the resource and its properties.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/webPubSub/{resourceName}
+            Operation Id: WebPubSub_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="resourceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWebPubSubAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.WebPubSub&gt;&gt; GetWebPubSubAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string resourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.WebPubSub&gt;&gt; GetWebPubSubAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string resourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.ResourceGroupExtensions.GetWebPubSubAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetWebPubSubAsync (resourceGroup As ResourceGroup, resourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of WebPubSub))" />
+      <MemberSignature Language="F#" Value="static member GetWebPubSubAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.WebPubSub&gt;&gt;" Usage="Azure.ResourceManager.WebPubSub.ResourceGroupExtensions.GetWebPubSubAsync (resourceGroup, resourceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.WebPubSub&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="resourceName"> The name of the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the resource and its properties.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/webPubSub/{resourceName}
+            Operation Id: WebPubSub_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="resourceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceName" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetWebPubSubs">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.WebPubSub.WebPubSubCollection GetWebPubSubs (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.WebPubSub.WebPubSubCollection GetWebPubSubs(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
@@ -36,8 +108,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a WebPubSubCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.WebPubSub.WebPubSubCollection" /> object. </returns>
+        <summary> Gets a collection of WebPubSubs in the WebPubSub. </summary>
+        <returns> An object representing collection of WebPubSubs and their operations over a WebPubSub. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

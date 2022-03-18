@@ -1,16 +1,16 @@
 <Type Name="ArcSettingData" FullName="Azure.ResourceManager.Hci.ArcSettingData">
-  <TypeSignature Language="C#" Value="public class ArcSettingData : Azure.ResourceManager.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArcSettingData extends Azure.ResourceManager.Models.Resource" />
+  <TypeSignature Language="C#" Value="public class ArcSettingData : Azure.ResourceManager.Models.ResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArcSettingData extends Azure.ResourceManager.Models.ResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Hci.ArcSettingData" />
-  <TypeSignature Language="VB.NET" Value="Public Class ArcSettingData&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type ArcSettingData = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArcSettingData&#xA;Inherits ResourceData" />
+  <TypeSignature Language="F#" Value="type ArcSettingData = class&#xA;    inherit ResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Hci</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.Resource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

@@ -46,71 +46,77 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Hci.Models.ArcSettingCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string arcSettingName, Azure.ResourceManager.Hci.ArcSettingData arcSetting, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Hci.Models.ArcSettingCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string arcSettingName, class Azure.ResourceManager.Hci.ArcSettingData arcSetting, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Hci.ArcSettingCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Hci.ArcSettingData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, arcSettingName As String, arcSetting As ArcSettingData, Optional cancellationToken As CancellationToken = Nothing) As ArcSettingCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Hci.ArcSettingData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Hci.Models.ArcSettingCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Hci.ArcSettingData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Hci.Models.ArcSettingCreateOrUpdateOperation" Usage="arcSettingCollection.CreateOrUpdate (waitForCompletion, arcSettingName, arcSetting, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcSetting&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string arcSettingName, Azure.ResourceManager.Hci.ArcSettingData arcSetting, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Hci.ArcSetting&gt; CreateOrUpdate(valuetype Azure.WaitUntil waitUntil, string arcSettingName, class Azure.ResourceManager.Hci.ArcSettingData arcSetting, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Hci.ArcSettingCollection.CreateOrUpdate(Azure.WaitUntil,System.String,Azure.ResourceManager.Hci.ArcSettingData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, arcSettingName As String, arcSetting As ArcSettingData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ArcSetting)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.Hci.ArcSettingData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcSetting&gt;&#xA;override this.CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.Hci.ArcSettingData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcSetting&gt;" Usage="arcSettingCollection.CreateOrUpdate (waitUntil, arcSettingName, arcSetting, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Hci</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Hci.Models.ArcSettingCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcSetting&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="arcSettingName" Type="System.String" />
         <Parameter Name="arcSetting" Type="Azure.ResourceManager.Hci.ArcSettingData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="arcSettingName"> The name of the proxy resource holding details of HCI ArcSetting information. </param>
         <param name="arcSetting"> Parameters supplied to the Create ArcSetting resource for this HCI cluster. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create ArcSetting for HCI cluster. </summary>
+        <summary>
+            Create ArcSetting for HCI cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}
+            Operation Id: ArcSettings_Create
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="arcSettingName" /> is empty. </exception>
+          <paramref name="arcSettingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="arcSettingName" /> or <paramref name="arcSetting" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Hci.Models.ArcSettingCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string arcSettingName, Azure.ResourceManager.Hci.ArcSettingData arcSetting, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Hci.Models.ArcSettingCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string arcSettingName, class Azure.ResourceManager.Hci.ArcSettingData arcSetting, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Hci.ArcSettingCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Hci.ArcSettingData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, arcSettingName As String, arcSetting As ArcSettingData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArcSettingCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Hci.ArcSettingData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Hci.Models.ArcSettingCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Hci.ArcSettingData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Hci.Models.ArcSettingCreateOrUpdateOperation&gt;" Usage="arcSettingCollection.CreateOrUpdateAsync (waitForCompletion, arcSettingName, arcSetting, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcSetting&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string arcSettingName, Azure.ResourceManager.Hci.ArcSettingData arcSetting, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Hci.ArcSetting&gt;&gt; CreateOrUpdateAsync(valuetype Azure.WaitUntil waitUntil, string arcSettingName, class Azure.ResourceManager.Hci.ArcSettingData arcSetting, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Hci.ArcSettingCollection.CreateOrUpdateAsync(Azure.WaitUntil,System.String,Azure.ResourceManager.Hci.ArcSettingData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, arcSettingName As String, arcSetting As ArcSettingData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ArcSetting))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.Hci.ArcSettingData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcSetting&gt;&gt;&#xA;override this.CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.Hci.ArcSettingData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcSetting&gt;&gt;" Usage="arcSettingCollection.CreateOrUpdateAsync (waitUntil, arcSettingName, arcSetting, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Hci</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Hci.Models.ArcSettingCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Hci.ArcSetting&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="arcSettingName" Type="System.String" />
         <Parameter Name="arcSetting" Type="Azure.ResourceManager.Hci.ArcSettingData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="arcSettingName"> The name of the proxy resource holding details of HCI ArcSetting information. </param>
         <param name="arcSetting"> Parameters supplied to the Create ArcSetting resource for this HCI cluster. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create ArcSetting for HCI cluster. </summary>
+        <summary>
+            Create ArcSetting for HCI cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}
+            Operation Id: ArcSettings_Create
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="arcSettingName" /> is empty. </exception>
+          <paramref name="arcSettingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="arcSettingName" /> or <paramref name="arcSetting" /> is null. </exception>
       </Docs>
@@ -137,11 +143,15 @@
       <Docs>
         <param name="arcSettingName"> The name of the proxy resource holding details of HCI ArcSetting information. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks to see if the resource exists in azure. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}
+            Operation Id: ArcSettings_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="arcSettingName" /> is empty. </exception>
+          <paramref name="arcSettingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="arcSettingName" /> is null. </exception>
       </Docs>
@@ -168,11 +178,15 @@
       <Docs>
         <param name="arcSettingName"> The name of the proxy resource holding details of HCI ArcSetting information. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks to see if the resource exists in azure. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}
+            Operation Id: ArcSettings_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="arcSettingName" /> is empty. </exception>
+          <paramref name="arcSettingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="arcSettingName" /> is null. </exception>
       </Docs>
@@ -199,11 +213,15 @@
       <Docs>
         <param name="arcSettingName"> The name of the proxy resource holding details of HCI ArcSetting information. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get ArcSetting resource details of HCI Cluster. </summary>
+        <summary>
+            Get ArcSetting resource details of HCI Cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}
+            Operation Id: ArcSettings_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="arcSettingName" /> is empty. </exception>
+          <paramref name="arcSettingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="arcSettingName" /> is null. </exception>
       </Docs>
@@ -228,7 +246,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get ArcSetting resources of HCI Cluster. </summary>
+        <summary>
+            Get ArcSetting resources of HCI Cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings
+            Operation Id: ArcSettings_ListByCluster
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Hci.ArcSetting" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -253,7 +275,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get ArcSetting resources of HCI Cluster. </summary>
+        <summary>
+            Get ArcSetting resources of HCI Cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings
+            Operation Id: ArcSettings_ListByCluster
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Hci.ArcSetting" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -280,11 +306,15 @@
       <Docs>
         <param name="arcSettingName"> The name of the proxy resource holding details of HCI ArcSetting information. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get ArcSetting resource details of HCI Cluster. </summary>
+        <summary>
+            Get ArcSetting resource details of HCI Cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}
+            Operation Id: ArcSettings_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="arcSettingName" /> is empty. </exception>
+          <paramref name="arcSettingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="arcSettingName" /> is null. </exception>
       </Docs>
@@ -311,11 +341,15 @@
       <Docs>
         <param name="arcSettingName"> The name of the proxy resource holding details of HCI ArcSetting information. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}
+            Operation Id: ArcSettings_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="arcSettingName" /> is empty. </exception>
+          <paramref name="arcSettingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="arcSettingName" /> is null. </exception>
       </Docs>
@@ -342,11 +376,15 @@
       <Docs>
         <param name="arcSettingName"> The name of the proxy resource holding details of HCI ArcSetting information. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}
+            Operation Id: ArcSettings_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="arcSettingName" /> is empty. </exception>
+          <paramref name="arcSettingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="arcSettingName" /> is null. </exception>
       </Docs>

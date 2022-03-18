@@ -37,6 +37,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnErrorDeploymentType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.OnErrorDeploymentType? OnErrorDeploymentType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.OnErrorDeploymentType&gt; OnErrorDeploymentType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.OnErrorDeploymentExtended.OnErrorDeploymentType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OnErrorDeploymentType As Nullable(Of OnErrorDeploymentType)" />
+      <MemberSignature Language="F#" Value="member this.OnErrorDeploymentType : Nullable&lt;Azure.ResourceManager.Resources.Models.OnErrorDeploymentType&gt;" Usage="Azure.ResourceManager.Resources.Models.OnErrorDeploymentExtended.OnErrorDeploymentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Resources.Models.OnErrorDeploymentType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The deployment on error behavior type. Possible values are LastSuccessful and SpecificDeployment. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ProvisioningState">
       <MemberSignature Language="C#" Value="public string ProvisioningState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProvisioningState" />
@@ -53,26 +73,6 @@
       </ReturnValue>
       <Docs>
         <summary> The state of the provisioning for the on error deployment. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Type">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.OnErrorDeploymentType? Type { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.OnErrorDeploymentType&gt; Type" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.OnErrorDeploymentExtended.Type" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Nullable(Of OnErrorDeploymentType)" />
-      <MemberSignature Language="F#" Value="member this.Type : Nullable&lt;Azure.ResourceManager.Resources.Models.OnErrorDeploymentType&gt;" Usage="Azure.ResourceManager.Resources.Models.OnErrorDeploymentExtended.Type" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Resources.Models.OnErrorDeploymentType&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> The deployment on error behavior type. Possible values are LastSuccessful and SpecificDeployment. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -17,6 +17,78 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetAddressResource">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.EdgeOrder.AddressResource&gt; GetAddressResource (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string addressName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.EdgeOrder.AddressResource&gt; GetAddressResource(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string addressName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeOrder.ResourceGroupExtensions.GetAddressResource(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAddressResource (resourceGroup As ResourceGroup, addressName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of AddressResource)" />
+      <MemberSignature Language="F#" Value="static member GetAddressResource : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.EdgeOrder.AddressResource&gt;" Usage="Azure.ResourceManager.EdgeOrder.ResourceGroupExtensions.GetAddressResource (resourceGroup, addressName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EdgeOrder</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.EdgeOrder.AddressResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="addressName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="addressName"> The name of the address Resource within the specified resource group. address names must be between 3 and 24 characters in length and use any alphanumeric and underscore only. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets information about the specified address.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/addresses/{addressName}
+            Operation Id: GetAddressByName
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="addressName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="addressName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAddressResourceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EdgeOrder.AddressResource&gt;&gt; GetAddressResourceAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string addressName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.EdgeOrder.AddressResource&gt;&gt; GetAddressResourceAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string addressName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeOrder.ResourceGroupExtensions.GetAddressResourceAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAddressResourceAsync (resourceGroup As ResourceGroup, addressName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of AddressResource))" />
+      <MemberSignature Language="F#" Value="static member GetAddressResourceAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EdgeOrder.AddressResource&gt;&gt;" Usage="Azure.ResourceManager.EdgeOrder.ResourceGroupExtensions.GetAddressResourceAsync (resourceGroup, addressName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EdgeOrder</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EdgeOrder.AddressResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="addressName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="addressName"> The name of the address Resource within the specified resource group. address names must be between 3 and 24 characters in length and use any alphanumeric and underscore only. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets information about the specified address.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/addresses/{addressName}
+            Operation Id: GetAddressByName
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="addressName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="addressName" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetAddressResources">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EdgeOrder.AddressResourceCollection GetAddressResources (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EdgeOrder.AddressResourceCollection GetAddressResources(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
@@ -36,9 +108,85 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a AddressResourceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.EdgeOrder.AddressResourceCollection" /> object. </returns>
+        <summary> Gets a collection of AddressResources in the AddressResource. </summary>
+        <returns> An object representing collection of AddressResources and their operations over a AddressResource. </returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrderItemResource">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt; GetOrderItemResource (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string orderItemName, string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.EdgeOrder.OrderItemResource&gt; GetOrderItemResource(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string orderItemName, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeOrder.ResourceGroupExtensions.GetOrderItemResource(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetOrderItemResource (resourceGroup As ResourceGroup, orderItemName As String, Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of OrderItemResource)" />
+      <MemberSignature Language="F#" Value="static member GetOrderItemResource : Azure.ResourceManager.Resources.ResourceGroup * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;" Usage="Azure.ResourceManager.EdgeOrder.ResourceGroupExtensions.GetOrderItemResource (resourceGroup, orderItemName, expand, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EdgeOrder</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="orderItemName" Type="System.String" />
+        <Parameter Name="expand" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="orderItemName"> The name of the order item. </param>
+        <param name="expand"> $expand is supported on device details, forward shipping details and reverse shipping details parameters. Each of these can be provided as a comma separated list. Device Details for order item provides details on the devices of the product, Forward and Reverse Shipping details provide forward and reverse shipping details respectively. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets an order item.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/orderItems/{orderItemName}
+            Operation Id: GetOrderItemByName
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="orderItemName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="orderItemName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrderItemResourceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;&gt; GetOrderItemResourceAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string orderItemName, string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;&gt; GetOrderItemResourceAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string orderItemName, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeOrder.ResourceGroupExtensions.GetOrderItemResourceAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetOrderItemResourceAsync (resourceGroup As ResourceGroup, orderItemName As String, Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of OrderItemResource))" />
+      <MemberSignature Language="F#" Value="static member GetOrderItemResourceAsync : Azure.ResourceManager.Resources.ResourceGroup * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;&gt;" Usage="Azure.ResourceManager.EdgeOrder.ResourceGroupExtensions.GetOrderItemResourceAsync (resourceGroup, orderItemName, expand, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EdgeOrder</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="orderItemName" Type="System.String" />
+        <Parameter Name="expand" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="orderItemName"> The name of the order item. </param>
+        <param name="expand"> $expand is supported on device details, forward shipping details and reverse shipping details parameters. Each of these can be provided as a comma separated list. Device Details for order item provides details on the devices of the product, Forward and Reverse Shipping details provide forward and reverse shipping details respectively. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets an order item.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/orderItems/{orderItemName}
+            Operation Id: GetOrderItemByName
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="orderItemName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="orderItemName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOrderItemResources">
@@ -60,9 +208,85 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a OrderItemResourceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.EdgeOrder.OrderItemResourceCollection" /> object. </returns>
+        <summary> Gets a collection of OrderItemResources in the OrderItemResource. </summary>
+        <returns> An object representing collection of OrderItemResources and their operations over a OrderItemResource. </returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrderResource">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.EdgeOrder.OrderResource&gt; GetOrderResource (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string location, string orderName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.EdgeOrder.OrderResource&gt; GetOrderResource(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string location, string orderName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeOrder.ResourceGroupExtensions.GetOrderResource(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetOrderResource (resourceGroup As ResourceGroup, location As String, orderName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of OrderResource)" />
+      <MemberSignature Language="F#" Value="static member GetOrderResource : Azure.ResourceManager.Resources.ResourceGroup * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.EdgeOrder.OrderResource&gt;" Usage="Azure.ResourceManager.EdgeOrder.ResourceGroupExtensions.GetOrderResource (resourceGroup, location, orderName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EdgeOrder</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.EdgeOrder.OrderResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="orderName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="location"> The name of Azure region. </param>
+        <param name="orderName"> The name of the order. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets an order.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/locations/{location}/orders/{orderName}
+            Operation Id: GetOrderByName
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> or <paramref name="orderName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> or <paramref name="orderName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrderResourceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EdgeOrder.OrderResource&gt;&gt; GetOrderResourceAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string location, string orderName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.EdgeOrder.OrderResource&gt;&gt; GetOrderResourceAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string location, string orderName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeOrder.ResourceGroupExtensions.GetOrderResourceAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetOrderResourceAsync (resourceGroup As ResourceGroup, location As String, orderName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of OrderResource))" />
+      <MemberSignature Language="F#" Value="static member GetOrderResourceAsync : Azure.ResourceManager.Resources.ResourceGroup * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EdgeOrder.OrderResource&gt;&gt;" Usage="Azure.ResourceManager.EdgeOrder.ResourceGroupExtensions.GetOrderResourceAsync (resourceGroup, location, orderName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EdgeOrder</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EdgeOrder.OrderResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="orderName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="location"> The name of Azure region. </param>
+        <param name="orderName"> The name of the order. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets an order.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/locations/{location}/orders/{orderName}
+            Operation Id: GetOrderByName
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> or <paramref name="orderName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> or <paramref name="orderName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOrderResources">
@@ -84,8 +308,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a OrderResourceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.EdgeOrder.OrderResourceCollection" /> object. </returns>
+        <summary> Gets a collection of OrderResources in the OrderResource. </summary>
+        <returns> An object representing collection of OrderResources and their operations over a OrderResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +336,12 @@
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
         <param name="skipToken"> $skipToken is supported on Get list of order, which provides the next page in the list of order. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists order at resource group level.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/orders
+            Operation Id: ListOrderAtResourceGroupLevel
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.EdgeOrder.OrderResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +368,12 @@
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
         <param name="skipToken"> $skipToken is supported on Get list of order, which provides the next page in the list of order. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists order at resource group level.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/orders
+            Operation Id: ListOrderAtResourceGroupLevel
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.EdgeOrder.OrderResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

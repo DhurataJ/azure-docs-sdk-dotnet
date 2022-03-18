@@ -36,9 +36,153 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a CdnWebApplicationFirewallPolicyCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicyCollection" /> object. </returns>
+        <summary> Gets a collection of CdnWebApplicationFirewallPolicies in the CdnWebApplicationFirewallPolicy. </summary>
+        <returns> An object representing collection of CdnWebApplicationFirewallPolicies and their operations over a CdnWebApplicationFirewallPolicy. </returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnWebApplicationFirewallPolicy">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt; GetCdnWebApplicationFirewallPolicy (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string policyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt; GetCdnWebApplicationFirewallPolicy(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string policyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.ResourceGroupExtensions.GetCdnWebApplicationFirewallPolicy(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCdnWebApplicationFirewallPolicy (resourceGroup As ResourceGroup, policyName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CdnWebApplicationFirewallPolicy)" />
+      <MemberSignature Language="F#" Value="static member GetCdnWebApplicationFirewallPolicy : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt;" Usage="Azure.ResourceManager.Cdn.ResourceGroupExtensions.GetCdnWebApplicationFirewallPolicy (resourceGroup, policyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="policyName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="policyName"> The name of the CdnWebApplicationFirewallPolicy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Retrieve protection policy with specified name within a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/CdnWebApplicationFirewallPolicies/{policyName}
+            Operation Id: Policies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policyName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnWebApplicationFirewallPolicyAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt;&gt; GetCdnWebApplicationFirewallPolicyAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string policyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt;&gt; GetCdnWebApplicationFirewallPolicyAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string policyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.ResourceGroupExtensions.GetCdnWebApplicationFirewallPolicyAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCdnWebApplicationFirewallPolicyAsync (resourceGroup As ResourceGroup, policyName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CdnWebApplicationFirewallPolicy))" />
+      <MemberSignature Language="F#" Value="static member GetCdnWebApplicationFirewallPolicyAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt;&gt;" Usage="Azure.ResourceManager.Cdn.ResourceGroupExtensions.GetCdnWebApplicationFirewallPolicyAsync (resourceGroup, policyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="policyName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="policyName"> The name of the CdnWebApplicationFirewallPolicy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Retrieve protection policy with specified name within a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/CdnWebApplicationFirewallPolicies/{policyName}
+            Operation Id: Policies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policyName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfile">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Cdn.Profile&gt; GetProfile (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string profileName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.Profile&gt; GetProfile(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string profileName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.ResourceGroupExtensions.GetProfile(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProfile (resourceGroup As ResourceGroup, profileName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Profile)" />
+      <MemberSignature Language="F#" Value="static member GetProfile : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.Profile&gt;" Usage="Azure.ResourceManager.Cdn.ResourceGroupExtensions.GetProfile (resourceGroup, profileName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Profile&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="profileName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="profileName"> Name of the CDN profile which is unique within the resource group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a CDN profile with the specified profile name under the specified subscription and resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}
+            Operation Id: Profiles_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="profileName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="profileName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfileAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Profile&gt;&gt; GetProfileAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string profileName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.Profile&gt;&gt; GetProfileAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string profileName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.ResourceGroupExtensions.GetProfileAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProfileAsync (resourceGroup As ResourceGroup, profileName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Profile))" />
+      <MemberSignature Language="F#" Value="static member GetProfileAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Profile&gt;&gt;" Usage="Azure.ResourceManager.Cdn.ResourceGroupExtensions.GetProfileAsync (resourceGroup, profileName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Profile&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="profileName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="profileName"> Name of the CDN profile which is unique within the resource group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a CDN profile with the specified profile name under the specified subscription and resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}
+            Operation Id: Profiles_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="profileName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="profileName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetProfiles">
@@ -60,8 +204,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a ProfileCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Cdn.ProfileCollection" /> object. </returns>
+        <summary> Gets a collection of Profiles in the Profile. </summary>
+        <returns> An object representing collection of Profiles and their operations over a Profile. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
