@@ -10,7 +10,7 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: resourcemanager
 ---
-# Azure ResourceManager client library for .NET - Version 1.0.0-alpha.20220318.6 
+# Azure ResourceManager client library for .NET - Version 1.0.0-alpha.20220319.2 
 
 
 This package follows the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html), which provide core capabilities that are shared amongst all Azure SDKs, including:
@@ -81,12 +81,12 @@ string resourceGroupName = "myResourceGroup";
 Subscription subscription = await client.GetDefaultSubscriptionAsync();
 ResourceGroupCollection resourceGroups = subscription.GetResourceGroups();
 ResourceGroup resourceGroup = await resourceGroups.GetAsync(resourceGroupName);
-await foreach (VirtualMachine virtualMachine in resourceGroup.GetVirtualMachines())
-{
-    //previously we would have to take the resourceGroupName and the vmName from the vm object
-    //and pass those into the powerOff method as well as we would need to execute that on a separate compute client
-    await virtualMachine.PowerOffAsync(WaitUntil.Completed);
-}
+//await foreach (VirtualMachine virtualMachine in resourceGroup.GetVirtualMachines())
+//{
+//    //previously we would have to take the resourceGroupName and the vmName from the vm object
+//    //and pass those into the powerOff method as well as we would need to execute that on a separate compute client
+//    await virtualMachine.PowerOffAsync(WaitUntil.Completed);
+//}
 ```
 
 ### **[Resource]Data.cs**
@@ -127,15 +127,15 @@ VirtualMachineCollection virtualMachines = resourceGroup.GetVirtualMachines();
 
 // Next we loop over all vms in the collection
 // Each vm is a [Resource] object from above
-await foreach (VirtualMachine virtualMachine in virtualMachines)
-{
-    // We access the [Resource]Data properties from vm.Data
-    if (!virtualMachine.Data.Tags.ContainsKey("owner"))
-    {
-        // We can also access all operations from vm since it is already scoped for us
-        await virtualMachine.AddTagAsync("owner", "tagValue");
-    }
-}
+//await foreach (VirtualMachine virtualMachine in virtualMachines)
+//{
+//    // We access the [Resource]Data properties from vm.Data
+//    if (!virtualMachine.Data.Tags.ContainsKey("owner"))
+//    {
+//        // We can also access all operations from vm since it is already scoped for us
+//        await virtualMachine.AddTagAsync("owner", "tagValue");
+//    }
+//}
 ```
 
 ## Structured Resource Identifier
@@ -170,7 +170,7 @@ ResourceGroup resourceGroup = await resourceGroups.GetAsync(id.ResourceGroupName
 AvailabilitySetCollection availabilitySets = resourceGroup.GetAvailabilitySets();
 // Finally we get the resource itself
 // Note: for this last step in this example, Azure.ResourceManager.Compute is needed
-AvailabilitySet availabilitySet = await availabilitySets.GetAsync(id.Name);
+//AvailabilitySet availabilitySet = await availabilitySets.GetAsync(id.Name);
 ```
 
 This approach required a lot of code and 3 API calls to Azure. The same can be done with less code and without any API calls by using extension methods that we have provided on the client itself. These extension methods allow you to pass in a resource identifier and retrieve a scoped resource client. The object returned is a *[Resource]* mentioned above, since it has not reached out to Azure to retrieve the data yet the Data property will be null.
