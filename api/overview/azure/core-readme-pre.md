@@ -10,7 +10,7 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: core
 ---
-# Azure Core shared client library for .NET - Version 1.23.0-alpha.20220321.5 
+# Azure Core shared client library for .NET - Version 1.23.0-alpha.20220321.7 
 
 
 Azure.Core provides shared primitives, abstractions, and helpers for modern .NET Azure SDK client libraries. 
