@@ -1,6 +1,6 @@
 <Type Name="PrivateEndpointConnectionProxyCollection" FullName="Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyCollection">
-  <TypeSignature Language="C#" Value="public class PrivateEndpointConnectionProxyCollection : Azure.ResourceManager.Core.ArmCollection, System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrivateEndpointConnectionProxyCollection extends Azure.ResourceManager.Core.ArmCollection implements class System.Collections.Generic.IAsyncEnumerable`1&lt;class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="C#" Value="public class PrivateEndpointConnectionProxyCollection : Azure.ResourceManager.ArmCollection, System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrivateEndpointConnectionProxyCollection extends Azure.ResourceManager.ArmCollection implements class System.Collections.Generic.IAsyncEnumerable`1&lt;class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PrivateEndpointConnectionProxyCollection&#xA;Inherits ArmCollection&#xA;Implements IAsyncEnumerable(Of PrivateEndpointConnectionProxy), IEnumerable(Of PrivateEndpointConnectionProxy)" />
   <TypeSignature Language="F#" Value="type PrivateEndpointConnectionProxyCollection = class&#xA;    inherit ArmCollection&#xA;    interface seq&lt;PrivateEndpointConnectionProxy&gt;&#xA;    interface IEnumerable&#xA;    interface IAsyncEnumerable&lt;PrivateEndpointConnectionProxy&gt;" />
@@ -9,7 +9,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Core.ArmCollection</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.ArmCollection</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -44,65 +44,77 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DeviceUpdate.Models.PrivateEndpointConnectionProxyCreateOrUpdateOperation CreateOrUpdate (string privateEndpointConnectionProxyId, Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData privateEndpointConnectionProxy, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.DeviceUpdate.Models.PrivateEndpointConnectionProxyCreateOrUpdateOperation CreateOrUpdate(string privateEndpointConnectionProxyId, class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData privateEndpointConnectionProxy, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyCollection.CreateOrUpdate(System.String,Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (privateEndpointConnectionProxyId As String, privateEndpointConnectionProxy As PrivateEndpointConnectionProxyData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As PrivateEndpointConnectionProxyCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.DeviceUpdate.Models.PrivateEndpointConnectionProxyCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.DeviceUpdate.Models.PrivateEndpointConnectionProxyCreateOrUpdateOperation" Usage="privateEndpointConnectionProxyCollection.CreateOrUpdate (privateEndpointConnectionProxyId, privateEndpointConnectionProxy, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string privateEndpointConnectionProxyId, Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData privateEndpointConnectionProxy, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt; CreateOrUpdate(valuetype Azure.WaitUntil waitUntil, string privateEndpointConnectionProxyId, class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData privateEndpointConnectionProxy, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyCollection.CreateOrUpdate(Azure.WaitUntil,System.String,Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, privateEndpointConnectionProxyId As String, privateEndpointConnectionProxy As PrivateEndpointConnectionProxyData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of PrivateEndpointConnectionProxy)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;&#xA;override this.CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;" Usage="privateEndpointConnectionProxyCollection.CreateOrUpdate (waitUntil, privateEndpointConnectionProxyId, privateEndpointConnectionProxy, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DeviceUpdate.Models.PrivateEndpointConnectionProxyCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="privateEndpointConnectionProxyId" Type="System.String" />
         <Parameter Name="privateEndpointConnectionProxy" Type="Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="privateEndpointConnectionProxyId"> The ID of the private endpoint connection proxy object. </param>
         <param name="privateEndpointConnectionProxy"> The parameters for creating a private endpoint connection proxy. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> (INTERNAL - DO NOT USE) Creates or updates the specified private endpoint connection proxy resource associated with the device update account. </summary>
+        <summary>
+            (INTERNAL - DO NOT USE) Creates or updates the specified private endpoint connection proxy resource associated with the device update account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceUpdate/accounts/{accountName}/privateEndpointConnectionProxies/{privateEndpointConnectionProxyId}
+            Operation Id: PrivateEndpointConnectionProxies_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="privateEndpointConnectionProxyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionProxyId" /> or <paramref name="privateEndpointConnectionProxy" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.DeviceUpdate.Models.PrivateEndpointConnectionProxyCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string privateEndpointConnectionProxyId, Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData privateEndpointConnectionProxy, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.DeviceUpdate.Models.PrivateEndpointConnectionProxyCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string privateEndpointConnectionProxyId, class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData privateEndpointConnectionProxy, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (privateEndpointConnectionProxyId As String, privateEndpointConnectionProxy As PrivateEndpointConnectionProxyData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PrivateEndpointConnectionProxyCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.DeviceUpdate.Models.PrivateEndpointConnectionProxyCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.DeviceUpdate.Models.PrivateEndpointConnectionProxyCreateOrUpdateOperation&gt;" Usage="privateEndpointConnectionProxyCollection.CreateOrUpdateAsync (privateEndpointConnectionProxyId, privateEndpointConnectionProxy, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string privateEndpointConnectionProxyId, Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData privateEndpointConnectionProxy, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;&gt; CreateOrUpdateAsync(valuetype Azure.WaitUntil waitUntil, string privateEndpointConnectionProxyId, class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData privateEndpointConnectionProxy, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyCollection.CreateOrUpdateAsync(Azure.WaitUntil,System.String,Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, privateEndpointConnectionProxyId As String, privateEndpointConnectionProxy As PrivateEndpointConnectionProxyData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of PrivateEndpointConnectionProxy))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;&gt;&#xA;override this.CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;&gt;" Usage="privateEndpointConnectionProxyCollection.CreateOrUpdateAsync (waitUntil, privateEndpointConnectionProxyId, privateEndpointConnectionProxy, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.DeviceUpdate.Models.PrivateEndpointConnectionProxyCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="privateEndpointConnectionProxyId" Type="System.String" />
         <Parameter Name="privateEndpointConnectionProxy" Type="Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="privateEndpointConnectionProxyId"> The ID of the private endpoint connection proxy object. </param>
         <param name="privateEndpointConnectionProxy"> The parameters for creating a private endpoint connection proxy. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> (INTERNAL - DO NOT USE) Creates or updates the specified private endpoint connection proxy resource associated with the device update account. </summary>
+        <summary>
+            (INTERNAL - DO NOT USE) Creates or updates the specified private endpoint connection proxy resource associated with the device update account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceUpdate/accounts/{accountName}/privateEndpointConnectionProxies/{privateEndpointConnectionProxyId}
+            Operation Id: PrivateEndpointConnectionProxies_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="privateEndpointConnectionProxyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionProxyId" /> or <paramref name="privateEndpointConnectionProxy" /> is null. </exception>
       </Docs>
@@ -128,9 +140,15 @@
       <Docs>
         <param name="privateEndpointConnectionProxyId"> The ID of the private endpoint connection proxy object. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceUpdate/accounts/{accountName}/privateEndpointConnectionProxies/{privateEndpointConnectionProxyId}
+            Operation Id: PrivateEndpointConnectionProxies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="privateEndpointConnectionProxyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionProxyId" /> is null. </exception>
       </Docs>
@@ -156,9 +174,15 @@
       <Docs>
         <param name="privateEndpointConnectionProxyId"> The ID of the private endpoint connection proxy object. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceUpdate/accounts/{accountName}/privateEndpointConnectionProxies/{privateEndpointConnectionProxyId}
+            Operation Id: PrivateEndpointConnectionProxies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="privateEndpointConnectionProxyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionProxyId" /> is null. </exception>
       </Docs>
@@ -184,9 +208,15 @@
       <Docs>
         <param name="privateEndpointConnectionProxyId"> The ID of the private endpoint connection proxy object. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> (INTERNAL - DO NOT USE) Get the specified private endpoint connection proxy associated with the device update account. </summary>
+        <summary>
+            (INTERNAL - DO NOT USE) Get the specified private endpoint connection proxy associated with the device update account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceUpdate/accounts/{accountName}/privateEndpointConnectionProxies/{privateEndpointConnectionProxyId}
+            Operation Id: PrivateEndpointConnectionProxies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="privateEndpointConnectionProxyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionProxyId" /> is null. </exception>
       </Docs>
@@ -210,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> (INTERNAL - DO NOT USE) List all private endpoint connection proxies in a device update account. </summary>
+        <summary>
+            (INTERNAL - DO NOT USE) List all private endpoint connection proxies in a device update account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceUpdate/accounts/{accountName}/privateEndpointConnectionProxies
+            Operation Id: PrivateEndpointConnectionProxies_ListByAccount
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,7 +268,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> (INTERNAL - DO NOT USE) List all private endpoint connection proxies in a device update account. </summary>
+        <summary>
+            (INTERNAL - DO NOT USE) List all private endpoint connection proxies in a device update account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceUpdate/accounts/{accountName}/privateEndpointConnectionProxies
+            Operation Id: PrivateEndpointConnectionProxies_ListByAccount
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -260,9 +298,15 @@
       <Docs>
         <param name="privateEndpointConnectionProxyId"> The ID of the private endpoint connection proxy object. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> (INTERNAL - DO NOT USE) Get the specified private endpoint connection proxy associated with the device update account. </summary>
+        <summary>
+            (INTERNAL - DO NOT USE) Get the specified private endpoint connection proxy associated with the device update account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceUpdate/accounts/{accountName}/privateEndpointConnectionProxies/{privateEndpointConnectionProxyId}
+            Operation Id: PrivateEndpointConnectionProxies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="privateEndpointConnectionProxyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionProxyId" /> is null. </exception>
       </Docs>
@@ -288,9 +332,15 @@
       <Docs>
         <param name="privateEndpointConnectionProxyId"> The ID of the private endpoint connection proxy object. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceUpdate/accounts/{accountName}/privateEndpointConnectionProxies/{privateEndpointConnectionProxyId}
+            Operation Id: PrivateEndpointConnectionProxies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="privateEndpointConnectionProxyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionProxyId" /> is null. </exception>
       </Docs>
@@ -316,9 +366,15 @@
       <Docs>
         <param name="privateEndpointConnectionProxyId"> The ID of the private endpoint connection proxy object. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceUpdate/accounts/{accountName}/privateEndpointConnectionProxies/{privateEndpointConnectionProxyId}
+            Operation Id: PrivateEndpointConnectionProxies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="privateEndpointConnectionProxyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionProxyId" /> is null. </exception>
       </Docs>
@@ -395,26 +451,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxyCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

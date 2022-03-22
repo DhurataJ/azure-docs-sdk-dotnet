@@ -1,0 +1,1289 @@
+<Type Name="CosmosDBExtensions" FullName="Azure.ResourceManager.CosmosDB.CosmosDBExtensions">
+  <TypeSignature Language="C#" Value="public static class CosmosDBExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CosmosDBExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.CosmosDB.CosmosDBExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module CosmosDBExtensions" />
+  <TypeSignature Language="F#" Value="type CosmosDBExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Azure.ResourceManager.CosmosDB. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckNameExistsDatabaseAccount">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;bool&gt; CheckNameExistsDatabaseAccount (this Azure.ResourceManager.Resources.Tenant tenant, string accountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;bool&gt; CheckNameExistsDatabaseAccount(class Azure.ResourceManager.Resources.Tenant tenant, string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.CheckNameExistsDatabaseAccount(Azure.ResourceManager.Resources.Tenant,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckNameExistsDatabaseAccount (tenant As Tenant, accountName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member CheckNameExistsDatabaseAccount : Azure.ResourceManager.Resources.Tenant * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.CheckNameExistsDatabaseAccount (tenant, accountName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenant" Type="Azure.ResourceManager.Resources.Tenant" RefType="this" />
+        <Parameter Name="accountName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
+        <param name="accountName"> Cosmos DB database account name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Checks that the Azure Cosmos DB account name already exists. A valid account name may contain only lowercase letters, numbers, and the '-' character, and must be between 3 and 50 characters.
+            Request Path: /providers/Microsoft.DocumentDB/databaseAccountNames/{accountName}
+            Operation Id: DatabaseAccounts_CheckNameExists
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="accountName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accountName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckNameExistsDatabaseAccountAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt; CheckNameExistsDatabaseAccountAsync (this Azure.ResourceManager.Resources.Tenant tenant, string accountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;bool&gt;&gt; CheckNameExistsDatabaseAccountAsync(class Azure.ResourceManager.Resources.Tenant tenant, string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.CheckNameExistsDatabaseAccountAsync(Azure.ResourceManager.Resources.Tenant,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckNameExistsDatabaseAccountAsync (tenant As Tenant, accountName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Boolean))" />
+      <MemberSignature Language="F#" Value="static member CheckNameExistsDatabaseAccountAsync : Azure.ResourceManager.Resources.Tenant * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.CheckNameExistsDatabaseAccountAsync (tenant, accountName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenant" Type="Azure.ResourceManager.Resources.Tenant" RefType="this" />
+        <Parameter Name="accountName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
+        <param name="accountName"> Cosmos DB database account name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Checks that the Azure Cosmos DB account name already exists. A valid account name may contain only lowercase letters, numbers, and the '-' character, and must be between 3 and 50 characters.
+            Request Path: /providers/Microsoft.DocumentDB/databaseAccountNames/{accountName}
+            Operation Id: DatabaseAccounts_CheckNameExists
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="accountName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accountName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCassandraKeyspace">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.CassandraKeyspace GetCassandraKeyspace (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.CassandraKeyspace GetCassandraKeyspace(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCassandraKeyspace(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCassandraKeyspace (client As ArmClient, id As ResourceIdentifier) As CassandraKeyspace" />
+      <MemberSignature Language="F#" Value="static member GetCassandraKeyspace : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.CassandraKeyspace" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCassandraKeyspace (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.CassandraKeyspace</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a CassandraKeyspace along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.CassandraKeyspace" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCassandraTable">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.CassandraTable GetCassandraTable (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.CassandraTable GetCassandraTable(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCassandraTable(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCassandraTable (client As ArmClient, id As ResourceIdentifier) As CassandraTable" />
+      <MemberSignature Language="F#" Value="static member GetCassandraTable : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.CassandraTable" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCassandraTable (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.CassandraTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a CassandraTable along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.CassandraTable" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClusterResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.ClusterResource GetClusterResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.ClusterResource GetClusterResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetClusterResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetClusterResource (client As ArmClient, id As ResourceIdentifier) As ClusterResource" />
+      <MemberSignature Language="F#" Value="static member GetClusterResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.ClusterResource" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetClusterResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.ClusterResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a ClusterResource along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.ClusterResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClusterResource">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt; GetClusterResource (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string clusterName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.ClusterResource&gt; GetClusterResource(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string clusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetClusterResource(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetClusterResource (resourceGroup As ResourceGroup, clusterName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ClusterResource)" />
+      <MemberSignature Language="F#" Value="static member GetClusterResource : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetClusterResource (resourceGroup, clusterName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="clusterName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="clusterName"> Managed Cassandra cluster name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of a managed Cassandra cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="clusterName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="clusterName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClusterResourceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt; GetClusterResourceAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string clusterName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt; GetClusterResourceAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string clusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetClusterResourceAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetClusterResourceAsync (resourceGroup As ResourceGroup, clusterName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ClusterResource))" />
+      <MemberSignature Language="F#" Value="static member GetClusterResourceAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetClusterResourceAsync (resourceGroup, clusterName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="clusterName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="clusterName"> Managed Cassandra cluster name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of a managed Cassandra cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="clusterName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="clusterName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClusterResources">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.ClusterResourceCollection GetClusterResources (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.ClusterResourceCollection GetClusterResources(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetClusterResources(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetClusterResources (resourceGroup As ResourceGroup) As ClusterResourceCollection" />
+      <MemberSignature Language="F#" Value="static member GetClusterResources : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.CosmosDB.ClusterResourceCollection" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetClusterResources resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.ClusterResourceCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of ClusterResources in the ClusterResource. </summary>
+        <returns> An object representing collection of ClusterResources and their operations over a ClusterResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClusterResources">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt; GetClusterResources (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.CosmosDB.ClusterResource&gt; GetClusterResources(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetClusterResources(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetClusterResources (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ClusterResource)" />
+      <MemberSignature Language="F#" Value="static member GetClusterResources : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetClusterResources (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List all managed Cassandra clusters in this subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/cassandraClusters
+            Operation Id: CassandraClusters_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.CosmosDB.ClusterResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClusterResourcesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt; GetClusterResourcesAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.CosmosDB.ClusterResource&gt; GetClusterResourcesAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetClusterResourcesAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetClusterResourcesAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ClusterResource)" />
+      <MemberSignature Language="F#" Value="static member GetClusterResourcesAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetClusterResourcesAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List all managed Cassandra clusters in this subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/cassandraClusters
+            Operation Id: CassandraClusters_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.CosmosDB.ClusterResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCosmosDBLocation">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.CosmosDBLocation GetCosmosDBLocation (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.CosmosDBLocation GetCosmosDBLocation(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCosmosDBLocation(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCosmosDBLocation (client As ArmClient, id As ResourceIdentifier) As CosmosDBLocation" />
+      <MemberSignature Language="F#" Value="static member GetCosmosDBLocation : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.CosmosDBLocation" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCosmosDBLocation (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.CosmosDBLocation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a CosmosDBLocation along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.CosmosDBLocation" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCosmosDBLocation">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt; GetCosmosDBLocation (this Azure.ResourceManager.Resources.Subscription subscription, string location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt; GetCosmosDBLocation(class Azure.ResourceManager.Resources.Subscription subscription, string location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCosmosDBLocation(Azure.ResourceManager.Resources.Subscription,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCosmosDBLocation (subscription As Subscription, location As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CosmosDBLocation)" />
+      <MemberSignature Language="F#" Value="static member GetCosmosDBLocation : Azure.ResourceManager.Resources.Subscription * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCosmosDBLocation (subscription, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="location"> Cosmos DB region, with spaces between words and each word capitalized. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of an existing Cosmos DB location
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/locations/{location}
+            Operation Id: Locations_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCosmosDBLocationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt;&gt; GetCosmosDBLocationAsync (this Azure.ResourceManager.Resources.Subscription subscription, string location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt;&gt; GetCosmosDBLocationAsync(class Azure.ResourceManager.Resources.Subscription subscription, string location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCosmosDBLocationAsync(Azure.ResourceManager.Resources.Subscription,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCosmosDBLocationAsync (subscription As Subscription, location As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CosmosDBLocation))" />
+      <MemberSignature Language="F#" Value="static member GetCosmosDBLocationAsync : Azure.ResourceManager.Resources.Subscription * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt;&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCosmosDBLocationAsync (subscription, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.CosmosDBLocation&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="location"> Cosmos DB region, with spaces between words and each word capitalized. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of an existing Cosmos DB location
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/locations/{location}
+            Operation Id: Locations_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCosmosDBLocations">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.CosmosDBLocationCollection GetCosmosDBLocations (this Azure.ResourceManager.Resources.Subscription subscription);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.CosmosDBLocationCollection GetCosmosDBLocations(class Azure.ResourceManager.Resources.Subscription subscription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCosmosDBLocations(Azure.ResourceManager.Resources.Subscription)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCosmosDBLocations (subscription As Subscription) As CosmosDBLocationCollection" />
+      <MemberSignature Language="F#" Value="static member GetCosmosDBLocations : Azure.ResourceManager.Resources.Subscription -&gt; Azure.ResourceManager.CosmosDB.CosmosDBLocationCollection" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCosmosDBLocations subscription" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.CosmosDBLocationCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <summary> Gets a collection of CosmosDBLocations in the CosmosDBLocation. </summary>
+        <returns> An object representing collection of CosmosDBLocations and their operations over a CosmosDBLocation. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCosmosTable">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.CosmosTable GetCosmosTable (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.CosmosTable GetCosmosTable(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCosmosTable(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCosmosTable (client As ArmClient, id As ResourceIdentifier) As CosmosTable" />
+      <MemberSignature Language="F#" Value="static member GetCosmosTable : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.CosmosTable" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetCosmosTable (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.CosmosTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a CosmosTable along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.CosmosTable" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccount">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.DatabaseAccount GetDatabaseAccount (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.DatabaseAccount GetDatabaseAccount(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccount(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccount (client As ArmClient, id As ResourceIdentifier) As DatabaseAccount" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccount : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.DatabaseAccount" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccount (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.DatabaseAccount</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DatabaseAccount along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccount" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccount">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.CosmosDB.DatabaseAccount&gt; GetDatabaseAccount (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string accountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.DatabaseAccount&gt; GetDatabaseAccount(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccount(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccount (resourceGroup As ResourceGroup, accountName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DatabaseAccount)" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccount : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CosmosDB.DatabaseAccount&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccount (resourceGroup, accountName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.CosmosDB.DatabaseAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="accountName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="accountName"> Cosmos DB database account name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Retrieves the properties of an existing Azure Cosmos DB database account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}
+            Operation Id: DatabaseAccounts_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="accountName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accountName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccountAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.DatabaseAccount&gt;&gt; GetDatabaseAccountAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string accountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.DatabaseAccount&gt;&gt; GetDatabaseAccountAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccountAsync (resourceGroup As ResourceGroup, accountName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DatabaseAccount))" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccountAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.DatabaseAccount&gt;&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountAsync (resourceGroup, accountName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.DatabaseAccount&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="accountName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="accountName"> Cosmos DB database account name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Retrieves the properties of an existing Azure Cosmos DB database account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}
+            Operation Id: DatabaseAccounts_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="accountName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accountName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccountCassandraKeyspaceTableThroughputSetting">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.DatabaseAccountCassandraKeyspaceTableThroughputSetting GetDatabaseAccountCassandraKeyspaceTableThroughputSetting (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.DatabaseAccountCassandraKeyspaceTableThroughputSetting GetDatabaseAccountCassandraKeyspaceTableThroughputSetting(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountCassandraKeyspaceTableThroughputSetting(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccountCassandraKeyspaceTableThroughputSetting (client As ArmClient, id As ResourceIdentifier) As DatabaseAccountCassandraKeyspaceTableThroughputSetting" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccountCassandraKeyspaceTableThroughputSetting : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.DatabaseAccountCassandraKeyspaceTableThroughputSetting" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountCassandraKeyspaceTableThroughputSetting (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.DatabaseAccountCassandraKeyspaceTableThroughputSetting</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DatabaseAccountCassandraKeyspaceTableThroughputSetting along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccountCassandraKeyspaceTableThroughputSetting" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccountCassandraKeyspaceThroughputSetting">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.DatabaseAccountCassandraKeyspaceThroughputSetting GetDatabaseAccountCassandraKeyspaceThroughputSetting (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.DatabaseAccountCassandraKeyspaceThroughputSetting GetDatabaseAccountCassandraKeyspaceThroughputSetting(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountCassandraKeyspaceThroughputSetting(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccountCassandraKeyspaceThroughputSetting (client As ArmClient, id As ResourceIdentifier) As DatabaseAccountCassandraKeyspaceThroughputSetting" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccountCassandraKeyspaceThroughputSetting : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.DatabaseAccountCassandraKeyspaceThroughputSetting" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountCassandraKeyspaceThroughputSetting (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.DatabaseAccountCassandraKeyspaceThroughputSetting</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DatabaseAccountCassandraKeyspaceThroughputSetting along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccountCassandraKeyspaceThroughputSetting" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccountGremlinDatabaseGraphThroughputSetting">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.DatabaseAccountGremlinDatabaseGraphThroughputSetting GetDatabaseAccountGremlinDatabaseGraphThroughputSetting (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.DatabaseAccountGremlinDatabaseGraphThroughputSetting GetDatabaseAccountGremlinDatabaseGraphThroughputSetting(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountGremlinDatabaseGraphThroughputSetting(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccountGremlinDatabaseGraphThroughputSetting (client As ArmClient, id As ResourceIdentifier) As DatabaseAccountGremlinDatabaseGraphThroughputSetting" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccountGremlinDatabaseGraphThroughputSetting : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.DatabaseAccountGremlinDatabaseGraphThroughputSetting" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountGremlinDatabaseGraphThroughputSetting (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.DatabaseAccountGremlinDatabaseGraphThroughputSetting</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DatabaseAccountGremlinDatabaseGraphThroughputSetting along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccountGremlinDatabaseGraphThroughputSetting" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccountGremlinDatabaseThroughputSetting">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.DatabaseAccountGremlinDatabaseThroughputSetting GetDatabaseAccountGremlinDatabaseThroughputSetting (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.DatabaseAccountGremlinDatabaseThroughputSetting GetDatabaseAccountGremlinDatabaseThroughputSetting(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountGremlinDatabaseThroughputSetting(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccountGremlinDatabaseThroughputSetting (client As ArmClient, id As ResourceIdentifier) As DatabaseAccountGremlinDatabaseThroughputSetting" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccountGremlinDatabaseThroughputSetting : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.DatabaseAccountGremlinDatabaseThroughputSetting" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountGremlinDatabaseThroughputSetting (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.DatabaseAccountGremlinDatabaseThroughputSetting</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DatabaseAccountGremlinDatabaseThroughputSetting along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccountGremlinDatabaseThroughputSetting" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccountMongodbDatabaseCollectionThroughputSetting">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.DatabaseAccountMongodbDatabaseCollectionThroughputSetting GetDatabaseAccountMongodbDatabaseCollectionThroughputSetting (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.DatabaseAccountMongodbDatabaseCollectionThroughputSetting GetDatabaseAccountMongodbDatabaseCollectionThroughputSetting(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountMongodbDatabaseCollectionThroughputSetting(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccountMongodbDatabaseCollectionThroughputSetting (client As ArmClient, id As ResourceIdentifier) As DatabaseAccountMongodbDatabaseCollectionThroughputSetting" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccountMongodbDatabaseCollectionThroughputSetting : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.DatabaseAccountMongodbDatabaseCollectionThroughputSetting" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountMongodbDatabaseCollectionThroughputSetting (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.DatabaseAccountMongodbDatabaseCollectionThroughputSetting</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DatabaseAccountMongodbDatabaseCollectionThroughputSetting along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccountMongodbDatabaseCollectionThroughputSetting" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccountMongodbDatabaseThroughputSetting">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.DatabaseAccountMongodbDatabaseThroughputSetting GetDatabaseAccountMongodbDatabaseThroughputSetting (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.DatabaseAccountMongodbDatabaseThroughputSetting GetDatabaseAccountMongodbDatabaseThroughputSetting(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountMongodbDatabaseThroughputSetting(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccountMongodbDatabaseThroughputSetting (client As ArmClient, id As ResourceIdentifier) As DatabaseAccountMongodbDatabaseThroughputSetting" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccountMongodbDatabaseThroughputSetting : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.DatabaseAccountMongodbDatabaseThroughputSetting" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountMongodbDatabaseThroughputSetting (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.DatabaseAccountMongodbDatabaseThroughputSetting</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DatabaseAccountMongodbDatabaseThroughputSetting along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccountMongodbDatabaseThroughputSetting" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccounts">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.DatabaseAccountCollection GetDatabaseAccounts (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.DatabaseAccountCollection GetDatabaseAccounts(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccounts(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccounts (resourceGroup As ResourceGroup) As DatabaseAccountCollection" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccounts : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.CosmosDB.DatabaseAccountCollection" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccounts resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.DatabaseAccountCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of DatabaseAccounts in the DatabaseAccount. </summary>
+        <returns> An object representing collection of DatabaseAccounts and their operations over a DatabaseAccount. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccounts">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.CosmosDB.DatabaseAccount&gt; GetDatabaseAccounts (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.CosmosDB.DatabaseAccount&gt; GetDatabaseAccounts(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccounts(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccounts (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DatabaseAccount)" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccounts : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.CosmosDB.DatabaseAccount&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccounts (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.CosmosDB.DatabaseAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists all the Azure Cosmos DB database accounts available under the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/databaseAccounts
+            Operation Id: DatabaseAccounts_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccount" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccountsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.CosmosDB.DatabaseAccount&gt; GetDatabaseAccountsAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.CosmosDB.DatabaseAccount&gt; GetDatabaseAccountsAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountsAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccountsAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DatabaseAccount)" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccountsAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.CosmosDB.DatabaseAccount&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountsAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.CosmosDB.DatabaseAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists all the Azure Cosmos DB database accounts available under the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/databaseAccounts
+            Operation Id: DatabaseAccounts_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccount" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccountSqlDatabaseContainerThroughputSetting">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseContainerThroughputSetting GetDatabaseAccountSqlDatabaseContainerThroughputSetting (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseContainerThroughputSetting GetDatabaseAccountSqlDatabaseContainerThroughputSetting(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountSqlDatabaseContainerThroughputSetting(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccountSqlDatabaseContainerThroughputSetting (client As ArmClient, id As ResourceIdentifier) As DatabaseAccountSqlDatabaseContainerThroughputSetting" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccountSqlDatabaseContainerThroughputSetting : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseContainerThroughputSetting" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountSqlDatabaseContainerThroughputSetting (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseContainerThroughputSetting</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DatabaseAccountSqlDatabaseContainerThroughputSetting along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseContainerThroughputSetting" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccountSqlDatabaseThroughputSetting">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting GetDatabaseAccountSqlDatabaseThroughputSetting (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting GetDatabaseAccountSqlDatabaseThroughputSetting(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountSqlDatabaseThroughputSetting(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccountSqlDatabaseThroughputSetting (client As ArmClient, id As ResourceIdentifier) As DatabaseAccountSqlDatabaseThroughputSetting" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccountSqlDatabaseThroughputSetting : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountSqlDatabaseThroughputSetting (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DatabaseAccountSqlDatabaseThroughputSetting along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseAccountTableThroughputSetting">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.DatabaseAccountTableThroughputSetting GetDatabaseAccountTableThroughputSetting (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.DatabaseAccountTableThroughputSetting GetDatabaseAccountTableThroughputSetting(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountTableThroughputSetting(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatabaseAccountTableThroughputSetting (client As ArmClient, id As ResourceIdentifier) As DatabaseAccountTableThroughputSetting" />
+      <MemberSignature Language="F#" Value="static member GetDatabaseAccountTableThroughputSetting : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.DatabaseAccountTableThroughputSetting" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDatabaseAccountTableThroughputSetting (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.DatabaseAccountTableThroughputSetting</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DatabaseAccountTableThroughputSetting along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccountTableThroughputSetting" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataCenterResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.DataCenterResource GetDataCenterResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.DataCenterResource GetDataCenterResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDataCenterResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDataCenterResource (client As ArmClient, id As ResourceIdentifier) As DataCenterResource" />
+      <MemberSignature Language="F#" Value="static member GetDataCenterResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.DataCenterResource" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetDataCenterResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.DataCenterResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DataCenterResource along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.DataCenterResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGremlinDatabase">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.GremlinDatabase GetGremlinDatabase (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.GremlinDatabase GetGremlinDatabase(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetGremlinDatabase(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetGremlinDatabase (client As ArmClient, id As ResourceIdentifier) As GremlinDatabase" />
+      <MemberSignature Language="F#" Value="static member GetGremlinDatabase : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.GremlinDatabase" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetGremlinDatabase (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.GremlinDatabase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a GremlinDatabase along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.GremlinDatabase" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGremlinGraph">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.GremlinGraph GetGremlinGraph (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.GremlinGraph GetGremlinGraph(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetGremlinGraph(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetGremlinGraph (client As ArmClient, id As ResourceIdentifier) As GremlinGraph" />
+      <MemberSignature Language="F#" Value="static member GetGremlinGraph : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.GremlinGraph" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetGremlinGraph (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.GremlinGraph</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a GremlinGraph along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.GremlinGraph" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMongoDBCollection">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.MongoDBCollection GetMongoDBCollection (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.MongoDBCollection GetMongoDBCollection(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetMongoDBCollection(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMongoDBCollection (client As ArmClient, id As ResourceIdentifier) As MongoDBCollection" />
+      <MemberSignature Language="F#" Value="static member GetMongoDBCollection : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.MongoDBCollection" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetMongoDBCollection (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.MongoDBCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a MongoDBCollection along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.MongoDBCollection" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMongoDBDatabase">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.MongoDBDatabase GetMongoDBDatabase (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.MongoDBDatabase GetMongoDBDatabase(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetMongoDBDatabase(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMongoDBDatabase (client As ArmClient, id As ResourceIdentifier) As MongoDBDatabase" />
+      <MemberSignature Language="F#" Value="static member GetMongoDBDatabase : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.MongoDBDatabase" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetMongoDBDatabase (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.MongoDBDatabase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a MongoDBDatabase along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.MongoDBDatabase" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPrivateEndpointConnection">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.PrivateEndpointConnection GetPrivateEndpointConnection (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.PrivateEndpointConnection GetPrivateEndpointConnection(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetPrivateEndpointConnection(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateEndpointConnection (client As ArmClient, id As ResourceIdentifier) As PrivateEndpointConnection" />
+      <MemberSignature Language="F#" Value="static member GetPrivateEndpointConnection : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.PrivateEndpointConnection" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetPrivateEndpointConnection (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.PrivateEndpointConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a PrivateEndpointConnection along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.PrivateEndpointConnection" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPrivateLinkResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.PrivateLinkResource GetPrivateLinkResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.PrivateLinkResource GetPrivateLinkResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetPrivateLinkResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateLinkResource (client As ArmClient, id As ResourceIdentifier) As PrivateLinkResource" />
+      <MemberSignature Language="F#" Value="static member GetPrivateLinkResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.PrivateLinkResource" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetPrivateLinkResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.PrivateLinkResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a PrivateLinkResource along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.PrivateLinkResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRestorableDatabaseAccount">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount GetRestorableDatabaseAccount (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount GetRestorableDatabaseAccount(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetRestorableDatabaseAccount(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetRestorableDatabaseAccount (client As ArmClient, id As ResourceIdentifier) As RestorableDatabaseAccount" />
+      <MemberSignature Language="F#" Value="static member GetRestorableDatabaseAccount : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetRestorableDatabaseAccount (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a RestorableDatabaseAccount along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRestorableDatabaseAccounts">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount&gt; GetRestorableDatabaseAccounts (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount&gt; GetRestorableDatabaseAccounts(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetRestorableDatabaseAccounts(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetRestorableDatabaseAccounts (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of RestorableDatabaseAccount)" />
+      <MemberSignature Language="F#" Value="static member GetRestorableDatabaseAccounts : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetRestorableDatabaseAccounts (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists all the restorable Azure Cosmos DB database accounts available under the subscription. This call requires 'Microsoft.DocumentDB/locations/restorableDatabaseAccounts/read' permission.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/restorableDatabaseAccounts
+            Operation Id: RestorableDatabaseAccounts_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRestorableDatabaseAccountsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount&gt; GetRestorableDatabaseAccountsAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount&gt; GetRestorableDatabaseAccountsAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetRestorableDatabaseAccountsAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetRestorableDatabaseAccountsAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of RestorableDatabaseAccount)" />
+      <MemberSignature Language="F#" Value="static member GetRestorableDatabaseAccountsAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount&gt;" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetRestorableDatabaseAccountsAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists all the restorable Azure Cosmos DB database accounts available under the subscription. This call requires 'Microsoft.DocumentDB/locations/restorableDatabaseAccounts/read' permission.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.DocumentDB/restorableDatabaseAccounts
+            Operation Id: RestorableDatabaseAccounts_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.CosmosDB.RestorableDatabaseAccount" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlContainer">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.SqlContainer GetSqlContainer (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.SqlContainer GetSqlContainer(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetSqlContainer(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlContainer (client As ArmClient, id As ResourceIdentifier) As SqlContainer" />
+      <MemberSignature Language="F#" Value="static member GetSqlContainer : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.SqlContainer" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetSqlContainer (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.SqlContainer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a SqlContainer along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.SqlContainer" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabase">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.SqlDatabase GetSqlDatabase (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.SqlDatabase GetSqlDatabase(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetSqlDatabase(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlDatabase (client As ArmClient, id As ResourceIdentifier) As SqlDatabase" />
+      <MemberSignature Language="F#" Value="static member GetSqlDatabase : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.SqlDatabase" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetSqlDatabase (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.SqlDatabase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a SqlDatabase along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.SqlDatabase" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlStoredProcedure">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.SqlStoredProcedure GetSqlStoredProcedure (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.SqlStoredProcedure GetSqlStoredProcedure(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetSqlStoredProcedure(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlStoredProcedure (client As ArmClient, id As ResourceIdentifier) As SqlStoredProcedure" />
+      <MemberSignature Language="F#" Value="static member GetSqlStoredProcedure : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.SqlStoredProcedure" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetSqlStoredProcedure (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.SqlStoredProcedure</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a SqlStoredProcedure along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.SqlStoredProcedure" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlTrigger">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.SqlTrigger GetSqlTrigger (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.SqlTrigger GetSqlTrigger(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetSqlTrigger(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlTrigger (client As ArmClient, id As ResourceIdentifier) As SqlTrigger" />
+      <MemberSignature Language="F#" Value="static member GetSqlTrigger : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.SqlTrigger" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetSqlTrigger (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.SqlTrigger</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a SqlTrigger along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.SqlTrigger" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlUserDefinedFunction">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CosmosDB.SqlUserDefinedFunction GetSqlUserDefinedFunction (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CosmosDB.SqlUserDefinedFunction GetSqlUserDefinedFunction(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetSqlUserDefinedFunction(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlUserDefinedFunction (client As ArmClient, id As ResourceIdentifier) As SqlUserDefinedFunction" />
+      <MemberSignature Language="F#" Value="static member GetSqlUserDefinedFunction : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CosmosDB.SqlUserDefinedFunction" Usage="Azure.ResourceManager.CosmosDB.CosmosDBExtensions.GetSqlUserDefinedFunction (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CosmosDB.SqlUserDefinedFunction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a SqlUserDefinedFunction along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.SqlUserDefinedFunction" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

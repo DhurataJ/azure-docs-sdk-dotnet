@@ -1,0 +1,263 @@
+<Type Name="ExtendedLocationExtensions" FullName="Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions">
+  <TypeSignature Language="C#" Value="public static class ExtendedLocationExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ExtendedLocationExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ExtendedLocationExtensions" />
+  <TypeSignature Language="F#" Value="type ExtendedLocationExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ExtendedLocation</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Azure.ResourceManager.ExtendedLocation. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCustomLocation">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ExtendedLocation.CustomLocation GetCustomLocation (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ExtendedLocation.CustomLocation GetCustomLocation(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetCustomLocation(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomLocation (client As ArmClient, id As ResourceIdentifier) As CustomLocation" />
+      <MemberSignature Language="F#" Value="static member GetCustomLocation : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ExtendedLocation.CustomLocation" Usage="Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetCustomLocation (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ExtendedLocation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ExtendedLocation.CustomLocation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a CustomLocation along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ExtendedLocation.CustomLocation" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomLocation">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.ExtendedLocation.CustomLocation&gt; GetCustomLocation (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string resourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.ExtendedLocation.CustomLocation&gt; GetCustomLocation(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string resourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetCustomLocation(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomLocation (resourceGroup As ResourceGroup, resourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CustomLocation)" />
+      <MemberSignature Language="F#" Value="static member GetCustomLocation : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ExtendedLocation.CustomLocation&gt;" Usage="Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetCustomLocation (resourceGroup, resourceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ExtendedLocation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ExtendedLocation.CustomLocation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="resourceName"> Custom Locations name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the details of the customLocation with a specified resource group and name.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ExtendedLocation/customLocations/{resourceName}
+            Operation Id: CustomLocations_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="resourceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomLocationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ExtendedLocation.CustomLocation&gt;&gt; GetCustomLocationAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string resourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ExtendedLocation.CustomLocation&gt;&gt; GetCustomLocationAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string resourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetCustomLocationAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomLocationAsync (resourceGroup As ResourceGroup, resourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CustomLocation))" />
+      <MemberSignature Language="F#" Value="static member GetCustomLocationAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ExtendedLocation.CustomLocation&gt;&gt;" Usage="Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetCustomLocationAsync (resourceGroup, resourceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ExtendedLocation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ExtendedLocation.CustomLocation&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="resourceName"> Custom Locations name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the details of the customLocation with a specified resource group and name.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ExtendedLocation/customLocations/{resourceName}
+            Operation Id: CustomLocations_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="resourceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomLocations">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ExtendedLocation.CustomLocationCollection GetCustomLocations (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ExtendedLocation.CustomLocationCollection GetCustomLocations(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetCustomLocations(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomLocations (resourceGroup As ResourceGroup) As CustomLocationCollection" />
+      <MemberSignature Language="F#" Value="static member GetCustomLocations : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.ExtendedLocation.CustomLocationCollection" Usage="Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetCustomLocations resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ExtendedLocation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ExtendedLocation.CustomLocationCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of CustomLocations in the CustomLocation. </summary>
+        <returns> An object representing collection of CustomLocations and their operations over a CustomLocation. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomLocations">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.ExtendedLocation.CustomLocation&gt; GetCustomLocations (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.ExtendedLocation.CustomLocation&gt; GetCustomLocations(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetCustomLocations(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomLocations (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of CustomLocation)" />
+      <MemberSignature Language="F#" Value="static member GetCustomLocations : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ExtendedLocation.CustomLocation&gt;" Usage="Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetCustomLocations (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ExtendedLocation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ExtendedLocation.CustomLocation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a list of Custom Locations in the specified subscription. The operation returns properties of each Custom Location
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ExtendedLocation/customLocations
+            Operation Id: CustomLocations_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ExtendedLocation.CustomLocation" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomLocationsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.ExtendedLocation.CustomLocation&gt; GetCustomLocationsAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.ExtendedLocation.CustomLocation&gt; GetCustomLocationsAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetCustomLocationsAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomLocationsAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of CustomLocation)" />
+      <MemberSignature Language="F#" Value="static member GetCustomLocationsAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ExtendedLocation.CustomLocation&gt;" Usage="Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetCustomLocationsAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ExtendedLocation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ExtendedLocation.CustomLocation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a list of Custom Locations in the specified subscription. The operation returns properties of each Custom Location
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ExtendedLocation/customLocations
+            Operation Id: CustomLocations_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ExtendedLocation.CustomLocation" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOperationsCustomLocations">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt; GetOperationsCustomLocations (this Azure.ResourceManager.Resources.Tenant tenant, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt; GetOperationsCustomLocations(class Azure.ResourceManager.Resources.Tenant tenant, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetOperationsCustomLocations(Azure.ResourceManager.Resources.Tenant,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetOperationsCustomLocations (tenant As Tenant, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of CustomLocationOperation)" />
+      <MemberSignature Language="F#" Value="static member GetOperationsCustomLocations : Azure.ResourceManager.Resources.Tenant * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt;" Usage="Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetOperationsCustomLocations (tenant, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ExtendedLocation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenant" Type="Azure.ResourceManager.Resources.Tenant" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists all available Custom Locations operations.
+            Request Path: /providers/Microsoft.ExtendedLocation/operations
+            Operation Id: CustomLocations_ListOperations
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOperationsCustomLocationsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt; GetOperationsCustomLocationsAsync (this Azure.ResourceManager.Resources.Tenant tenant, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt; GetOperationsCustomLocationsAsync(class Azure.ResourceManager.Resources.Tenant tenant, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetOperationsCustomLocationsAsync(Azure.ResourceManager.Resources.Tenant,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetOperationsCustomLocationsAsync (tenant As Tenant, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of CustomLocationOperation)" />
+      <MemberSignature Language="F#" Value="static member GetOperationsCustomLocationsAsync : Azure.ResourceManager.Resources.Tenant * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt;" Usage="Azure.ResourceManager.ExtendedLocation.ExtendedLocationExtensions.GetOperationsCustomLocationsAsync (tenant, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ExtendedLocation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenant" Type="Azure.ResourceManager.Resources.Tenant" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists all available Custom Locations operations.
+            Request Path: /providers/Microsoft.ExtendedLocation/operations
+            Operation Id: CustomLocations_ListOperations
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

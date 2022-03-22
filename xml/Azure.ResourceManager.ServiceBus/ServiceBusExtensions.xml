@@ -1,0 +1,622 @@
+<Type Name="ServiceBusExtensions" FullName="Azure.ResourceManager.ServiceBus.ServiceBusExtensions">
+  <TypeSignature Language="C#" Value="public static class ServiceBusExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ServiceBusExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ServiceBus.ServiceBusExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ServiceBusExtensions" />
+  <TypeSignature Language="F#" Value="type ServiceBusExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Azure.ResourceManager.ServiceBus. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckServiceBusNameAvailability">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.ServiceBus.Models.CheckNameAvailabilityResult&gt; CheckServiceBusNameAvailability (this Azure.ResourceManager.Resources.Subscription subscription, Azure.ResourceManager.ServiceBus.Models.CheckNameAvailability parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.ServiceBus.Models.CheckNameAvailabilityResult&gt; CheckServiceBusNameAvailability(class Azure.ResourceManager.Resources.Subscription subscription, class Azure.ResourceManager.ServiceBus.Models.CheckNameAvailability parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.CheckServiceBusNameAvailability(Azure.ResourceManager.Resources.Subscription,Azure.ResourceManager.ServiceBus.Models.CheckNameAvailability,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckServiceBusNameAvailability (subscription As Subscription, parameters As CheckNameAvailability, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CheckNameAvailabilityResult)" />
+      <MemberSignature Language="F#" Value="static member CheckServiceBusNameAvailability : Azure.ResourceManager.Resources.Subscription * Azure.ResourceManager.ServiceBus.Models.CheckNameAvailability * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ServiceBus.Models.CheckNameAvailabilityResult&gt;" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.CheckServiceBusNameAvailability (subscription, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ServiceBus.Models.CheckNameAvailabilityResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.ServiceBus.Models.CheckNameAvailability" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="parameters"> Parameters to check availability of the given namespace name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Check the give namespace name availability.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ServiceBus/CheckNameAvailability
+            Operation Id: Namespaces_CheckNameAvailability
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckServiceBusNameAvailabilityAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ServiceBus.Models.CheckNameAvailabilityResult&gt;&gt; CheckServiceBusNameAvailabilityAsync (this Azure.ResourceManager.Resources.Subscription subscription, Azure.ResourceManager.ServiceBus.Models.CheckNameAvailability parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ServiceBus.Models.CheckNameAvailabilityResult&gt;&gt; CheckServiceBusNameAvailabilityAsync(class Azure.ResourceManager.Resources.Subscription subscription, class Azure.ResourceManager.ServiceBus.Models.CheckNameAvailability parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.CheckServiceBusNameAvailabilityAsync(Azure.ResourceManager.Resources.Subscription,Azure.ResourceManager.ServiceBus.Models.CheckNameAvailability,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckServiceBusNameAvailabilityAsync (subscription As Subscription, parameters As CheckNameAvailability, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CheckNameAvailabilityResult))" />
+      <MemberSignature Language="F#" Value="static member CheckServiceBusNameAvailabilityAsync : Azure.ResourceManager.Resources.Subscription * Azure.ResourceManager.ServiceBus.Models.CheckNameAvailability * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ServiceBus.Models.CheckNameAvailabilityResult&gt;&gt;" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.CheckServiceBusNameAvailabilityAsync (subscription, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ServiceBus.Models.CheckNameAvailabilityResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.ServiceBus.Models.CheckNameAvailability" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="parameters"> Parameters to check availability of the given namespace name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Check the give namespace name availability.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ServiceBus/CheckNameAvailability
+            Operation Id: Namespaces_CheckNameAvailability
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisasterRecovery">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.DisasterRecovery GetDisasterRecovery (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.DisasterRecovery GetDisasterRecovery(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetDisasterRecovery(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDisasterRecovery (client As ArmClient, id As ResourceIdentifier) As DisasterRecovery" />
+      <MemberSignature Language="F#" Value="static member GetDisasterRecovery : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.DisasterRecovery" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetDisasterRecovery (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.DisasterRecovery</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.DisasterRecovery" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.DisasterRecovery.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.DisasterRecovery" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.DisasterRecovery" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMigrationConfigProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.MigrationConfigProperties GetMigrationConfigProperties (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.MigrationConfigProperties GetMigrationConfigProperties(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetMigrationConfigProperties(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMigrationConfigProperties (client As ArmClient, id As ResourceIdentifier) As MigrationConfigProperties" />
+      <MemberSignature Language="F#" Value="static member GetMigrationConfigProperties : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.MigrationConfigProperties" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetMigrationConfigProperties (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.MigrationConfigProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.MigrationConfigProperties" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.MigrationConfigProperties.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.MigrationConfigProperties" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.MigrationConfigProperties" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNamespaceAuthorizationRule">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRule GetNamespaceAuthorizationRule (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRule GetNamespaceAuthorizationRule(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetNamespaceAuthorizationRule(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetNamespaceAuthorizationRule (client As ArmClient, id As ResourceIdentifier) As NamespaceAuthorizationRule" />
+      <MemberSignature Language="F#" Value="static member GetNamespaceAuthorizationRule : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRule" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetNamespaceAuthorizationRule (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRule</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRule" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRule.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRule" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRule" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNamespaceDisasterRecoveryAuthorizationRule">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.NamespaceDisasterRecoveryAuthorizationRule GetNamespaceDisasterRecoveryAuthorizationRule (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.NamespaceDisasterRecoveryAuthorizationRule GetNamespaceDisasterRecoveryAuthorizationRule(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetNamespaceDisasterRecoveryAuthorizationRule(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetNamespaceDisasterRecoveryAuthorizationRule (client As ArmClient, id As ResourceIdentifier) As NamespaceDisasterRecoveryAuthorizationRule" />
+      <MemberSignature Language="F#" Value="static member GetNamespaceDisasterRecoveryAuthorizationRule : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.NamespaceDisasterRecoveryAuthorizationRule" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetNamespaceDisasterRecoveryAuthorizationRule (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.NamespaceDisasterRecoveryAuthorizationRule</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.NamespaceDisasterRecoveryAuthorizationRule" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.NamespaceDisasterRecoveryAuthorizationRule.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.NamespaceDisasterRecoveryAuthorizationRule" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.NamespaceDisasterRecoveryAuthorizationRule" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNamespaceQueueAuthorizationRule">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.NamespaceQueueAuthorizationRule GetNamespaceQueueAuthorizationRule (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.NamespaceQueueAuthorizationRule GetNamespaceQueueAuthorizationRule(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetNamespaceQueueAuthorizationRule(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetNamespaceQueueAuthorizationRule (client As ArmClient, id As ResourceIdentifier) As NamespaceQueueAuthorizationRule" />
+      <MemberSignature Language="F#" Value="static member GetNamespaceQueueAuthorizationRule : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.NamespaceQueueAuthorizationRule" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetNamespaceQueueAuthorizationRule (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.NamespaceQueueAuthorizationRule</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.NamespaceQueueAuthorizationRule" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.NamespaceQueueAuthorizationRule.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.NamespaceQueueAuthorizationRule" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.NamespaceQueueAuthorizationRule" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNamespaceTopicAuthorizationRule">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.NamespaceTopicAuthorizationRule GetNamespaceTopicAuthorizationRule (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.NamespaceTopicAuthorizationRule GetNamespaceTopicAuthorizationRule(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetNamespaceTopicAuthorizationRule(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetNamespaceTopicAuthorizationRule (client As ArmClient, id As ResourceIdentifier) As NamespaceTopicAuthorizationRule" />
+      <MemberSignature Language="F#" Value="static member GetNamespaceTopicAuthorizationRule : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.NamespaceTopicAuthorizationRule" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetNamespaceTopicAuthorizationRule (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.NamespaceTopicAuthorizationRule</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.NamespaceTopicAuthorizationRule" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.NamespaceTopicAuthorizationRule.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.NamespaceTopicAuthorizationRule" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.NamespaceTopicAuthorizationRule" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNetworkRuleSet">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.NetworkRuleSet GetNetworkRuleSet (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.NetworkRuleSet GetNetworkRuleSet(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetNetworkRuleSet(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetNetworkRuleSet (client As ArmClient, id As ResourceIdentifier) As NetworkRuleSet" />
+      <MemberSignature Language="F#" Value="static member GetNetworkRuleSet : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.NetworkRuleSet" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetNetworkRuleSet (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.NetworkRuleSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.NetworkRuleSet" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.NetworkRuleSet.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.NetworkRuleSet" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.NetworkRuleSet" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPrivateEndpointConnection">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.PrivateEndpointConnection GetPrivateEndpointConnection (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.PrivateEndpointConnection GetPrivateEndpointConnection(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetPrivateEndpointConnection(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateEndpointConnection (client As ArmClient, id As ResourceIdentifier) As PrivateEndpointConnection" />
+      <MemberSignature Language="F#" Value="static member GetPrivateEndpointConnection : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.PrivateEndpointConnection" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetPrivateEndpointConnection (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.PrivateEndpointConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.PrivateEndpointConnection" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.PrivateEndpointConnection.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.PrivateEndpointConnection" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.PrivateEndpointConnection" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceBusNamespace">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.ServiceBusNamespace GetServiceBusNamespace (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.ServiceBusNamespace GetServiceBusNamespace(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusNamespace(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceBusNamespace (client As ArmClient, id As ResourceIdentifier) As ServiceBusNamespace" />
+      <MemberSignature Language="F#" Value="static member GetServiceBusNamespace : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.ServiceBusNamespace" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusNamespace (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.ServiceBusNamespace</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusNamespace" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.ServiceBusNamespace.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusNamespace" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusNamespace" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceBusNamespace">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt; GetServiceBusNamespace (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string namespaceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt; GetServiceBusNamespace(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string namespaceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusNamespace(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceBusNamespace (resourceGroup As ResourceGroup, namespaceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ServiceBusNamespace)" />
+      <MemberSignature Language="F#" Value="static member GetServiceBusNamespace : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt;" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusNamespace (resourceGroup, namespaceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="namespaceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="namespaceName"> The namespace name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a description for the specified namespace.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}
+            Operation Id: Namespaces_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="namespaceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceBusNamespaceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt;&gt; GetServiceBusNamespaceAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string namespaceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt;&gt; GetServiceBusNamespaceAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string namespaceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusNamespaceAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceBusNamespaceAsync (resourceGroup As ResourceGroup, namespaceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ServiceBusNamespace))" />
+      <MemberSignature Language="F#" Value="static member GetServiceBusNamespaceAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt;&gt;" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusNamespaceAsync (resourceGroup, namespaceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="namespaceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="namespaceName"> The namespace name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a description for the specified namespace.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}
+            Operation Id: Namespaces_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="namespaceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceBusNamespaces">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.ServiceBusNamespaceCollection GetServiceBusNamespaces (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.ServiceBusNamespaceCollection GetServiceBusNamespaces(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusNamespaces(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceBusNamespaces (resourceGroup As ResourceGroup) As ServiceBusNamespaceCollection" />
+      <MemberSignature Language="F#" Value="static member GetServiceBusNamespaces : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.ServiceBus.ServiceBusNamespaceCollection" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusNamespaces resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.ServiceBusNamespaceCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of ServiceBusNamespaces in the ServiceBusNamespace. </summary>
+        <returns> An object representing collection of ServiceBusNamespaces and their operations over a ServiceBusNamespace. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceBusNamespaces">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt; GetServiceBusNamespaces (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt; GetServiceBusNamespaces(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusNamespaces(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceBusNamespaces (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ServiceBusNamespace)" />
+      <MemberSignature Language="F#" Value="static member GetServiceBusNamespaces : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt;" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusNamespaces (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets all the available namespaces within the subscription, irrespective of the resource groups.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ServiceBus/namespaces
+            Operation Id: Namespaces_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusNamespace" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceBusNamespacesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt; GetServiceBusNamespacesAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt; GetServiceBusNamespacesAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusNamespacesAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceBusNamespacesAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ServiceBusNamespace)" />
+      <MemberSignature Language="F#" Value="static member GetServiceBusNamespacesAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt;" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusNamespacesAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ServiceBus.ServiceBusNamespace&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets all the available namespaces within the subscription, irrespective of the resource groups.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ServiceBus/namespaces
+            Operation Id: Namespaces_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusNamespace" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceBusQueue">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.ServiceBusQueue GetServiceBusQueue (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.ServiceBusQueue GetServiceBusQueue(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusQueue(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceBusQueue (client As ArmClient, id As ResourceIdentifier) As ServiceBusQueue" />
+      <MemberSignature Language="F#" Value="static member GetServiceBusQueue : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.ServiceBusQueue" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusQueue (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.ServiceBusQueue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusQueue" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.ServiceBusQueue.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusQueue" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusQueue" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceBusRule">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.ServiceBusRule GetServiceBusRule (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.ServiceBusRule GetServiceBusRule(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusRule(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceBusRule (client As ArmClient, id As ResourceIdentifier) As ServiceBusRule" />
+      <MemberSignature Language="F#" Value="static member GetServiceBusRule : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.ServiceBusRule" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusRule (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.ServiceBusRule</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusRule" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.ServiceBusRule.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusRule" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusRule" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceBusSubscription">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.ServiceBusSubscription GetServiceBusSubscription (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.ServiceBusSubscription GetServiceBusSubscription(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusSubscription(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceBusSubscription (client As ArmClient, id As ResourceIdentifier) As ServiceBusSubscription" />
+      <MemberSignature Language="F#" Value="static member GetServiceBusSubscription : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.ServiceBusSubscription" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusSubscription (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.ServiceBusSubscription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusSubscription" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.ServiceBusSubscription.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusSubscription" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusSubscription" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceBusTopic">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceBus.ServiceBusTopic GetServiceBusTopic (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceBus.ServiceBusTopic GetServiceBusTopic(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusTopic(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceBusTopic (client As ArmClient, id As ResourceIdentifier) As ServiceBusTopic" />
+      <MemberSignature Language="F#" Value="static member GetServiceBusTopic : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ServiceBus.ServiceBusTopic" Usage="Azure.ResourceManager.ServiceBus.ServiceBusExtensions.GetServiceBusTopic (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.ServiceBusTopic</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusTopic" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ServiceBus.ServiceBusTopic.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusTopic" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusTopic" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

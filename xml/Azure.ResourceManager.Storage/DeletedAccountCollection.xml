@@ -1,6 +1,6 @@
 <Type Name="DeletedAccountCollection" FullName="Azure.ResourceManager.Storage.DeletedAccountCollection">
-  <TypeSignature Language="C#" Value="public class DeletedAccountCollection : Azure.ResourceManager.Core.ArmCollection" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeletedAccountCollection extends Azure.ResourceManager.Core.ArmCollection" />
+  <TypeSignature Language="C#" Value="public class DeletedAccountCollection : Azure.ResourceManager.ArmCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeletedAccountCollection extends Azure.ResourceManager.ArmCollection" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Storage.DeletedAccountCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class DeletedAccountCollection&#xA;Inherits ArmCollection" />
   <TypeSignature Language="F#" Value="type DeletedAccountCollection = class&#xA;    inherit ArmCollection" />
@@ -9,7 +9,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Core.ArmCollection</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.ArmCollection</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -56,11 +56,15 @@
         <param name="location"> The location of the deleted storage account. </param>
         <param name="deletedAccountName"> Name of the deleted storage account. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/locations/{location}/deletedAccounts/{deletedAccountName}
+            Operation Id: DeletedAccounts_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="deletedAccountName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="deletedAccountName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="deletedAccountName" /> is null. </exception>
       </Docs>
@@ -88,11 +92,15 @@
         <param name="location"> The location of the deleted storage account. </param>
         <param name="deletedAccountName"> Name of the deleted storage account. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/locations/{location}/deletedAccounts/{deletedAccountName}
+            Operation Id: DeletedAccounts_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="deletedAccountName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="deletedAccountName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="deletedAccountName" /> is null. </exception>
       </Docs>
@@ -120,11 +128,15 @@
         <param name="location"> The location of the deleted storage account. </param>
         <param name="deletedAccountName"> Name of the deleted storage account. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get properties of specified deleted account resource. </summary>
+        <summary>
+            Get properties of specified deleted account resource.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/locations/{location}/deletedAccounts/{deletedAccountName}
+            Operation Id: DeletedAccounts_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="deletedAccountName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="deletedAccountName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="deletedAccountName" /> is null. </exception>
       </Docs>
@@ -152,11 +164,15 @@
         <param name="location"> The location of the deleted storage account. </param>
         <param name="deletedAccountName"> Name of the deleted storage account. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get properties of specified deleted account resource. </summary>
+        <summary>
+            Get properties of specified deleted account resource.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/locations/{location}/deletedAccounts/{deletedAccountName}
+            Operation Id: DeletedAccounts_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="deletedAccountName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="deletedAccountName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="deletedAccountName" /> is null. </exception>
       </Docs>
@@ -184,11 +200,15 @@
         <param name="location"> The location of the deleted storage account. </param>
         <param name="deletedAccountName"> Name of the deleted storage account. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/locations/{location}/deletedAccounts/{deletedAccountName}
+            Operation Id: DeletedAccounts_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="deletedAccountName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="deletedAccountName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="deletedAccountName" /> is null. </exception>
       </Docs>
@@ -216,11 +236,15 @@
         <param name="location"> The location of the deleted storage account. </param>
         <param name="deletedAccountName"> Name of the deleted storage account. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/locations/{location}/deletedAccounts/{deletedAccountName}
+            Operation Id: DeletedAccounts_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="deletedAccountName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="deletedAccountName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="deletedAccountName" /> is null. </exception>
       </Docs>

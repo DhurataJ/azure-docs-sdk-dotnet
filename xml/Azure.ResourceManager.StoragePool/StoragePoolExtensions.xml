@@ -1,0 +1,373 @@
+<Type Name="StoragePoolExtensions" FullName="Azure.ResourceManager.StoragePool.StoragePoolExtensions">
+  <TypeSignature Language="C#" Value="public static class StoragePoolExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StoragePoolExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.StoragePool.StoragePoolExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StoragePoolExtensions" />
+  <TypeSignature Language="F#" Value="type StoragePoolExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Azure.ResourceManager.StoragePool. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetDiskPool">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.StoragePool.DiskPool GetDiskPool (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.StoragePool.DiskPool GetDiskPool(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPool(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDiskPool (client As ArmClient, id As ResourceIdentifier) As DiskPool" />
+      <MemberSignature Language="F#" Value="static member GetDiskPool : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.StoragePool.DiskPool" Usage="Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPool (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.StoragePool.DiskPool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DiskPool along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.StoragePool.DiskPool" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDiskPool">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.StoragePool.DiskPool&gt; GetDiskPool (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string diskPoolName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.StoragePool.DiskPool&gt; GetDiskPool(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string diskPoolName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPool(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDiskPool (resourceGroup As ResourceGroup, diskPoolName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DiskPool)" />
+      <MemberSignature Language="F#" Value="static member GetDiskPool : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;" Usage="Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPool (resourceGroup, diskPoolName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="diskPoolName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="diskPoolName"> The name of the Disk Pool. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a Disk pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.StoragePool/diskPools/{diskPoolName}
+            Operation Id: DiskPools_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="diskPoolName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="diskPoolName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDiskPoolAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;&gt; GetDiskPoolAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string diskPoolName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.StoragePool.DiskPool&gt;&gt; GetDiskPoolAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string diskPoolName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPoolAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDiskPoolAsync (resourceGroup As ResourceGroup, diskPoolName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DiskPool))" />
+      <MemberSignature Language="F#" Value="static member GetDiskPoolAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;&gt;" Usage="Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPoolAsync (resourceGroup, diskPoolName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="diskPoolName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="diskPoolName"> The name of the Disk Pool. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a Disk pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.StoragePool/diskPools/{diskPoolName}
+            Operation Id: DiskPools_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="diskPoolName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="diskPoolName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDiskPools">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.StoragePool.DiskPoolCollection GetDiskPools (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.StoragePool.DiskPoolCollection GetDiskPools(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPools(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDiskPools (resourceGroup As ResourceGroup) As DiskPoolCollection" />
+      <MemberSignature Language="F#" Value="static member GetDiskPools : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.StoragePool.DiskPoolCollection" Usage="Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPools resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.StoragePool.DiskPoolCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of DiskPools in the DiskPool. </summary>
+        <returns> An object representing collection of DiskPools and their operations over a DiskPool. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDiskPools">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.StoragePool.DiskPool&gt; GetDiskPools (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.StoragePool.DiskPool&gt; GetDiskPools(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPools(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDiskPools (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DiskPool)" />
+      <MemberSignature Language="F#" Value="static member GetDiskPools : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;" Usage="Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPools (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a list of Disk Pools in a subscription
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.StoragePool/diskPools
+            Operation Id: DiskPools_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.StoragePool.DiskPool" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDiskPoolsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.StoragePool.DiskPool&gt; GetDiskPoolsAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.StoragePool.DiskPool&gt; GetDiskPoolsAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPoolsAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDiskPoolsAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DiskPool)" />
+      <MemberSignature Language="F#" Value="static member GetDiskPoolsAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;" Usage="Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPoolsAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.StoragePool.DiskPool&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a list of Disk Pools in a subscription
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.StoragePool/diskPools
+            Operation Id: DiskPools_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.StoragePool.DiskPool" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDiskPoolZones">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.StoragePool.Models.DiskPoolZoneInfo&gt; GetDiskPoolZones (this Azure.ResourceManager.Resources.Subscription subscription, string location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.StoragePool.Models.DiskPoolZoneInfo&gt; GetDiskPoolZones(class Azure.ResourceManager.Resources.Subscription subscription, string location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPoolZones(Azure.ResourceManager.Resources.Subscription,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDiskPoolZones (subscription As Subscription, location As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DiskPoolZoneInfo)" />
+      <MemberSignature Language="F#" Value="static member GetDiskPoolZones : Azure.ResourceManager.Resources.Subscription * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.StoragePool.Models.DiskPoolZoneInfo&gt;" Usage="Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPoolZones (subscription, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.StoragePool.Models.DiskPoolZoneInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="location"> The location of the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists available Disk Pool Skus in an Azure location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.StoragePool/locations/{location}/diskPoolZones
+            Operation Id: DiskPoolZones_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.StoragePool.Models.DiskPoolZoneInfo" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDiskPoolZonesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.StoragePool.Models.DiskPoolZoneInfo&gt; GetDiskPoolZonesAsync (this Azure.ResourceManager.Resources.Subscription subscription, string location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.StoragePool.Models.DiskPoolZoneInfo&gt; GetDiskPoolZonesAsync(class Azure.ResourceManager.Resources.Subscription subscription, string location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPoolZonesAsync(Azure.ResourceManager.Resources.Subscription,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDiskPoolZonesAsync (subscription As Subscription, location As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DiskPoolZoneInfo)" />
+      <MemberSignature Language="F#" Value="static member GetDiskPoolZonesAsync : Azure.ResourceManager.Resources.Subscription * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.StoragePool.Models.DiskPoolZoneInfo&gt;" Usage="Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetDiskPoolZonesAsync (subscription, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.StoragePool.Models.DiskPoolZoneInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="location"> The location of the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists available Disk Pool Skus in an Azure location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.StoragePool/locations/{location}/diskPoolZones
+            Operation Id: DiskPoolZones_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.StoragePool.Models.DiskPoolZoneInfo" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIscsiTarget">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.StoragePool.IscsiTarget GetIscsiTarget (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.StoragePool.IscsiTarget GetIscsiTarget(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetIscsiTarget(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetIscsiTarget (client As ArmClient, id As ResourceIdentifier) As IscsiTarget" />
+      <MemberSignature Language="F#" Value="static member GetIscsiTarget : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.StoragePool.IscsiTarget" Usage="Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetIscsiTarget (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.StoragePool.IscsiTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a IscsiTarget along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.StoragePool.IscsiTarget" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceSkus">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.StoragePool.Models.ResourceSkuInfo&gt; GetResourceSkus (this Azure.ResourceManager.Resources.Subscription subscription, string location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.StoragePool.Models.ResourceSkuInfo&gt; GetResourceSkus(class Azure.ResourceManager.Resources.Subscription subscription, string location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetResourceSkus(Azure.ResourceManager.Resources.Subscription,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetResourceSkus (subscription As Subscription, location As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ResourceSkuInfo)" />
+      <MemberSignature Language="F#" Value="static member GetResourceSkus : Azure.ResourceManager.Resources.Subscription * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.StoragePool.Models.ResourceSkuInfo&gt;" Usage="Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetResourceSkus (subscription, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.StoragePool.Models.ResourceSkuInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="location"> The location of the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists available StoragePool resources and skus in an Azure location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.StoragePool/locations/{location}/skus
+            Operation Id: ResourceSkus_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.StoragePool.Models.ResourceSkuInfo" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceSkusAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.StoragePool.Models.ResourceSkuInfo&gt; GetResourceSkusAsync (this Azure.ResourceManager.Resources.Subscription subscription, string location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.StoragePool.Models.ResourceSkuInfo&gt; GetResourceSkusAsync(class Azure.ResourceManager.Resources.Subscription subscription, string location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetResourceSkusAsync(Azure.ResourceManager.Resources.Subscription,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetResourceSkusAsync (subscription As Subscription, location As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ResourceSkuInfo)" />
+      <MemberSignature Language="F#" Value="static member GetResourceSkusAsync : Azure.ResourceManager.Resources.Subscription * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.StoragePool.Models.ResourceSkuInfo&gt;" Usage="Azure.ResourceManager.StoragePool.StoragePoolExtensions.GetResourceSkusAsync (subscription, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.StoragePool.Models.ResourceSkuInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="location"> The location of the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists available StoragePool resources and skus in an Azure location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.StoragePool/locations/{location}/skus
+            Operation Id: ResourceSkus_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.StoragePool.Models.ResourceSkuInfo" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

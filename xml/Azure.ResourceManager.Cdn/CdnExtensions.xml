@@ -1,0 +1,813 @@
+<Type Name="CdnExtensions" FullName="Azure.ResourceManager.Cdn.CdnExtensions">
+  <TypeSignature Language="C#" Value="public static class CdnExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CdnExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Cdn.CdnExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module CdnExtensions" />
+  <TypeSignature Language="F#" Value="type CdnExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Azure.ResourceManager.Cdn. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckCdnNameAvailability">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt; CheckCdnNameAvailability (this Azure.ResourceManager.Resources.Tenant tenant, Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput checkNameAvailabilityInput, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt; CheckCdnNameAvailability(class Azure.ResourceManager.Resources.Tenant tenant, class Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput checkNameAvailabilityInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.CheckCdnNameAvailability(Azure.ResourceManager.Resources.Tenant,Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckCdnNameAvailability (tenant As Tenant, checkNameAvailabilityInput As CheckNameAvailabilityInput, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CheckNameAvailabilityOutput)" />
+      <MemberSignature Language="F#" Value="static member CheckCdnNameAvailability : Azure.ResourceManager.Resources.Tenant * Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.CheckCdnNameAvailability (tenant, checkNameAvailabilityInput, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenant" Type="Azure.ResourceManager.Resources.Tenant" RefType="this" />
+        <Parameter Name="checkNameAvailabilityInput" Type="Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
+        <param name="checkNameAvailabilityInput"> Input to check. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Check the availability of a resource name. This is needed for resources where name is globally unique, such as a CDN endpoint.
+            Request Path: /providers/Microsoft.Cdn/checkNameAvailability
+            Operation Id: CheckNameAvailability
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="checkNameAvailabilityInput" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckCdnNameAvailabilityAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt; CheckCdnNameAvailabilityAsync (this Azure.ResourceManager.Resources.Tenant tenant, Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput checkNameAvailabilityInput, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt; CheckCdnNameAvailabilityAsync(class Azure.ResourceManager.Resources.Tenant tenant, class Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput checkNameAvailabilityInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.CheckCdnNameAvailabilityAsync(Azure.ResourceManager.Resources.Tenant,Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckCdnNameAvailabilityAsync (tenant As Tenant, checkNameAvailabilityInput As CheckNameAvailabilityInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CheckNameAvailabilityOutput))" />
+      <MemberSignature Language="F#" Value="static member CheckCdnNameAvailabilityAsync : Azure.ResourceManager.Resources.Tenant * Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.CheckCdnNameAvailabilityAsync (tenant, checkNameAvailabilityInput, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenant" Type="Azure.ResourceManager.Resources.Tenant" RefType="this" />
+        <Parameter Name="checkNameAvailabilityInput" Type="Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
+        <param name="checkNameAvailabilityInput"> Input to check. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Check the availability of a resource name. This is needed for resources where name is globally unique, such as a CDN endpoint.
+            Request Path: /providers/Microsoft.Cdn/checkNameAvailability
+            Operation Id: CheckNameAvailability
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="checkNameAvailabilityInput" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckCdnNameAvailabilityWithSubscription">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt; CheckCdnNameAvailabilityWithSubscription (this Azure.ResourceManager.Resources.Subscription subscription, Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput checkNameAvailabilityInput, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt; CheckCdnNameAvailabilityWithSubscription(class Azure.ResourceManager.Resources.Subscription subscription, class Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput checkNameAvailabilityInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.CheckCdnNameAvailabilityWithSubscription(Azure.ResourceManager.Resources.Subscription,Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckCdnNameAvailabilityWithSubscription (subscription As Subscription, checkNameAvailabilityInput As CheckNameAvailabilityInput, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CheckNameAvailabilityOutput)" />
+      <MemberSignature Language="F#" Value="static member CheckCdnNameAvailabilityWithSubscription : Azure.ResourceManager.Resources.Subscription * Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.CheckCdnNameAvailabilityWithSubscription (subscription, checkNameAvailabilityInput, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="checkNameAvailabilityInput" Type="Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="checkNameAvailabilityInput"> Input to check. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Check the availability of a resource name. This is needed for resources where name is globally unique, such as a CDN endpoint.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/checkNameAvailability
+            Operation Id: CheckNameAvailabilityWithSubscription
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="checkNameAvailabilityInput" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckCdnNameAvailabilityWithSubscriptionAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt; CheckCdnNameAvailabilityWithSubscriptionAsync (this Azure.ResourceManager.Resources.Subscription subscription, Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput checkNameAvailabilityInput, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt; CheckCdnNameAvailabilityWithSubscriptionAsync(class Azure.ResourceManager.Resources.Subscription subscription, class Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput checkNameAvailabilityInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.CheckCdnNameAvailabilityWithSubscriptionAsync(Azure.ResourceManager.Resources.Subscription,Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckCdnNameAvailabilityWithSubscriptionAsync (subscription As Subscription, checkNameAvailabilityInput As CheckNameAvailabilityInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CheckNameAvailabilityOutput))" />
+      <MemberSignature Language="F#" Value="static member CheckCdnNameAvailabilityWithSubscriptionAsync : Azure.ResourceManager.Resources.Subscription * Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.CheckCdnNameAvailabilityWithSubscriptionAsync (subscription, checkNameAvailabilityInput, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="checkNameAvailabilityInput" Type="Azure.ResourceManager.Cdn.Models.CheckNameAvailabilityInput" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="checkNameAvailabilityInput"> Input to check. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Check the availability of a resource name. This is needed for resources where name is globally unique, such as a CDN endpoint.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/checkNameAvailability
+            Operation Id: CheckNameAvailabilityWithSubscription
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="checkNameAvailabilityInput" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnCustomDomain">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Cdn.CdnCustomDomain GetCdnCustomDomain (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Cdn.CdnCustomDomain GetCdnCustomDomain(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetCdnCustomDomain(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCdnCustomDomain (client As ArmClient, id As ResourceIdentifier) As CdnCustomDomain" />
+      <MemberSignature Language="F#" Value="static member GetCdnCustomDomain : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Cdn.CdnCustomDomain" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetCdnCustomDomain (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Cdn.CdnCustomDomain</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a CdnCustomDomain along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Cdn.CdnCustomDomain" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnEndpoint">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Cdn.CdnEndpoint GetCdnEndpoint (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Cdn.CdnEndpoint GetCdnEndpoint(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetCdnEndpoint(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCdnEndpoint (client As ArmClient, id As ResourceIdentifier) As CdnEndpoint" />
+      <MemberSignature Language="F#" Value="static member GetCdnEndpoint : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Cdn.CdnEndpoint" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetCdnEndpoint (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Cdn.CdnEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a CdnEndpoint along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Cdn.CdnEndpoint" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnOrigin">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Cdn.CdnOrigin GetCdnOrigin (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Cdn.CdnOrigin GetCdnOrigin(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetCdnOrigin(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCdnOrigin (client As ArmClient, id As ResourceIdentifier) As CdnOrigin" />
+      <MemberSignature Language="F#" Value="static member GetCdnOrigin : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Cdn.CdnOrigin" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetCdnOrigin (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Cdn.CdnOrigin</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a CdnOrigin along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Cdn.CdnOrigin" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnOriginGroup">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Cdn.CdnOriginGroup GetCdnOriginGroup (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Cdn.CdnOriginGroup GetCdnOriginGroup(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetCdnOriginGroup(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCdnOriginGroup (client As ArmClient, id As ResourceIdentifier) As CdnOriginGroup" />
+      <MemberSignature Language="F#" Value="static member GetCdnOriginGroup : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Cdn.CdnOriginGroup" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetCdnOriginGroup (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Cdn.CdnOriginGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a CdnOriginGroup along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Cdn.CdnOriginGroup" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnWebApplicationFirewallPolicies">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicyCollection GetCdnWebApplicationFirewallPolicies (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicyCollection GetCdnWebApplicationFirewallPolicies(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetCdnWebApplicationFirewallPolicies(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCdnWebApplicationFirewallPolicies (resourceGroup As ResourceGroup) As CdnWebApplicationFirewallPolicyCollection" />
+      <MemberSignature Language="F#" Value="static member GetCdnWebApplicationFirewallPolicies : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicyCollection" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetCdnWebApplicationFirewallPolicies resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicyCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of CdnWebApplicationFirewallPolicies in the CdnWebApplicationFirewallPolicy. </summary>
+        <returns> An object representing collection of CdnWebApplicationFirewallPolicies and their operations over a CdnWebApplicationFirewallPolicy. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnWebApplicationFirewallPolicy">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy GetCdnWebApplicationFirewallPolicy (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy GetCdnWebApplicationFirewallPolicy(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetCdnWebApplicationFirewallPolicy(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCdnWebApplicationFirewallPolicy (client As ArmClient, id As ResourceIdentifier) As CdnWebApplicationFirewallPolicy" />
+      <MemberSignature Language="F#" Value="static member GetCdnWebApplicationFirewallPolicy : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetCdnWebApplicationFirewallPolicy (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a CdnWebApplicationFirewallPolicy along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnWebApplicationFirewallPolicy">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt; GetCdnWebApplicationFirewallPolicy (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string policyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt; GetCdnWebApplicationFirewallPolicy(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string policyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetCdnWebApplicationFirewallPolicy(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCdnWebApplicationFirewallPolicy (resourceGroup As ResourceGroup, policyName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CdnWebApplicationFirewallPolicy)" />
+      <MemberSignature Language="F#" Value="static member GetCdnWebApplicationFirewallPolicy : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetCdnWebApplicationFirewallPolicy (resourceGroup, policyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="policyName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="policyName"> The name of the CdnWebApplicationFirewallPolicy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Retrieve protection policy with specified name within a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/CdnWebApplicationFirewallPolicies/{policyName}
+            Operation Id: Policies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policyName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCdnWebApplicationFirewallPolicyAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt;&gt; GetCdnWebApplicationFirewallPolicyAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string policyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt;&gt; GetCdnWebApplicationFirewallPolicyAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string policyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetCdnWebApplicationFirewallPolicyAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCdnWebApplicationFirewallPolicyAsync (resourceGroup As ResourceGroup, policyName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CdnWebApplicationFirewallPolicy))" />
+      <MemberSignature Language="F#" Value="static member GetCdnWebApplicationFirewallPolicyAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt;&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetCdnWebApplicationFirewallPolicyAsync (resourceGroup, policyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicy&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="policyName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="policyName"> The name of the CdnWebApplicationFirewallPolicy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Retrieve protection policy with specified name within a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/CdnWebApplicationFirewallPolicies/{policyName}
+            Operation Id: Policies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policyName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEdgeNodes">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Cdn.Models.EdgeNode&gt; GetEdgeNodes (this Azure.ResourceManager.Resources.Tenant tenant, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Cdn.Models.EdgeNode&gt; GetEdgeNodes(class Azure.ResourceManager.Resources.Tenant tenant, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetEdgeNodes(Azure.ResourceManager.Resources.Tenant,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEdgeNodes (tenant As Tenant, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of EdgeNode)" />
+      <MemberSignature Language="F#" Value="static member GetEdgeNodes : Azure.ResourceManager.Resources.Tenant * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Cdn.Models.EdgeNode&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetEdgeNodes (tenant, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Cdn.Models.EdgeNode&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenant" Type="Azure.ResourceManager.Resources.Tenant" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Edgenodes are the global Point of Presence (POP) locations used to deliver CDN content to end users.
+            Request Path: /providers/Microsoft.Cdn/edgenodes
+            Operation Id: EdgeNodes_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Cdn.Models.EdgeNode" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEdgeNodesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Models.EdgeNode&gt; GetEdgeNodesAsync (this Azure.ResourceManager.Resources.Tenant tenant, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Cdn.Models.EdgeNode&gt; GetEdgeNodesAsync(class Azure.ResourceManager.Resources.Tenant tenant, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetEdgeNodesAsync(Azure.ResourceManager.Resources.Tenant,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEdgeNodesAsync (tenant As Tenant, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of EdgeNode)" />
+      <MemberSignature Language="F#" Value="static member GetEdgeNodesAsync : Azure.ResourceManager.Resources.Tenant * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Models.EdgeNode&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetEdgeNodesAsync (tenant, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Models.EdgeNode&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenant" Type="Azure.ResourceManager.Resources.Tenant" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Edgenodes are the global Point of Presence (POP) locations used to deliver CDN content to end users.
+            Request Path: /providers/Microsoft.Cdn/edgenodes
+            Operation Id: EdgeNodes_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Cdn.Models.EdgeNode" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedRuleSets">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Cdn.Models.ManagedRuleSetDefinition&gt; GetManagedRuleSets (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Cdn.Models.ManagedRuleSetDefinition&gt; GetManagedRuleSets(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetManagedRuleSets(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedRuleSets (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ManagedRuleSetDefinition)" />
+      <MemberSignature Language="F#" Value="static member GetManagedRuleSets : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Cdn.Models.ManagedRuleSetDefinition&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetManagedRuleSets (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Cdn.Models.ManagedRuleSetDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists all available managed rule sets.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/CdnWebApplicationFirewallManagedRuleSets
+            Operation Id: ManagedRuleSets_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Cdn.Models.ManagedRuleSetDefinition" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedRuleSetsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Models.ManagedRuleSetDefinition&gt; GetManagedRuleSetsAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Cdn.Models.ManagedRuleSetDefinition&gt; GetManagedRuleSetsAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetManagedRuleSetsAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedRuleSetsAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ManagedRuleSetDefinition)" />
+      <MemberSignature Language="F#" Value="static member GetManagedRuleSetsAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Models.ManagedRuleSetDefinition&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetManagedRuleSetsAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Models.ManagedRuleSetDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists all available managed rule sets.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/CdnWebApplicationFirewallManagedRuleSets
+            Operation Id: ManagedRuleSets_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Cdn.Models.ManagedRuleSetDefinition" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfile">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Cdn.Profile GetProfile (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Cdn.Profile GetProfile(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetProfile(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProfile (client As ArmClient, id As ResourceIdentifier) As Profile" />
+      <MemberSignature Language="F#" Value="static member GetProfile : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Cdn.Profile" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetProfile (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Cdn.Profile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a Profile along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Cdn.Profile" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfile">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Cdn.Profile&gt; GetProfile (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string profileName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.Profile&gt; GetProfile(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string profileName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetProfile(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProfile (resourceGroup As ResourceGroup, profileName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Profile)" />
+      <MemberSignature Language="F#" Value="static member GetProfile : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.Profile&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetProfile (resourceGroup, profileName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Profile&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="profileName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="profileName"> Name of the CDN profile which is unique within the resource group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a CDN profile with the specified profile name under the specified subscription and resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}
+            Operation Id: Profiles_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="profileName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="profileName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfileAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Profile&gt;&gt; GetProfileAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string profileName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.Profile&gt;&gt; GetProfileAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string profileName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetProfileAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProfileAsync (resourceGroup As ResourceGroup, profileName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Profile))" />
+      <MemberSignature Language="F#" Value="static member GetProfileAsync : Azure.ResourceManager.Resources.ResourceGroup * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Profile&gt;&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetProfileAsync (resourceGroup, profileName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Profile&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="profileName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="profileName"> Name of the CDN profile which is unique within the resource group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a CDN profile with the specified profile name under the specified subscription and resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}
+            Operation Id: Profiles_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="profileName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="profileName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfiles">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Cdn.ProfileCollection GetProfiles (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Cdn.ProfileCollection GetProfiles(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetProfiles(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProfiles (resourceGroup As ResourceGroup) As ProfileCollection" />
+      <MemberSignature Language="F#" Value="static member GetProfiles : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.Cdn.ProfileCollection" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetProfiles resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Cdn.ProfileCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of Profiles in the Profile. </summary>
+        <returns> An object representing collection of Profiles and their operations over a Profile. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfiles">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Cdn.Profile&gt; GetProfiles (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Cdn.Profile&gt; GetProfiles(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetProfiles(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProfiles (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of Profile)" />
+      <MemberSignature Language="F#" Value="static member GetProfiles : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Cdn.Profile&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetProfiles (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Cdn.Profile&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists all of the CDN profiles within an Azure subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/profiles
+            Operation Id: Profiles_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Cdn.Profile" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfilesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Profile&gt; GetProfilesAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Cdn.Profile&gt; GetProfilesAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetProfilesAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProfilesAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of Profile)" />
+      <MemberSignature Language="F#" Value="static member GetProfilesAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Profile&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetProfilesAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Profile&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists all of the CDN profiles within an Azure subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/profiles
+            Operation Id: Profiles_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Cdn.Profile" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceUsages">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Cdn.Models.ResourceUsage&gt; GetResourceUsages (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Cdn.Models.ResourceUsage&gt; GetResourceUsages(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetResourceUsages(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetResourceUsages (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ResourceUsage)" />
+      <MemberSignature Language="F#" Value="static member GetResourceUsages : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Cdn.Models.ResourceUsage&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetResourceUsages (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Cdn.Models.ResourceUsage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Check the quota and actual usage of the CDN profiles under the given subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/checkResourceUsage
+            Operation Id: ResourceUsage_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Cdn.Models.ResourceUsage" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceUsagesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Models.ResourceUsage&gt; GetResourceUsagesAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Cdn.Models.ResourceUsage&gt; GetResourceUsagesAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.GetResourceUsagesAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetResourceUsagesAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ResourceUsage)" />
+      <MemberSignature Language="F#" Value="static member GetResourceUsagesAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Models.ResourceUsage&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.GetResourceUsagesAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Models.ResourceUsage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Check the quota and actual usage of the CDN profiles under the given subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/checkResourceUsage
+            Operation Id: ResourceUsage_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Cdn.Models.ResourceUsage" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateProbe">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Cdn.Models.ValidateProbeOutput&gt; ValidateProbe (this Azure.ResourceManager.Resources.Subscription subscription, Azure.ResourceManager.Cdn.Models.ValidateProbeInput validateProbeInput, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.Models.ValidateProbeOutput&gt; ValidateProbe(class Azure.ResourceManager.Resources.Subscription subscription, class Azure.ResourceManager.Cdn.Models.ValidateProbeInput validateProbeInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.ValidateProbe(Azure.ResourceManager.Resources.Subscription,Azure.ResourceManager.Cdn.Models.ValidateProbeInput,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ValidateProbe (subscription As Subscription, validateProbeInput As ValidateProbeInput, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ValidateProbeOutput)" />
+      <MemberSignature Language="F#" Value="static member ValidateProbe : Azure.ResourceManager.Resources.Subscription * Azure.ResourceManager.Cdn.Models.ValidateProbeInput * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Cdn.Models.ValidateProbeOutput&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.ValidateProbe (subscription, validateProbeInput, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Models.ValidateProbeOutput&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="validateProbeInput" Type="Azure.ResourceManager.Cdn.Models.ValidateProbeInput" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="validateProbeInput"> Input to check. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Check if the probe path is a valid path and the file can be accessed. Probe path is the path to a file hosted on the origin server to help accelerate the delivery of dynamic content via the CDN endpoint. This path is relative to the origin path specified in the endpoint configuration.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/validateProbe
+            Operation Id: ValidateProbe
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="validateProbeInput" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateProbeAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.ValidateProbeOutput&gt;&gt; ValidateProbeAsync (this Azure.ResourceManager.Resources.Subscription subscription, Azure.ResourceManager.Cdn.Models.ValidateProbeInput validateProbeInput, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Cdn.Models.ValidateProbeOutput&gt;&gt; ValidateProbeAsync(class Azure.ResourceManager.Resources.Subscription subscription, class Azure.ResourceManager.Cdn.Models.ValidateProbeInput validateProbeInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Cdn.CdnExtensions.ValidateProbeAsync(Azure.ResourceManager.Resources.Subscription,Azure.ResourceManager.Cdn.Models.ValidateProbeInput,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ValidateProbeAsync (subscription As Subscription, validateProbeInput As ValidateProbeInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ValidateProbeOutput))" />
+      <MemberSignature Language="F#" Value="static member ValidateProbeAsync : Azure.ResourceManager.Resources.Subscription * Azure.ResourceManager.Cdn.Models.ValidateProbeInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.ValidateProbeOutput&gt;&gt;" Usage="Azure.ResourceManager.Cdn.CdnExtensions.ValidateProbeAsync (subscription, validateProbeInput, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.ValidateProbeOutput&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="validateProbeInput" Type="Azure.ResourceManager.Cdn.Models.ValidateProbeInput" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="validateProbeInput"> Input to check. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Check if the probe path is a valid path and the file can be accessed. Probe path is the path to a file hosted on the origin server to help accelerate the delivery of dynamic content via the CDN endpoint. This path is relative to the origin path specified in the endpoint configuration.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/validateProbe
+            Operation Id: ValidateProbe
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="validateProbeInput" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

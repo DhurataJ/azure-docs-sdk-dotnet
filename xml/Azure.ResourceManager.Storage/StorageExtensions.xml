@@ -1,0 +1,983 @@
+<Type Name="StorageExtensions" FullName="Azure.ResourceManager.Storage.StorageExtensions">
+  <TypeSignature Language="C#" Value="public static class StorageExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StorageExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Storage.StorageExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StorageExtensions" />
+  <TypeSignature Language="F#" Value="type StorageExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Azure.ResourceManager.Storage. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckStorageAccountNameAvailability">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt; CheckStorageAccountNameAvailability (this Azure.ResourceManager.Resources.Subscription subscription, Azure.ResourceManager.Storage.Models.StorageAccountCheckNameAvailabilityParameters accountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt; CheckStorageAccountNameAvailability(class Azure.ResourceManager.Resources.Subscription subscription, class Azure.ResourceManager.Storage.Models.StorageAccountCheckNameAvailabilityParameters accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.CheckStorageAccountNameAvailability(Azure.ResourceManager.Resources.Subscription,Azure.ResourceManager.Storage.Models.StorageAccountCheckNameAvailabilityParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckStorageAccountNameAvailability (subscription As Subscription, accountName As StorageAccountCheckNameAvailabilityParameters, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CheckNameAvailabilityResult)" />
+      <MemberSignature Language="F#" Value="static member CheckStorageAccountNameAvailability : Azure.ResourceManager.Resources.Subscription * Azure.ResourceManager.Storage.Models.StorageAccountCheckNameAvailabilityParameters * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.CheckStorageAccountNameAvailability (subscription, accountName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="accountName" Type="Azure.ResourceManager.Storage.Models.StorageAccountCheckNameAvailabilityParameters" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="accountName"> The name of the storage account within the specified resource group. Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Checks that the storage account name is valid and is not already in use.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/checkNameAvailability
+            Operation Id: StorageAccounts_CheckNameAvailability
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accountName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckStorageAccountNameAvailabilityAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt;&gt; CheckStorageAccountNameAvailabilityAsync (this Azure.ResourceManager.Resources.Subscription subscription, Azure.ResourceManager.Storage.Models.StorageAccountCheckNameAvailabilityParameters accountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt;&gt; CheckStorageAccountNameAvailabilityAsync(class Azure.ResourceManager.Resources.Subscription subscription, class Azure.ResourceManager.Storage.Models.StorageAccountCheckNameAvailabilityParameters accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.CheckStorageAccountNameAvailabilityAsync(Azure.ResourceManager.Resources.Subscription,Azure.ResourceManager.Storage.Models.StorageAccountCheckNameAvailabilityParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckStorageAccountNameAvailabilityAsync (subscription As Subscription, accountName As StorageAccountCheckNameAvailabilityParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CheckNameAvailabilityResult))" />
+      <MemberSignature Language="F#" Value="static member CheckStorageAccountNameAvailabilityAsync : Azure.ResourceManager.Resources.Subscription * Azure.ResourceManager.Storage.Models.StorageAccountCheckNameAvailabilityParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt;&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.CheckStorageAccountNameAvailabilityAsync (subscription, accountName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="accountName" Type="Azure.ResourceManager.Storage.Models.StorageAccountCheckNameAvailabilityParameters" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="accountName"> The name of the storage account within the specified resource group. Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Checks that the storage account name is valid and is not already in use.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/checkNameAvailability
+            Operation Id: StorageAccounts_CheckNameAvailability
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accountName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBlobContainer">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.BlobContainer GetBlobContainer (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.BlobContainer GetBlobContainer(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetBlobContainer(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBlobContainer (client As ArmClient, id As ResourceIdentifier) As BlobContainer" />
+      <MemberSignature Language="F#" Value="static member GetBlobContainer : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.BlobContainer" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetBlobContainer (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.BlobContainer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a BlobContainer along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.BlobContainer" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBlobInventoryPolicy">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.BlobInventoryPolicy GetBlobInventoryPolicy (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.BlobInventoryPolicy GetBlobInventoryPolicy(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetBlobInventoryPolicy(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBlobInventoryPolicy (client As ArmClient, id As ResourceIdentifier) As BlobInventoryPolicy" />
+      <MemberSignature Language="F#" Value="static member GetBlobInventoryPolicy : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.BlobInventoryPolicy" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetBlobInventoryPolicy (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.BlobInventoryPolicy</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a BlobInventoryPolicy along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.BlobInventoryPolicy" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBlobService">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.BlobService GetBlobService (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.BlobService GetBlobService(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetBlobService(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBlobService (client As ArmClient, id As ResourceIdentifier) As BlobService" />
+      <MemberSignature Language="F#" Value="static member GetBlobService : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.BlobService" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetBlobService (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.BlobService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a BlobService along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.BlobService" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeletedAccount">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.DeletedAccount GetDeletedAccount (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.DeletedAccount GetDeletedAccount(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetDeletedAccount(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeletedAccount (client As ArmClient, id As ResourceIdentifier) As DeletedAccount" />
+      <MemberSignature Language="F#" Value="static member GetDeletedAccount : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.DeletedAccount" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetDeletedAccount (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.DeletedAccount</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a DeletedAccount along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.DeletedAccount" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeletedAccount">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Storage.DeletedAccount&gt; GetDeletedAccount (this Azure.ResourceManager.Resources.Subscription subscription, string location, string deletedAccountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Storage.DeletedAccount&gt; GetDeletedAccount(class Azure.ResourceManager.Resources.Subscription subscription, string location, string deletedAccountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetDeletedAccount(Azure.ResourceManager.Resources.Subscription,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeletedAccount (subscription As Subscription, location As String, deletedAccountName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeletedAccount)" />
+      <MemberSignature Language="F#" Value="static member GetDeletedAccount : Azure.ResourceManager.Resources.Subscription * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Storage.DeletedAccount&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetDeletedAccount (subscription, location, deletedAccountName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Storage.DeletedAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="deletedAccountName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="location"> The location of the deleted storage account. </param>
+        <param name="deletedAccountName"> Name of the deleted storage account. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get properties of specified deleted account resource.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/locations/{location}/deletedAccounts/{deletedAccountName}
+            Operation Id: DeletedAccounts_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> or <paramref name="deletedAccountName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> or <paramref name="deletedAccountName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeletedAccountAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.DeletedAccount&gt;&gt; GetDeletedAccountAsync (this Azure.ResourceManager.Resources.Subscription subscription, string location, string deletedAccountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Storage.DeletedAccount&gt;&gt; GetDeletedAccountAsync(class Azure.ResourceManager.Resources.Subscription subscription, string location, string deletedAccountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetDeletedAccountAsync(Azure.ResourceManager.Resources.Subscription,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeletedAccountAsync (subscription As Subscription, location As String, deletedAccountName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeletedAccount))" />
+      <MemberSignature Language="F#" Value="static member GetDeletedAccountAsync : Azure.ResourceManager.Resources.Subscription * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.DeletedAccount&gt;&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetDeletedAccountAsync (subscription, location, deletedAccountName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.DeletedAccount&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="deletedAccountName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="location"> The location of the deleted storage account. </param>
+        <param name="deletedAccountName"> Name of the deleted storage account. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get properties of specified deleted account resource.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/locations/{location}/deletedAccounts/{deletedAccountName}
+            Operation Id: DeletedAccounts_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> or <paramref name="deletedAccountName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> or <paramref name="deletedAccountName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeletedAccounts">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.DeletedAccountCollection GetDeletedAccounts (this Azure.ResourceManager.Resources.Subscription subscription);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.DeletedAccountCollection GetDeletedAccounts(class Azure.ResourceManager.Resources.Subscription subscription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetDeletedAccounts(Azure.ResourceManager.Resources.Subscription)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeletedAccounts (subscription As Subscription) As DeletedAccountCollection" />
+      <MemberSignature Language="F#" Value="static member GetDeletedAccounts : Azure.ResourceManager.Resources.Subscription -&gt; Azure.ResourceManager.Storage.DeletedAccountCollection" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetDeletedAccounts subscription" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.DeletedAccountCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <summary> Gets a collection of DeletedAccounts in the DeletedAccount. </summary>
+        <returns> An object representing collection of DeletedAccounts and their operations over a DeletedAccount. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeletedAccounts">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Storage.DeletedAccount&gt; GetDeletedAccounts (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Storage.DeletedAccount&gt; GetDeletedAccounts(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetDeletedAccounts(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeletedAccounts (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DeletedAccount)" />
+      <MemberSignature Language="F#" Value="static member GetDeletedAccounts : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Storage.DeletedAccount&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetDeletedAccounts (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Storage.DeletedAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists deleted accounts under the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/deletedAccounts
+            Operation Id: DeletedAccounts_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Storage.DeletedAccount" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeletedAccountsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Storage.DeletedAccount&gt; GetDeletedAccountsAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Storage.DeletedAccount&gt; GetDeletedAccountsAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetDeletedAccountsAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeletedAccountsAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DeletedAccount)" />
+      <MemberSignature Language="F#" Value="static member GetDeletedAccountsAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Storage.DeletedAccount&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetDeletedAccountsAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Storage.DeletedAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists deleted accounts under the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/deletedAccounts
+            Operation Id: DeletedAccounts_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Storage.DeletedAccount" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEncryptionScope">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.EncryptionScope GetEncryptionScope (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.EncryptionScope GetEncryptionScope(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetEncryptionScope(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEncryptionScope (client As ArmClient, id As ResourceIdentifier) As EncryptionScope" />
+      <MemberSignature Language="F#" Value="static member GetEncryptionScope : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.EncryptionScope" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetEncryptionScope (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.EncryptionScope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a EncryptionScope along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.EncryptionScope" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileService">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.FileService GetFileService (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.FileService GetFileService(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetFileService(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFileService (client As ArmClient, id As ResourceIdentifier) As FileService" />
+      <MemberSignature Language="F#" Value="static member GetFileService : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.FileService" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetFileService (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.FileService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a FileService along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.FileService" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileShare">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.FileShare GetFileShare (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.FileShare GetFileShare(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetFileShare(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFileShare (client As ArmClient, id As ResourceIdentifier) As FileShare" />
+      <MemberSignature Language="F#" Value="static member GetFileShare : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.FileShare" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetFileShare (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.FileShare</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a FileShare along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.FileShare" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImmutabilityPolicy">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.ImmutabilityPolicy GetImmutabilityPolicy (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.ImmutabilityPolicy GetImmutabilityPolicy(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetImmutabilityPolicy(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetImmutabilityPolicy (client As ArmClient, id As ResourceIdentifier) As ImmutabilityPolicy" />
+      <MemberSignature Language="F#" Value="static member GetImmutabilityPolicy : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.ImmutabilityPolicy" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetImmutabilityPolicy (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.ImmutabilityPolicy</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a ImmutabilityPolicy along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.ImmutabilityPolicy" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalUser">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.LocalUser GetLocalUser (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.LocalUser GetLocalUser(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetLocalUser(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLocalUser (client As ArmClient, id As ResourceIdentifier) As LocalUser" />
+      <MemberSignature Language="F#" Value="static member GetLocalUser : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.LocalUser" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetLocalUser (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.LocalUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a LocalUser along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.LocalUser" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagementPolicy">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.ManagementPolicy GetManagementPolicy (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.ManagementPolicy GetManagementPolicy(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetManagementPolicy(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagementPolicy (client As ArmClient, id As ResourceIdentifier) As ManagementPolicy" />
+      <MemberSignature Language="F#" Value="static member GetManagementPolicy : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.ManagementPolicy" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetManagementPolicy (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.ManagementPolicy</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a ManagementPolicy along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.ManagementPolicy" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectReplicationPolicy">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.ObjectReplicationPolicy GetObjectReplicationPolicy (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.ObjectReplicationPolicy GetObjectReplicationPolicy(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetObjectReplicationPolicy(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetObjectReplicationPolicy (client As ArmClient, id As ResourceIdentifier) As ObjectReplicationPolicy" />
+      <MemberSignature Language="F#" Value="static member GetObjectReplicationPolicy : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.ObjectReplicationPolicy" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetObjectReplicationPolicy (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.ObjectReplicationPolicy</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a ObjectReplicationPolicy along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.ObjectReplicationPolicy" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPrivateEndpointConnection">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.PrivateEndpointConnection GetPrivateEndpointConnection (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.PrivateEndpointConnection GetPrivateEndpointConnection(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetPrivateEndpointConnection(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateEndpointConnection (client As ArmClient, id As ResourceIdentifier) As PrivateEndpointConnection" />
+      <MemberSignature Language="F#" Value="static member GetPrivateEndpointConnection : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.PrivateEndpointConnection" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetPrivateEndpointConnection (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.PrivateEndpointConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a PrivateEndpointConnection along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.PrivateEndpointConnection" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueueService">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.QueueService GetQueueService (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.QueueService GetQueueService(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetQueueService(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetQueueService (client As ArmClient, id As ResourceIdentifier) As QueueService" />
+      <MemberSignature Language="F#" Value="static member GetQueueService : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.QueueService" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetQueueService (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.QueueService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a QueueService along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.QueueService" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSkus">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Storage.Models.StorageSkuInformation&gt; GetSkus (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Storage.Models.StorageSkuInformation&gt; GetSkus(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetSkus(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSkus (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of StorageSkuInformation)" />
+      <MemberSignature Language="F#" Value="static member GetSkus : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Storage.Models.StorageSkuInformation&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetSkus (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Storage.Models.StorageSkuInformation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists the available SKUs supported by Microsoft.Storage for given subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/skus
+            Operation Id: Skus_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Storage.Models.StorageSkuInformation" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSkusAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Storage.Models.StorageSkuInformation&gt; GetSkusAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Storage.Models.StorageSkuInformation&gt; GetSkusAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetSkusAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSkusAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of StorageSkuInformation)" />
+      <MemberSignature Language="F#" Value="static member GetSkusAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Storage.Models.StorageSkuInformation&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetSkusAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Storage.Models.StorageSkuInformation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists the available SKUs supported by Microsoft.Storage for given subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/skus
+            Operation Id: Skus_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Storage.Models.StorageSkuInformation" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStorageAccount">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.StorageAccount GetStorageAccount (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.StorageAccount GetStorageAccount(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetStorageAccount(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStorageAccount (client As ArmClient, id As ResourceIdentifier) As StorageAccount" />
+      <MemberSignature Language="F#" Value="static member GetStorageAccount : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.StorageAccount" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetStorageAccount (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.StorageAccount</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a StorageAccount along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.StorageAccount" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStorageAccount">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Storage.StorageAccount&gt; GetStorageAccount (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string accountName, Azure.ResourceManager.Storage.Models.StorageAccountExpand? expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Storage.StorageAccount&gt; GetStorageAccount(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string accountName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Storage.Models.StorageAccountExpand&gt; expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetStorageAccount(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Nullable{Azure.ResourceManager.Storage.Models.StorageAccountExpand},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStorageAccount (resourceGroup As ResourceGroup, accountName As String, Optional expand As Nullable(Of StorageAccountExpand) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of StorageAccount)" />
+      <MemberSignature Language="F#" Value="static member GetStorageAccount : Azure.ResourceManager.Resources.ResourceGroup * string * Nullable&lt;Azure.ResourceManager.Storage.Models.StorageAccountExpand&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Storage.StorageAccount&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetStorageAccount (resourceGroup, accountName, expand, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Storage.StorageAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="accountName" Type="System.String" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Azure.ResourceManager.Storage.Models.StorageAccountExpand&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="accountName"> The name of the storage account within the specified resource group. Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only. </param>
+        <param name="expand"> May be used to expand the properties within account's properties. By default, data is not included when fetching properties. Currently we only support geoReplicationStats and blobRestoreStatus. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Returns the properties for the specified storage account including but not limited to name, SKU name, location, and account status. The ListKeys operation should be used to retrieve storage keys.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}
+            Operation Id: StorageAccounts_GetProperties
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="accountName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accountName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStorageAccountAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.StorageAccount&gt;&gt; GetStorageAccountAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string accountName, Azure.ResourceManager.Storage.Models.StorageAccountExpand? expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Storage.StorageAccount&gt;&gt; GetStorageAccountAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string accountName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Storage.Models.StorageAccountExpand&gt; expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetStorageAccountAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Nullable{Azure.ResourceManager.Storage.Models.StorageAccountExpand},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStorageAccountAsync (resourceGroup As ResourceGroup, accountName As String, Optional expand As Nullable(Of StorageAccountExpand) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of StorageAccount))" />
+      <MemberSignature Language="F#" Value="static member GetStorageAccountAsync : Azure.ResourceManager.Resources.ResourceGroup * string * Nullable&lt;Azure.ResourceManager.Storage.Models.StorageAccountExpand&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.StorageAccount&gt;&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetStorageAccountAsync (resourceGroup, accountName, expand, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.StorageAccount&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="accountName" Type="System.String" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Azure.ResourceManager.Storage.Models.StorageAccountExpand&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="accountName"> The name of the storage account within the specified resource group. Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only. </param>
+        <param name="expand"> May be used to expand the properties within account's properties. By default, data is not included when fetching properties. Currently we only support geoReplicationStats and blobRestoreStatus. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Returns the properties for the specified storage account including but not limited to name, SKU name, location, and account status. The ListKeys operation should be used to retrieve storage keys.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}
+            Operation Id: StorageAccounts_GetProperties
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="accountName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accountName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStorageAccounts">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.StorageAccountCollection GetStorageAccounts (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.StorageAccountCollection GetStorageAccounts(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetStorageAccounts(Azure.ResourceManager.Resources.ResourceGroup)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStorageAccounts (resourceGroup As ResourceGroup) As StorageAccountCollection" />
+      <MemberSignature Language="F#" Value="static member GetStorageAccounts : Azure.ResourceManager.Resources.ResourceGroup -&gt; Azure.ResourceManager.Storage.StorageAccountCollection" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetStorageAccounts resourceGroup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.StorageAccountCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <summary> Gets a collection of StorageAccounts in the StorageAccount. </summary>
+        <returns> An object representing collection of StorageAccounts and their operations over a StorageAccount. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStorageAccounts">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Storage.StorageAccount&gt; GetStorageAccounts (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Storage.StorageAccount&gt; GetStorageAccounts(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetStorageAccounts(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStorageAccounts (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of StorageAccount)" />
+      <MemberSignature Language="F#" Value="static member GetStorageAccounts : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Storage.StorageAccount&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetStorageAccounts (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Storage.StorageAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists all the storage accounts available under the subscription. Note that storage keys are not returned; use the ListKeys operation for this.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/storageAccounts
+            Operation Id: StorageAccounts_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Storage.StorageAccount" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStorageAccountsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Storage.StorageAccount&gt; GetStorageAccountsAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Storage.StorageAccount&gt; GetStorageAccountsAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetStorageAccountsAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStorageAccountsAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of StorageAccount)" />
+      <MemberSignature Language="F#" Value="static member GetStorageAccountsAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Storage.StorageAccount&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetStorageAccountsAsync (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Storage.StorageAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Lists all the storage accounts available under the subscription. Note that storage keys are not returned; use the ListKeys operation for this.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/storageAccounts
+            Operation Id: StorageAccounts_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Storage.StorageAccount" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStorageQueue">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.StorageQueue GetStorageQueue (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.StorageQueue GetStorageQueue(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetStorageQueue(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStorageQueue (client As ArmClient, id As ResourceIdentifier) As StorageQueue" />
+      <MemberSignature Language="F#" Value="static member GetStorageQueue : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.StorageQueue" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetStorageQueue (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.StorageQueue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a StorageQueue along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.StorageQueue" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTable">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.Table GetTable (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.Table GetTable(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetTable(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTable (client As ArmClient, id As ResourceIdentifier) As Table" />
+      <MemberSignature Language="F#" Value="static member GetTable : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.Table" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetTable (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.Table</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a Table along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.Table" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTableService">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Storage.TableService GetTableService (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Storage.TableService GetTableService(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetTableService(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTableService (client As ArmClient, id As ResourceIdentifier) As TableService" />
+      <MemberSignature Language="F#" Value="static member GetTableService : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Storage.TableService" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetTableService (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Storage.TableService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a TableService along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.TableService" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUsagesByLocation">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Storage.Models.StorageUsage&gt; GetUsagesByLocation (this Azure.ResourceManager.Resources.Subscription subscription, string location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Storage.Models.StorageUsage&gt; GetUsagesByLocation(class Azure.ResourceManager.Resources.Subscription subscription, string location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetUsagesByLocation(Azure.ResourceManager.Resources.Subscription,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUsagesByLocation (subscription As Subscription, location As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of StorageUsage)" />
+      <MemberSignature Language="F#" Value="static member GetUsagesByLocation : Azure.ResourceManager.Resources.Subscription * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Storage.Models.StorageUsage&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetUsagesByLocation (subscription, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Storage.Models.StorageUsage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="location"> The location of the Azure Storage resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the current usage count and the limit for the resources of the location under the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/locations/{location}/usages
+            Operation Id: Usages_ListByLocation
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Storage.Models.StorageUsage" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUsagesByLocationAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Storage.Models.StorageUsage&gt; GetUsagesByLocationAsync (this Azure.ResourceManager.Resources.Subscription subscription, string location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Storage.Models.StorageUsage&gt; GetUsagesByLocationAsync(class Azure.ResourceManager.Resources.Subscription subscription, string location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.GetUsagesByLocationAsync(Azure.ResourceManager.Resources.Subscription,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUsagesByLocationAsync (subscription As Subscription, location As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of StorageUsage)" />
+      <MemberSignature Language="F#" Value="static member GetUsagesByLocationAsync : Azure.ResourceManager.Resources.Subscription * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Storage.Models.StorageUsage&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.GetUsagesByLocationAsync (subscription, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Storage.Models.StorageUsage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="location"> The location of the Azure Storage resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the current usage count and the limit for the resources of the location under the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Storage/locations/{location}/usages
+            Operation Id: Usages_ListByLocation
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Storage.Models.StorageUsage" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
