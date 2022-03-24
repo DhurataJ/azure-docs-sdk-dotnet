@@ -1,7 +1,7 @@
 {
   "Name": "Azure.Storage.Queues",
-  "Version": "12.10.0-alpha.20220324.3",
-  "DevVersion": "12.10.0-alpha.20220324.3",
+  "Version": "12.10.0-alpha.20220324.2",
+  "DevVersion": "12.10.0-alpha.20220324.2",
   "DirectoryPath": "sdk/storage/Azure.Storage.Queues",
   "ServiceDirectory": "storage",
   "ReadMePath": "sdk/storage/Azure.Storage.Queues/README.md",

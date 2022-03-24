@@ -1,7 +1,7 @@
 {
   "Name": "Azure.ResourceManager.Storage",
-  "Version": "1.0.0-alpha.20220324.3",
-  "DevVersion": "1.0.0-alpha.20220324.3",
+  "Version": "1.0.0-alpha.20220324.2",
+  "DevVersion": "1.0.0-alpha.20220324.2",
   "DirectoryPath": "sdk/storage/Azure.ResourceManager.Storage",
   "ServiceDirectory": "storage",
   "ReadMePath": "sdk/storage/Azure.ResourceManager.Storage/README.md",
