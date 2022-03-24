@@ -33,6 +33,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DeploymentScriptManagedIdentityType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.DeploymentScriptManagedIdentityType? DeploymentScriptManagedIdentityType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.DeploymentScriptManagedIdentityType&gt; DeploymentScriptManagedIdentityType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.DeploymentScriptManagedIdentity.DeploymentScriptManagedIdentityType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeploymentScriptManagedIdentityType As Nullable(Of DeploymentScriptManagedIdentityType)" />
+      <MemberSignature Language="F#" Value="member this.DeploymentScriptManagedIdentityType : Nullable&lt;Azure.ResourceManager.Resources.Models.DeploymentScriptManagedIdentityType&gt; with get, set" Usage="Azure.ResourceManager.Resources.Models.DeploymentScriptManagedIdentity.DeploymentScriptManagedIdentityType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Resources.Models.DeploymentScriptManagedIdentityType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Type of the managed identity. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TenantId">
       <MemberSignature Language="C#" Value="public string TenantId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TenantId" />
@@ -49,26 +69,6 @@
       </ReturnValue>
       <Docs>
         <summary> ID of the Azure Active Directory. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Type">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.DeploymentScriptManagedIdentityType? Type { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.DeploymentScriptManagedIdentityType&gt; Type" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.DeploymentScriptManagedIdentity.Type" />
-      <MemberSignature Language="VB.NET" Value="Public Property Type As Nullable(Of DeploymentScriptManagedIdentityType)" />
-      <MemberSignature Language="F#" Value="member this.Type : Nullable&lt;Azure.ResourceManager.Resources.Models.DeploymentScriptManagedIdentityType&gt; with get, set" Usage="Azure.ResourceManager.Resources.Models.DeploymentScriptManagedIdentity.Type" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Resources.Models.DeploymentScriptManagedIdentityType&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Type of the managed identity. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

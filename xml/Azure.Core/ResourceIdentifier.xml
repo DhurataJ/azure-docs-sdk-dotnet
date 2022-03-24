@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Core</AssemblyName>
     <AssemblyVersion>1.22.0.0</AssemblyVersion>
+    <AssemblyVersion>1.23.0.0</AssemblyVersion>
+    <AssemblyVersion>1.24.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,6 +38,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="resourceId" Type="System.String" />
@@ -64,6 +68,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -99,6 +105,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -139,6 +147,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -170,6 +180,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -196,6 +208,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -227,6 +241,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -254,6 +270,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
@@ -276,6 +294,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -298,6 +318,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -326,6 +348,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -354,6 +378,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -382,6 +408,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -408,6 +436,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -436,6 +466,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -464,6 +496,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -492,6 +526,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
@@ -514,6 +550,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -536,6 +574,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -558,6 +598,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceType</ReturnType>
@@ -580,6 +622,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
@@ -601,6 +645,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -623,6 +669,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

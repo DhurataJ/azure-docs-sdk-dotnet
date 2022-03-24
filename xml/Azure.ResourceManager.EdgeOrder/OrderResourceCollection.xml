@@ -1,6 +1,6 @@
 <Type Name="OrderResourceCollection" FullName="Azure.ResourceManager.EdgeOrder.OrderResourceCollection">
-  <TypeSignature Language="C#" Value="public class OrderResourceCollection : Azure.ResourceManager.Core.ArmCollection" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OrderResourceCollection extends Azure.ResourceManager.Core.ArmCollection" />
+  <TypeSignature Language="C#" Value="public class OrderResourceCollection : Azure.ResourceManager.ArmCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OrderResourceCollection extends Azure.ResourceManager.ArmCollection" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.EdgeOrder.OrderResourceCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class OrderResourceCollection&#xA;Inherits ArmCollection" />
   <TypeSignature Language="F#" Value="type OrderResourceCollection = class&#xA;    inherit ArmCollection" />
@@ -9,7 +9,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Core.ArmCollection</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.ArmCollection</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -56,11 +56,15 @@
         <param name="location"> The name of Azure region. </param>
         <param name="orderName"> The name of the order. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/locations/{location}/orders/{orderName}
+            Operation Id: GetOrderByName
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="orderName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="orderName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="orderName" /> is null. </exception>
       </Docs>
@@ -88,11 +92,15 @@
         <param name="location"> The name of Azure region. </param>
         <param name="orderName"> The name of the order. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/locations/{location}/orders/{orderName}
+            Operation Id: GetOrderByName
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="orderName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="orderName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="orderName" /> is null. </exception>
       </Docs>
@@ -120,11 +128,15 @@
         <param name="location"> The name of Azure region. </param>
         <param name="orderName"> The name of the order. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets an order. </summary>
+        <summary>
+            Gets an order.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/locations/{location}/orders/{orderName}
+            Operation Id: GetOrderByName
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="orderName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="orderName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="orderName" /> is null. </exception>
       </Docs>
@@ -152,11 +164,15 @@
         <param name="location"> The name of Azure region. </param>
         <param name="orderName"> The name of the order. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets an order. </summary>
+        <summary>
+            Gets an order.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/locations/{location}/orders/{orderName}
+            Operation Id: GetOrderByName
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="orderName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="orderName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="orderName" /> is null. </exception>
       </Docs>
@@ -184,11 +200,15 @@
         <param name="location"> The name of Azure region. </param>
         <param name="orderName"> The name of the order. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/locations/{location}/orders/{orderName}
+            Operation Id: GetOrderByName
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="orderName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="orderName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="orderName" /> is null. </exception>
       </Docs>
@@ -216,11 +236,15 @@
         <param name="location"> The name of Azure region. </param>
         <param name="orderName"> The name of the order. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/locations/{location}/orders/{orderName}
+            Operation Id: GetOrderByName
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="orderName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="orderName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="orderName" /> is null. </exception>
       </Docs>

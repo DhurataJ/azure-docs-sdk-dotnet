@@ -18,18 +18,18 @@
   </Docs>
   <Members>
     <Member MemberName="Duration">
-      <MemberSignature Language="C#" Value="public string Duration { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Duration" />
+      <MemberSignature Language="C#" Value="public TimeSpan? Duration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; Duration" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.DeploymentOperationProperties.Duration" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Duration As String" />
-      <MemberSignature Language="F#" Value="member this.Duration : string" Usage="Azure.ResourceManager.Resources.Models.DeploymentOperationProperties.Duration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Duration As Nullable(Of TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Duration : Nullable&lt;TimeSpan&gt;" Usage="Azure.ResourceManager.Resources.Models.DeploymentOperationProperties.Duration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The duration of the operation. </summary>
@@ -77,42 +77,42 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Request">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.HttpMessage Request { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.HttpMessage Request" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.DeploymentOperationProperties.Request" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Request As HttpMessage" />
-      <MemberSignature Language="F#" Value="member this.Request : Azure.ResourceManager.Resources.Models.HttpMessage" Usage="Azure.ResourceManager.Resources.Models.DeploymentOperationProperties.Request" />
+    <Member MemberName="RequestContent">
+      <MemberSignature Language="C#" Value="public BinaryData RequestContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData RequestContent" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.DeploymentOperationProperties.RequestContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestContent As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.RequestContent : BinaryData" Usage="Azure.ResourceManager.Resources.Models.DeploymentOperationProperties.RequestContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.HttpMessage</ReturnType>
+        <ReturnType>System.BinaryData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The HTTP request message. </summary>
+        <summary> HTTP message content. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Response">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.HttpMessage Response { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.HttpMessage Response" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.DeploymentOperationProperties.Response" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Response As HttpMessage" />
-      <MemberSignature Language="F#" Value="member this.Response : Azure.ResourceManager.Resources.Models.HttpMessage" Usage="Azure.ResourceManager.Resources.Models.DeploymentOperationProperties.Response" />
+    <Member MemberName="ResponseContent">
+      <MemberSignature Language="C#" Value="public BinaryData ResponseContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData ResponseContent" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.DeploymentOperationProperties.ResponseContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseContent As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.ResponseContent : BinaryData" Usage="Azure.ResourceManager.Resources.Models.DeploymentOperationProperties.ResponseContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.HttpMessage</ReturnType>
+        <ReturnType>System.BinaryData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The HTTP response message. </summary>
+        <summary> HTTP message content. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,16 +1,16 @@
 <Type Name="ArcExtensionData" FullName="Azure.ResourceManager.Hci.ArcExtensionData">
-  <TypeSignature Language="C#" Value="public class ArcExtensionData : Azure.ResourceManager.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArcExtensionData extends Azure.ResourceManager.Models.Resource" />
+  <TypeSignature Language="C#" Value="public class ArcExtensionData : Azure.ResourceManager.Models.ResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArcExtensionData extends Azure.ResourceManager.Models.ResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Hci.ArcExtensionData" />
-  <TypeSignature Language="VB.NET" Value="Public Class ArcExtensionData&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type ArcExtensionData = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArcExtensionData&#xA;Inherits ResourceData" />
+  <TypeSignature Language="F#" Value="type ArcExtensionData = class&#xA;    inherit ResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Hci</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.Resource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -246,11 +246,11 @@
       </Docs>
     </Member>
     <Member MemberName="ProtectedSettings">
-      <MemberSignature Language="C#" Value="public object ProtectedSettings { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object ProtectedSettings" />
+      <MemberSignature Language="C#" Value="public BinaryData ProtectedSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData ProtectedSettings" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Hci.ArcExtensionData.ProtectedSettings" />
-      <MemberSignature Language="VB.NET" Value="Public Property ProtectedSettings As Object" />
-      <MemberSignature Language="F#" Value="member this.ProtectedSettings : obj with get, set" Usage="Azure.ResourceManager.Hci.ArcExtensionData.ProtectedSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProtectedSettings As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.ProtectedSettings : BinaryData with get, set" Usage="Azure.ResourceManager.Hci.ArcExtensionData.ProtectedSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Hci</AssemblyName>
@@ -258,7 +258,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Object</ReturnType>
+        <ReturnType>System.BinaryData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Protected settings (may contain secrets). </summary>
@@ -309,11 +309,11 @@
       </Docs>
     </Member>
     <Member MemberName="Settings">
-      <MemberSignature Language="C#" Value="public object Settings { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object Settings" />
+      <MemberSignature Language="C#" Value="public BinaryData Settings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData Settings" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Hci.ArcExtensionData.Settings" />
-      <MemberSignature Language="VB.NET" Value="Public Property Settings As Object" />
-      <MemberSignature Language="F#" Value="member this.Settings : obj with get, set" Usage="Azure.ResourceManager.Hci.ArcExtensionData.Settings" />
+      <MemberSignature Language="VB.NET" Value="Public Property Settings As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.Settings : BinaryData with get, set" Usage="Azure.ResourceManager.Hci.ArcExtensionData.Settings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Hci</AssemblyName>
@@ -321,7 +321,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Object</ReturnType>
+        <ReturnType>System.BinaryData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Json formatted public settings for the extension. </summary>
