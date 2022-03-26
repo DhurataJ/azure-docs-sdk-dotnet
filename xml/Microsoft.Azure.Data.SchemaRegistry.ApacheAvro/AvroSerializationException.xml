@@ -1,0 +1,192 @@
+<Type Name="AvroSerializationException" FullName="Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException">
+  <TypeSignature Language="C#" Value="public class AvroSerializationException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit AvroSerializationException extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException" />
+  <TypeSignature Language="VB.NET" Value="Public Class AvroSerializationException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type AvroSerializationException = class&#xA;    inherit Exception" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents an exception that is thrown when Avro serialization or deserialization fails.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AvroSerializationException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of <see cref="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AvroSerializationException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException : string -&gt; Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException" Usage="new Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException message" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <summary>
+            Initializes a new instance of <see cref="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AvroSerializationException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException" Usage="new Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException (info, context)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Exception" /> class with serialized data.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is <see langword="null" /> or <see cref="P:System.Exception.HResult" /> is zero (0).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AvroSerializationException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException : string * Exception -&gt; Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException" Usage="new Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException (message, innerException)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        <summary>
+            Initializes a new instance of <see cref="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AvroSerializationException (string message, string serializedSchemaId, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string serializedSchemaId, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException.#ctor(System.String,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, serializedSchemaId As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException : string * string * Exception -&gt; Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException" Usage="new Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException (message, serializedSchemaId, innerException)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="serializedSchemaId" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="serializedSchemaId">The Schema Registry schema Id related to the <see cref="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException" />.</param>
+        <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        <summary>
+            Initializes a new instance of <see cref="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="avroSerializationException.GetObjectData (info, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>When overridden in a derived class, sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializedSchemaId">
+      <MemberSignature Language="C#" Value="public string SerializedSchemaId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SerializedSchemaId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException.SerializedSchemaId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SerializedSchemaId As String" />
+      <MemberSignature Language="F#" Value="member this.SerializedSchemaId : string with get, set" Usage="Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException.SerializedSchemaId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The Schema Registry schema Id related to the serialized data that caused the <see cref="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.AvroSerializationException" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

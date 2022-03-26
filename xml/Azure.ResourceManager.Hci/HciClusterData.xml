@@ -1,16 +1,16 @@
 <Type Name="HciClusterData" FullName="Azure.ResourceManager.Hci.HciClusterData">
-  <TypeSignature Language="C#" Value="public class HciClusterData : Azure.ResourceManager.Models.TrackedResource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HciClusterData extends Azure.ResourceManager.Models.TrackedResource" />
+  <TypeSignature Language="C#" Value="public class HciClusterData : Azure.ResourceManager.Models.TrackedResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HciClusterData extends Azure.ResourceManager.Models.TrackedResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Hci.HciClusterData" />
-  <TypeSignature Language="VB.NET" Value="Public Class HciClusterData&#xA;Inherits TrackedResource" />
-  <TypeSignature Language="F#" Value="type HciClusterData = class&#xA;    inherit TrackedResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class HciClusterData&#xA;Inherits TrackedResourceData" />
+  <TypeSignature Language="F#" Value="type HciClusterData = class&#xA;    inherit TrackedResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Hci</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.TrackedResource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.TrackedResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
