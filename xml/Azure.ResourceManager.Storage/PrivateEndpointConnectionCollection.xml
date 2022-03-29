@@ -44,69 +44,77 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Storage.Models.PrivateEndpointConnectionCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string privateEndpointConnectionName, Azure.ResourceManager.Storage.PrivateEndpointConnectionData properties, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Storage.Models.PrivateEndpointConnectionCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string privateEndpointConnectionName, class Azure.ResourceManager.Storage.PrivateEndpointConnectionData properties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.PrivateEndpointConnectionCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Storage.PrivateEndpointConnectionData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, privateEndpointConnectionName As String, properties As PrivateEndpointConnectionData, Optional cancellationToken As CancellationToken = Nothing) As PrivateEndpointConnectionCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.PrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Storage.Models.PrivateEndpointConnectionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.PrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Storage.Models.PrivateEndpointConnectionCreateOrUpdateOperation" Usage="privateEndpointConnectionCollection.CreateOrUpdate (waitForCompletion, privateEndpointConnectionName, properties, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.PrivateEndpointConnection&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string privateEndpointConnectionName, Azure.ResourceManager.Storage.PrivateEndpointConnectionData properties, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Storage.PrivateEndpointConnection&gt; CreateOrUpdate(valuetype Azure.WaitUntil waitUntil, string privateEndpointConnectionName, class Azure.ResourceManager.Storage.PrivateEndpointConnectionData properties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.PrivateEndpointConnectionCollection.CreateOrUpdate(Azure.WaitUntil,System.String,Azure.ResourceManager.Storage.PrivateEndpointConnectionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, privateEndpointConnectionName As String, properties As PrivateEndpointConnectionData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of PrivateEndpointConnection)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.Storage.PrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.PrivateEndpointConnection&gt;&#xA;override this.CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.Storage.PrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.PrivateEndpointConnection&gt;" Usage="privateEndpointConnectionCollection.CreateOrUpdate (waitUntil, privateEndpointConnectionName, properties, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Storage.Models.PrivateEndpointConnectionCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.PrivateEndpointConnection&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="privateEndpointConnectionName" Type="System.String" />
         <Parameter Name="properties" Type="Azure.ResourceManager.Storage.PrivateEndpointConnectionData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="privateEndpointConnectionName"> The name of the private endpoint connection associated with the Azure resource. </param>
         <param name="properties"> The private endpoint connection properties. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Update the state of specified private endpoint connection associated with the storage account. </summary>
+        <summary>
+            Update the state of specified private endpoint connection associated with the storage account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: PrivateEndpointConnections_Put
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> or <paramref name="properties" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.PrivateEndpointConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string privateEndpointConnectionName, Azure.ResourceManager.Storage.PrivateEndpointConnectionData properties, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Storage.Models.PrivateEndpointConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string privateEndpointConnectionName, class Azure.ResourceManager.Storage.PrivateEndpointConnectionData properties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.PrivateEndpointConnectionCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Storage.PrivateEndpointConnectionData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, privateEndpointConnectionName As String, properties As PrivateEndpointConnectionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PrivateEndpointConnectionCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.PrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.PrivateEndpointConnectionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.PrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.PrivateEndpointConnectionCreateOrUpdateOperation&gt;" Usage="privateEndpointConnectionCollection.CreateOrUpdateAsync (waitForCompletion, privateEndpointConnectionName, properties, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.PrivateEndpointConnection&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string privateEndpointConnectionName, Azure.ResourceManager.Storage.PrivateEndpointConnectionData properties, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Storage.PrivateEndpointConnection&gt;&gt; CreateOrUpdateAsync(valuetype Azure.WaitUntil waitUntil, string privateEndpointConnectionName, class Azure.ResourceManager.Storage.PrivateEndpointConnectionData properties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.PrivateEndpointConnectionCollection.CreateOrUpdateAsync(Azure.WaitUntil,System.String,Azure.ResourceManager.Storage.PrivateEndpointConnectionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, privateEndpointConnectionName As String, properties As PrivateEndpointConnectionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of PrivateEndpointConnection))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.Storage.PrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.PrivateEndpointConnection&gt;&gt;&#xA;override this.CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.Storage.PrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.PrivateEndpointConnection&gt;&gt;" Usage="privateEndpointConnectionCollection.CreateOrUpdateAsync (waitUntil, privateEndpointConnectionName, properties, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.PrivateEndpointConnectionCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.PrivateEndpointConnection&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="privateEndpointConnectionName" Type="System.String" />
         <Parameter Name="properties" Type="Azure.ResourceManager.Storage.PrivateEndpointConnectionData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="waitUntil"> "F:Azure.WaitUntil.Completed" if the method should wait to return until the long-running operation has completed on the service; "F:Azure.WaitUntil.Started" if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="privateEndpointConnectionName"> The name of the private endpoint connection associated with the Azure resource. </param>
         <param name="properties"> The private endpoint connection properties. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Update the state of specified private endpoint connection associated with the storage account. </summary>
+        <summary>
+            Update the state of specified private endpoint connection associated with the storage account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: PrivateEndpointConnections_Put
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> or <paramref name="properties" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="privateEndpointConnectionName"> The name of the private endpoint connection associated with the Azure resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: PrivateEndpointConnections_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="privateEndpointConnectionName"> The name of the private endpoint connection associated with the Azure resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: PrivateEndpointConnections_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="privateEndpointConnectionName"> The name of the private endpoint connection associated with the Azure resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified private endpoint connection associated with the storage account. </summary>
+        <summary>
+            Gets the specified private endpoint connection associated with the storage account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: PrivateEndpointConnections_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
@@ -220,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List all the private endpoint connections associated with the storage account. </summary>
+        <summary>
+            List all the private endpoint connections associated with the storage account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/privateEndpointConnections
+            Operation Id: PrivateEndpointConnections_List
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Storage.PrivateEndpointConnection" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,7 +268,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List all the private endpoint connections associated with the storage account. </summary>
+        <summary>
+            List all the private endpoint connections associated with the storage account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/privateEndpointConnections
+            Operation Id: PrivateEndpointConnections_List
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Storage.PrivateEndpointConnection" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,11 +298,15 @@
       <Docs>
         <param name="privateEndpointConnectionName"> The name of the private endpoint connection associated with the Azure resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified private endpoint connection associated with the storage account. </summary>
+        <summary>
+            Gets the specified private endpoint connection associated with the storage account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: PrivateEndpointConnections_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
@@ -300,11 +332,15 @@
       <Docs>
         <param name="privateEndpointConnectionName"> The name of the private endpoint connection associated with the Azure resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: PrivateEndpointConnections_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
@@ -330,11 +366,15 @@
       <Docs>
         <param name="privateEndpointConnectionName"> The name of the private endpoint connection associated with the Azure resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: PrivateEndpointConnections_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
