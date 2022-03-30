@@ -10,7 +10,7 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: resourcemanager
 ---
-# Azure ResourceManager client library for .NET - Version 1.0.0-alpha.20220329.1 
+# Azure ResourceManager client library for .NET - Version 1.0.0-alpha.20220329.3 
 
 
 This package follows the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html), which provide core capabilities that are shared amongst all Azure SDKs, including:
@@ -104,7 +104,6 @@ This object provides most of the logical collection operations.
 | Index | Get(string name) |
 | Add | CreateOrUpdate(string name, [Resource]Data data) |
 | Contains | Exists(string name) |
-| TryGet | GetIfExists(string name) |
 
 For most things, the parent will be a **ResourceGroup**. However, each parent / child relationship is represented this way. For example, a **Subnet** is a child of a **VirtualNetwork** and a **ResourceGroup** is a child of a **Subscription**.
 
@@ -212,9 +211,9 @@ Console.WriteLine(availabilitySet.Data.Name);
 
 ## Check if a [Resource] exists
 
-If you are not sure if a resource you want to get exists, or you just want to check if it exists, you can use `GetIfExists()` or `Exists()` methods, which can be invoked from any [Resource]Collection class.
+If you are not sure if a resource you want to get exists, or you just want to check if it exists, you can use `Exists()` method, which can be invoked from any [Resource]Collection class.
 
-`GetIfExists()` and `GetIfExistsAsync()` return a `Response<T>` where T is null if the specified resource does not exist. On the other hand, `Exists()` and `ExistsAsync()` return `Response<bool>` where the bool will be false if the specified resource does not exist.  Both of these methods still give you access to the underlying raw response.
+`Exists()` and `ExistsAsync()` return `Response<bool>` where the bool will be false if the specified resource does not exist.  Both of these methods still give you access to the underlying raw response.
 
 Before these methods were introduced you would need to catch the `RequestFailedException` and inspect the status code for 404.
 
@@ -256,26 +255,6 @@ if (exists)
 else
 {
     Console.WriteLine($"Resource Group {resourceGroupName} does not exist.");
-}
-```
-
-Another way to do this is by using `GetIfExistsAsync()` which will avoid the race condition mentioned above:
-
-```C# Snippet:Readme_TryGetRG
-ArmClient client = new ArmClient(new DefaultAzureCredential());
-SubscriptionResource subscription = await client.GetDefaultSubscriptionAsync();
-ResourceGroupCollection resourceGroups = subscription.GetResourceGroups();
-string resourceGroupName = "myRgName";
-
-ResourceGroupResource resourceGroup = await resourceGroups.GetIfExistsAsync(resourceGroupName);
-
-if (resourceGroup == null)
-{
-    Console.WriteLine($"Resource Group {resourceGroupName} does not exist.");
-}
-else
-{
-    // At this point, we are sure that myRG is a not null Resource Group, so we can use this object to perform any operations we want.
 }
 ```
 
