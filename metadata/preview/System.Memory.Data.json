@@ -1,7 +1,7 @@
 {
   "Name": "System.Memory.Data",
-  "Version": "1.1.0-alpha.20220331.2",
-  "DevVersion": "1.1.0-alpha.20220331.2",
+  "Version": "1.1.0-alpha.20220331.3",
+  "DevVersion": "1.1.0-alpha.20220331.3",
   "DirectoryPath": "sdk/core/System.Memory.Data",
   "ServiceDirectory": "core",
   "ReadMePath": "sdk/core/System.Memory.Data/README.md",
