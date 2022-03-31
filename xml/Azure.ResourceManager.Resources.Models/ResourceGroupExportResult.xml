@@ -46,11 +46,11 @@
       </Docs>
     </Member>
     <Member MemberName="Template">
-      <MemberSignature Language="C#" Value="public object Template { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object Template" />
+      <MemberSignature Language="C#" Value="public BinaryData Template { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData Template" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ResourceGroupExportResult.Template" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Template As Object" />
-      <MemberSignature Language="F#" Value="member this.Template : obj" Usage="Azure.ResourceManager.Resources.Models.ResourceGroupExportResult.Template" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Template As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.Template : BinaryData" Usage="Azure.ResourceManager.Resources.Models.ResourceGroupExportResult.Template" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
@@ -61,7 +61,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Object</ReturnType>
+        <ReturnType>System.BinaryData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The template content. </summary>
